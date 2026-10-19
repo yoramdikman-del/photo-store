@@ -85,6 +85,9 @@ nav.cols button{flex:none;font:inherit;font-size:.92rem;cursor:pointer;color:var
 nav.cols button[aria-current="page"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 nav.cols button:disabled{opacity:.55;cursor:default}
 a.contact-link{margin-inline-start:auto;flex:none;text-decoration:none;font-size:.92rem;padding:6px 12px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-weight:700;white-space:nowrap}
+#about{margin-top:40px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px clamp(16px,3vw,32px)}
+#about h2{font-family:var(--f-display);margin:0 0 8px;font-size:1.5rem}
+#about p{margin:0 0 10px;max-width:70ch;line-height:1.7}
 #contact{margin-top:40px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px clamp(16px,3vw,32px)}
 #contact h2{font-family:var(--f-display);margin:0 0 4px;font-size:1.5rem}
 #contact > p{margin:0 0 16px;color:var(--ink-soft);max-width:62ch}
@@ -163,6 +166,7 @@ nav.cols button.cam-tab[aria-current="page"]{background:var(--ink);color:var(--p
       <img src="logo.png" alt="לוגו צילום בכל גיל">
       <div class="brand"><b>צילום בכל גיל</b><span>ציוד צילום מחנויות רשמיות, נבדק ומסודר בעברית</span></div>
       <a class="contact-link" href="#contact">צור קשר</a>
+      <a class="social" href="#about">אודות</a>
       <a class="social" href="https://www.facebook.com/profile.php?id=61565225154450" target="_blank" rel="noopener">פייסבוק</a>
       <a class="social" href="https://www.instagram.com/photographyexpret20242024/" target="_blank" rel="noopener">אינסטגרם</a>
       <a class="social" href="https://chat.whatsapp.com/LlntXSR4SJL8tLl1S3lF6t" target="_blank" rel="noopener">קבוצת ווצאפ</a>
@@ -191,6 +195,15 @@ nav.cols button.cam-tab[aria-current="page"]{background:var(--ink);color:var(--p
   <div id="list"><p class="empty">טוען מוצרים…</p></div>
   </div>
 
+  <section id="about" aria-labelledby="about-h">
+    <h2 id="about-h">אודות</h2>
+    <p>"צילום בכל גיל" נולד מאהבה לצילום, ומהרבה שעות של חיפוש ציוד באלי אקספרס.</p>
+    <p>באלי אקספרס יש אלפי מוצרים לכל צורך, ורבים מהם נראים כמעט זהים. לא תמיד ברור מה באמת איכותי, מה מתאים למצלמה שלכם ומה רק נראה טוב בתמונה.</p>
+    <p>בשביל זה בנינו את החנות: פלטפורמה חכמה לחיפוש ואיתור מוצרים. אנחנו סורקים אלפי מוצרים, בודקים דירוג, כמות מכירות, חנות רשמית ומשלוח לישראל, ומביאים לכם את הטובים ביותר ואת המתאימים ביותר לצרכים שלכם. מאחורי כל בחירה עומד ניסיון של שנים, גם בצילום וגם בחיפוש ציוד טוב באלי אקספרס.</p>
+    <p>הכל בעברית, מסודר לפי נושא ולפי המצלמה שלכם, ומתעדכן כל שבוע.</p>
+    <p>הקנייה עצמה נעשית באלי אקספרס, באותו מחיר. כשקונים דרך הקישורים שלנו אנחנו מקבלים עמלה קטנה, וזה מה שמאפשר לנו להמשיך לבדוק ולעדכן.</p>
+  </section>
+
   <section id="contact" aria-labelledby="contact-h">
     <h2 id="contact-h">צור קשר</h2>
     <p>מחפשים סוללה לדגם שלא מופיע? רוצים לדעת אם מוצר מתאים למצלמה שלכם? כתבו לנו, ונחזור אליכם במייל.</p>
@@ -211,6 +224,7 @@ nav.cols button.cam-tab[aria-current="page"]{background:var(--ink);color:var(--p
 
 <footer>
   <div class="wrap">
+    <p><a href="#about" style="color:var(--ink);font-weight:700">אודות צילום בכל גיל</a></p>
     <div class="follow"><b>עקבו אחרינו:</b><a href="https://www.facebook.com/profile.php?id=61565225154450" target="_blank" rel="noopener">פייסבוק</a><a href="https://www.instagram.com/photographyexpret20242024/" target="_blank" rel="noopener">אינסטגרם</a><a class="wa" href="https://chat.whatsapp.com/LlntXSR4SJL8tLl1S3lF6t" target="_blank" rel="noopener">הצטרפו לקבוצת הווצאפ</a></div>
     <p><b>קישורי שותפים:</b> אם תקנו דרך הקישורים באתר אקבל עמלה קטנה, בלי עלות נוספת לכם.</p>
     <p id="checked"></p>
@@ -402,7 +416,7 @@ Promise.all([fetch('data/products.json', {cache: 'no-cache'}).then(r => r.json()
 }).catch(() => { $('list').innerHTML = '<p class="empty">לא הצלחנו לטעון את המוצרים. נסו לרענן את העמוד.</p>'; });
 
 $('q').addEventListener('input', () => render());
-window.addEventListener('hashchange', () => { if (DB && location.hash !== '#contact') route(); });
+window.addEventListener('hashchange', () => { if (DB && location.hash !== '#contact' && location.hash !== '#about') route(); });
 
 $('form').addEventListener('submit', async e => {
   e.preventDefault();
