@@ -153,6 +153,8 @@ def main():
 
     fz = [m for m, c in battery.items() if c == 'NP-FZ100']
     for p in prods:
+        if p['collection'] == 'adapters':   # מתאמים מתויגים ב-add_adapters.py
+            continue
         for k in ('for', 'models', 'brand_for', 'lens_note'):
             p.pop(k, None)
         pid = p['id']

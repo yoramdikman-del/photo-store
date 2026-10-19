@@ -327,7 +327,8 @@ function camResults(brand, model){
   const full = (brand.id === 'phone' || brand.id === 'action' || brand.id === 'dji') ? model.name : brand.name + ' ' + model.name;
   const typeName = CAMS.types[model.type];
   const exact = DB.products.filter(p => (p.models || []).includes(model.name)).sort((a,b) => b.sold - a.sold);
-  const byBrand = DB.products.filter(p => p.brand_for === brand.id && (p.for || []).includes(model.type)).sort((a,b) => b.sold - a.sold);
+  const byBrandAll = DB.products.filter(p => p.brand_for === brand.id && (p.for || []).includes(model.type)).sort((a,b) => b.sold - a.sold);
+  const byBrand = byBrandAll.filter(p => p.collection !== 'adapters'), adapters = byBrandAll.filter(p => p.collection === 'adapters');
   const general = DB.products.filter(p => !p.models && !p.brand_for && (p.for || []).includes(model.type));
   let h = `<div id="cam-res"></div>`;
   h += `<section class="tier"><h2>מתאים בדיוק ל-<bdi>${esc(full)}</bdi></h2>`;
@@ -337,6 +338,7 @@ function camResults(brand, model){
   h += exact.length ? `${model.battery ? `<p>קוד הסוללה: <span dir="ltr">${esc(model.battery)}</span></p>` : ''}<div class="grid">${exact.map(card).join('')}</div>` : (camTypes.includes(model.type) ? '' : '<p>אין עדיין מוצרים לדגם הזה בדיוק. האביזרים הכלליים מופיעים למטה.</p>');
   h += '</section>';
   if (byBrand.length) h += `<section class="tier"><h2>למצלמות ${esc(brand.name)}</h2><p>כל מוצר מתאים לעדשה או לאביזר מסוים, שכתוב על הכרטיס.</p><div class="grid">${byBrand.map(p => card({...p, note: p.lens_note || p.note})).join('')}</div></section>`;
+  if (adapters.length) h += `<section class="tier"><h2>מתאמים לעדשות אחרות, למצלמות ${esc(brand.name)}</h2><p>יש לכם עדשות ממותג אחר או ממצלמה קודמת? על כל מתאם כתוב לאילו עדשות הוא מתאים.</p><div class="grid">${adapters.map(p => card({...p, note: p.lens_note || p.note})).join('')}</div></section>`;
   if (general.length) {
     h += `<section class="tier"><h2>מתאים לכל ${esc(typeName)}</h2><p>אביזרים שלא תלויים בדגם: תיקים, חצובות, רצועות, ניקוי ועוד.${['M','D'].includes(model.type) ? ' בפילטרים בוחרים לפי הקוטר שכתוב על העדשה, למשל ⌀58.' : ''}</p>`;
     DB.collections.forEach(c => {
@@ -365,7 +367,9 @@ function setCollection(id){
   [...$('cols').querySelectorAll('button')].forEach(b => b.dataset.id === coll.id ? b.setAttribute('aria-current','page') : b.removeAttribute('aria-current'));
   $('h1').textContent = coll.title || coll.name;
   $('intro').textContent = coll.intro || '';
-  $('how').hidden = coll.id !== 'batteries';
+  if (!$('how').dataset.orig) $('how').dataset.orig = $('how').innerHTML;
+  if (coll.how) { $('how').innerHTML = `<span>${esc(coll.how[0])}</span><span>${esc(coll.how[1])}</span>`; $('how').hidden = false; }
+  else { $('how').innerHTML = $('how').dataset.orig; $('how').hidden = coll.id !== 'batteries'; }
   $('q').value = ''; $('q').placeholder = coll.search || 'חיפוש מוצר';
   const items = DB.products.filter(p => p.collection === coll.id);
   const chips = $('chips'); chips.innerHTML = '';
@@ -398,7 +402,7 @@ function render(){
 
 Promise.all([fetch('data/products.json', {cache: 'no-cache'}).then(r => r.json()), fetch('data/deals.json', {cache: 'no-cache'}).then(r => r.ok ? r.json() : null).catch(() => null), fetch('data/cameras.json', {cache: 'no-cache'}).then(r => r.ok ? r.json() : null).catch(() => null)]).then(([data, deals, cams]) => {
   if (deals) DEALS = deals; CAMS = cams;
-  DB = data; DB.products = DB.products.filter(p => p.status !== 'missing');
+  DB = data; DB.products = DB.products.filter(p => p.status !== 'missing' && p.status !== 'pending');
   const nav = $('cols');
   if (CAMS) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'cam'; b.className = 'cam-tab'; b.textContent = '📷 מה מתאים למצלמה שלי'; b.onclick = () => go('#cam'); nav.appendChild(b); }
   if (hasDeals()) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'deals'; b.className = 'deals-tab'; b.textContent = '🏷️ מבצעים וקופונים'; b.onclick = () => { history.replaceState(null, '', '#deals'); showDeals(); }; nav.appendChild(b); }
