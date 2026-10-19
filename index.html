@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>צילום בכל גיל – חנות ציוד צילום</title>
+<meta name="description" content="סוללות ומטענים למצלמות קנון, ניקון, סוני ופוג'יפילם מחנויות רשמיות באלי אקספרס, מסודרים לפי דגם מצלמה, בעברית.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: shop shelf – sticky header with camera-brand chips, product grid of white "product photo" tiles on navy-tinted paper */
+:root{
+  --paper:#f6f3ee; --ink:#1e2a44; --ink-soft:#56627c; --line:#dcd6cc;
+  --card:#ffffff; --tile:#ffffff; --accent:#f39c3c; --accent-ink:#1e2a44; --chip:#ebe5db;
+  --good:#2f7d5b;
+  --f-display:"Rubik","Arial Hebrew","Segoe UI",Arial,sans-serif;
+  --f-body:"Rubik","Arial Hebrew","Segoe UI",Arial,sans-serif;
+  --f-code:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#141b2b; --ink:#eef1f7; --ink-soft:#a5afc4; --line:#2b3550;
+  --card:#1c2538; --tile:#ffffff; --accent:#f5a85a; --accent-ink:#141b2b; --chip:#25304a; --good:#6cc39b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#141b2b; --ink:#eef1f7; --ink-soft:#a5afc4; --line:#2b3550;
+  --card:#1c2538; --tile:#ffffff; --accent:#f5a85a; --accent-ink:#141b2b; --chip:#25304a; --good:#6cc39b; color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:14px;padding-block:12px}
+.bar img{width:52px;height:52px;border-radius:50%;flex:none}
+.brand{min-width:0}
+.brand b{display:block;font-family:var(--f-display);font-weight:800;font-size:1.25rem;letter-spacing:-.01em}
+.brand span{color:var(--ink-soft);font-size:.9rem}
+nav.cols{display:flex;gap:8px;overflow-x:auto;padding-bottom:12px;scrollbar-width:none}
+nav.cols a{flex:none;text-decoration:none;color:var(--ink-soft);font-size:.92rem;padding:6px 12px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+nav.cols a[aria-current]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+nav.cols a.soon{opacity:.55;pointer-events:none}
+.hero{padding-block:28px 8px;display:grid;gap:10px}
+.hero h1{font-family:var(--f-display);font-weight:800;font-size:clamp(1.8rem,4.5vw,2.6rem);line-height:1.15;margin:0;text-wrap:balance}
+.hero p{margin:0;max-width:62ch;color:var(--ink-soft)}
+.how{display:flex;gap:12px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;max-width:760px}
+.how .code{font-family:var(--f-code);background:var(--accent);color:var(--accent-ink);padding:2px 8px;border-radius:6px;white-space:nowrap}
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding-block:18px 6px}
+.search{flex:1 1 260px;min-width:0;display:flex}
+.search input{width:100%;font:inherit;padding:11px 14px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.search input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:inherit;font-size:.95rem;cursor:pointer;border:1px solid var(--line);background:var(--chip);color:var(--ink);padding:8px 14px;border-radius:999px}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.chip:focus-visible,.buy:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.chip small{opacity:.7;font-variant-numeric:tabular-nums}
+.count{color:var(--ink-soft);font-size:.9rem;padding-block:6px 0}
+section.group{padding-block:22px 6px}
+section.group h2{font-family:var(--f-display);font-size:1.35rem;margin:0 0 12px;display:flex;gap:10px;align-items:baseline}
+section.group h2 small{font-weight:400;font-size:.9rem;color:var(--ink-soft)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.img{background:var(--tile);aspect-ratio:1/1;max-width:100%;display:grid;place-items:center;position:relative}
+.img img{width:100%;height:100%;object-fit:contain}
+.code-tag{position:absolute;top:10px;inset-inline-start:10px;font-family:var(--f-code);font-size:.85rem;background:var(--ink);color:#fff;padding:3px 9px;border-radius:7px;direction:ltr}
+.body{padding:14px 14px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.kind{font-size:.78rem;font-weight:500;letter-spacing:.02em;color:var(--ink-soft)}
+.title{font-weight:700;font-size:1.02rem;line-height:1.35;margin:0}
+.title .b{direction:ltr;unicode-bidi:isolate}
+.fits{font-size:.9rem;color:var(--ink-soft)}
+.fits bdi{color:var(--ink)}
+.meta{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:.86rem;color:var(--ink-soft);font-variant-numeric:tabular-nums}
+.meta .rate{color:var(--good);font-weight:500}
+.note{font-size:.82rem;background:var(--chip);border-radius:8px;padding:3px 8px;align-self:flex-start}
+.buy{margin-top:auto;display:block;text-align:center;text-decoration:none;font-weight:700;background:var(--accent);color:var(--accent-ink);padding:11px 12px;border-radius:12px}
+.buy:hover{filter:brightness(1.05)}
+.empty{padding:30px 0;color:var(--ink-soft)}
+footer{margin-top:36px;border-top:1px solid var(--line);padding-block:22px 34px;color:var(--ink-soft);font-size:.9rem}
+footer p{margin:.3em 0;max-width:70ch}
+@media (prefers-reduced-motion:no-preference){.card{transition:transform .15s ease}.card:hover{transform:translateY(-2px)}}
+
+nav.cols button{flex:none;font:inherit;font-size:.92rem;cursor:pointer;color:var(--ink-soft);background:none;padding:6px 12px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+nav.cols button[aria-current="page"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+nav.cols button:disabled{opacity:.55;cursor:default}
+a.contact-link{margin-inline-start:auto;flex:none;text-decoration:none;font-size:.92rem;padding:6px 12px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-weight:700;white-space:nowrap}
+#contact{margin-top:40px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px clamp(16px,3vw,32px)}
+#contact h2{font-family:var(--f-display);margin:0 0 4px;font-size:1.5rem}
+#contact > p{margin:0 0 16px;color:var(--ink-soft);max-width:62ch}
+.form{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.form .full{grid-column:1/-1}
+.field{display:grid;gap:6px;min-width:0}
+.field label{font-weight:500;font-size:.95rem}
+.field input,.field select,.field textarea{font:inherit;width:100%;padding:11px 12px;border-radius:12px;border:1px solid var(--line);background:var(--paper);color:var(--ink)}
+.field textarea{min-height:120px;resize:vertical}
+.field :focus{outline:2px solid var(--accent);outline-offset:1px}
+.send{font:inherit;font-weight:700;cursor:pointer;border:0;background:var(--ink);color:var(--paper);padding:12px 22px;border-radius:12px;justify-self:start}
+.send:disabled{opacity:.6}
+.status{font-weight:500}
+.status.ok{color:var(--good)} .status.err{color:#c0392b}
+.hp{position:absolute;inset-inline-start:-9999px}
+@media (max-width:560px){.how{flex-direction:column;gap:4px}.brand span{display:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="bar">
+      <img src="logo.png" alt="לוגו צילום בכל גיל">
+      <div class="brand"><b>צילום בכל גיל</b><span>ציוד צילום מחנויות רשמיות, נבדק ומסודר בעברית</span></div>
+      <a class="contact-link" href="#contact">צור קשר</a>
+    </div>
+    <nav class="cols" id="cols" aria-label="אוספים"></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1 id="h1"></h1>
+    <p id="intro"></p>
+    <div class="how" id="how"><span>איך יודעים מה מתאים?</span><span>מחפשים את דגם המצלמה, או את הקוד שכתוב על הסוללה המקורית, למשל <span class="code" dir="ltr">LP-E17</span> או <span class="code" dir="ltr">EN-EL15</span>.</span></div>
+  </div>
+
+  <div class="tools">
+    <label class="search" for="q"><input id="q" type="search" autocomplete="off"></label>
+    <div class="chips" id="chips" role="group" aria-label="סינון"></div>
+  </div>
+  <div class="count" id="count" aria-live="polite"></div>
+  <div id="list"><p class="empty">טוען מוצרים…</p></div>
+
+  <section id="contact" aria-labelledby="contact-h">
+    <h2 id="contact-h">צור קשר</h2>
+    <p>מחפשים סוללה לדגם שלא מופיע? רוצים לדעת אם מוצר מתאים למצלמה שלכם? כתבו לנו, ונחזור אליכם במייל.</p>
+    <form id="form" class="form" novalidate>
+      <div class="field"><label for="f-name">שם</label><input id="f-name" name="שם" required autocomplete="name"></div>
+      <div class="field"><label for="f-email">מייל לחזרה</label><input id="f-email" name="email" type="email" required autocomplete="email" dir="ltr"></div>
+      <div class="field"><label for="f-camera">דגם המצלמה או הטלפון</label><input id="f-camera" name="מצלמה" placeholder="למשל Canon R50"></div>
+      <div class="field"><label for="f-type">סוג הפנייה</label>
+        <select id="f-type" name="סוג פנייה"><option>שאלה על מוצר</option><option>בקשה למוצר שלא מופיע</option><option>בעיה בקישור</option><option>אחר</option></select></div>
+      <div class="field full"><label for="f-msg">ההודעה</label><textarea id="f-msg" name="הודעה" required></textarea></div>
+      <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="send" id="send" type="submit">שליחה</button>
+      <div class="status full" id="status" role="status"></div>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>קישורי שותפים:</b> אם תקנו דרך הקישורים באתר אקבל עמלה קטנה, בלי עלות נוספת לכם.</p>
+    <p id="checked"></p>
+    <p>הזמנה עד 75$ פטורה ממע"מ לפי הכללים היום.</p>
+  </div>
+</footer>
+
+<script>
+const FORM_ENDPOINT = 'https://formsubmit.co/ajax/gadgetphoto2024@gmail.com';
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let DB, coll, group = 'all';
+
+function card(p){
+  const price = p.price ? 'כ-' + Math.round(p.price) + '$' : '';
+  return `<article class="card">
+    <div class="img"><img loading="lazy" src="${esc(p.img)}" alt="${esc(p.title)}">${p.code ? `<span class="code-tag">${esc(p.code)}</span>` : ''}</div>
+    <div class="body">
+      <span class="kind">${esc(p.kind)}</span>
+      <h3 class="title"><span class="b">${esc(p.brand)}</span> – ${esc(p.title)}</h3>
+      ${p.fits ? `<div class="fits">מתאים ל: <bdi dir="ltr">${esc(p.fits)}</bdi></div>` : ''}
+      <div class="meta"><span class="rate">${p.rating}% חיובי</span><span>${Number(p.sold).toLocaleString('he-IL')} נמכרו</span><span>${price}</span></div>
+      ${p.note ? `<span class="note">${esc(p.note)}</span>` : ''}
+      <a class="buy" href="${esc(p.link)}" target="_blank" rel="noopener sponsored">לרכישה באלי אקספרס ←</a>
+    </div></article>`;
+}
+
+function setCollection(id){
+  coll = DB.collections.find(c => c.id === id && DB.products.some(p => p.collection === c.id))
+      || DB.collections.find(c => DB.products.some(p => p.collection === c.id));
+  group = 'all';
+  [...$('cols').querySelectorAll('button')].forEach(b => b.dataset.id === coll.id ? b.setAttribute('aria-current','page') : b.removeAttribute('aria-current'));
+  $('h1').textContent = coll.title || coll.name;
+  $('intro').textContent = coll.intro || '';
+  $('how').hidden = coll.id !== 'batteries';
+  $('q').value = ''; $('q').placeholder = coll.search || 'חיפוש מוצר';
+  const items = DB.products.filter(p => p.collection === coll.id);
+  const chips = $('chips'); chips.innerHTML = '';
+  const groups = [['all','הכל'], ...(coll.groups || []).filter(([g]) => items.some(p => p.group === g))];
+  if (groups.length > 2) groups.forEach(([g,l]) => {
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'chip';
+    const n = g === 'all' ? items.length : items.filter(p => p.group === g).length;
+    b.innerHTML = esc(l) + ' <small>' + n + '</small>'; b.setAttribute('aria-pressed', g === group);
+    b.onclick = () => { group = g; [...chips.children].forEach(c => c.setAttribute('aria-pressed', c === b)); render(); };
+    chips.appendChild(b);
+  });
+  render();
+}
+
+function render(){
+  const t = $('q').value.trim().toLowerCase().replace(/[\s-]/g,'');
+  const hit = p => !t || (p.code + p.fits + p.brand + p.title + p.kind).toLowerCase().replace(/[\s-]/g,'').includes(t);
+  const items = DB.products.filter(p => p.collection === coll.id && hit(p));
+  const sections = (coll.groups && coll.groups.length) ? coll.groups : [['', '']];
+  let html = '', n = 0;
+  sections.forEach(([g,l]) => {
+    if (group !== 'all' && group !== g) return;
+    const part = items.filter(p => !g || p.group === g).sort((a,b) => b.sold - a.sold);
+    if (!part.length) return; n += part.length;
+    html += `<section class="group">${l ? `<h2>${esc(l)} <small>${part.length} מוצרים</small></h2>` : ''}<div class="grid">${part.map(card).join('')}</div></section>`;
+  });
+  $('list').innerHTML = html || '<p class="empty">לא נמצא מוצר מתאים. נסו לחפש בלי רווחים, או כתבו לנו בטופס למטה.</p>';
+  $('count').textContent = n + ' מוצרים מוצגים';
+}
+
+fetch('data/products.json', {cache: 'no-cache'}).then(r => r.json()).then(data => {
+  DB = data; DB.products = DB.products.filter(p => p.status !== 'missing');
+  const nav = $('cols');
+  DB.collections.forEach(c => {
+    const has = DB.products.some(p => p.collection === c.id);
+    const b = document.createElement('button'); b.type = 'button'; b.dataset.id = c.id;
+    b.textContent = has ? c.name : c.name + ' · בקרוב'; b.disabled = !has;
+    b.onclick = () => { history.replaceState(null, '', '#' + c.id); setCollection(c.id); };
+    nav.appendChild(b);
+  });
+  const [y,m,d] = DB.updated.split('-');
+  $('checked').textContent = `המחירים, הדירוגים ומספר ההזמנות נבדקו ב-${+d}/${+m}/${y} ויכולים להשתנות. המחיר המעודכן מופיע בדף המוצר.`;
+  setCollection(location.hash.slice(1));
+}).catch(() => { $('list').innerHTML = '<p class="empty">לא הצלחנו לטעון את המוצרים. נסו לרענן את העמוד.</p>'; });
+
+$('q').addEventListener('input', () => render());
+
+$('form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const f = e.target, st = $('status');
+  if (!f.checkValidity()) { st.className = 'status full err'; st.textContent = 'נא למלא שם, מייל תקין והודעה.'; return; }
+  const body = Object.fromEntries(new FormData(f));
+  body._subject = 'פנייה חדשה מאתר צילום בכל גיל: ' + body['סוג פנייה'];
+  body._template = 'table';
+  $('send').disabled = true; st.className = 'status full'; st.textContent = 'שולח…';
+  try {
+    const r = await fetch(FORM_ENDPOINT, {method: 'POST', headers: {'Content-Type': 'application/json', 'Accept': 'application/json'}, body: JSON.stringify(body)});
+    if (!r.ok) throw 0;
+    f.reset(); st.className = 'status full ok'; st.textContent = 'ההודעה נשלחה. נחזור אליכם במייל בהקדם.';
+  } catch { st.className = 'status full err'; st.textContent = 'השליחה לא הצליחה. נסו שוב בעוד כמה דקות.'; }
+  $('send').disabled = false;
+});
+</script>
+</body>
+</html>
