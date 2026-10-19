@@ -1,0 +1,523 @@
+{
+ "types": {
+  "M": "מצלמת מירורלס",
+  "D": "מצלמת רפלקס",
+  "C": "מצלמה קומפקטית",
+  "P": "טלפון",
+  "A": "מצלמת אקשן",
+  "K": "מצלמת פוקט",
+  "R": "רחפן"
+ },
+ "brands": [
+  {
+   "id": "canon",
+   "name": "קנון",
+   "models": [
+    {
+     "name": "R50",
+     "type": "M",
+     "battery": "LP-E17"
+    },
+    {
+     "name": "R10",
+     "type": "M",
+     "battery": "LP-E17"
+    },
+    {
+     "name": "R100",
+     "type": "M",
+     "battery": "LP-E17"
+    },
+    {
+     "name": "R8",
+     "type": "M",
+     "battery": "LP-E17"
+    },
+    {
+     "name": "RP",
+     "type": "M",
+     "battery": "LP-E17"
+    },
+    {
+     "name": "R7",
+     "type": "M"
+    },
+    {
+     "name": "R6 II",
+     "type": "M"
+    },
+    {
+     "name": "R5 II",
+     "type": "M"
+    },
+    {
+     "name": "200D",
+     "type": "D",
+     "battery": "LP-E17"
+    },
+    {
+     "name": "250D",
+     "type": "D",
+     "battery": "LP-E17"
+    },
+    {
+     "name": "750D",
+     "type": "D",
+     "battery": "LP-E17"
+    },
+    {
+     "name": "800D",
+     "type": "D",
+     "battery": "LP-E17"
+    },
+    {
+     "name": "550D",
+     "type": "D",
+     "battery": "LP-E8"
+    },
+    {
+     "name": "600D",
+     "type": "D",
+     "battery": "LP-E8"
+    },
+    {
+     "name": "650D",
+     "type": "D",
+     "battery": "LP-E8"
+    },
+    {
+     "name": "700D",
+     "type": "D",
+     "battery": "LP-E8"
+    },
+    {
+     "name": "60D",
+     "type": "D",
+     "battery": "LP-E6"
+    },
+    {
+     "name": "70D",
+     "type": "D",
+     "battery": "LP-E6"
+    },
+    {
+     "name": "80D",
+     "type": "D",
+     "battery": "LP-E6"
+    },
+    {
+     "name": "90D",
+     "type": "D",
+     "battery": "LP-E6"
+    },
+    {
+     "name": "7D",
+     "type": "D",
+     "battery": "LP-E6"
+    },
+    {
+     "name": "6D",
+     "type": "D",
+     "battery": "LP-E6"
+    },
+    {
+     "name": "5D Mark II",
+     "type": "D",
+     "battery": "LP-E6"
+    },
+    {
+     "name": "5D Mark III",
+     "type": "D",
+     "battery": "LP-E6"
+    },
+    {
+     "name": "5D Mark IV",
+     "type": "D",
+     "battery": "LP-E6"
+    }
+   ]
+  },
+  {
+   "id": "nikon",
+   "name": "ניקון",
+   "models": [
+    {
+     "name": "Z5",
+     "type": "M",
+     "battery": "EN-EL15C"
+    },
+    {
+     "name": "Z6",
+     "type": "M",
+     "battery": "EN-EL15C"
+    },
+    {
+     "name": "Z6 II",
+     "type": "M",
+     "battery": "EN-EL15C"
+    },
+    {
+     "name": "Z7",
+     "type": "M",
+     "battery": "EN-EL15C"
+    },
+    {
+     "name": "Z7 II",
+     "type": "M",
+     "battery": "EN-EL15C"
+    },
+    {
+     "name": "Z8",
+     "type": "M",
+     "battery": "EN-EL15C"
+    },
+    {
+     "name": "Zf",
+     "type": "M",
+     "battery": "EN-EL15C"
+    },
+    {
+     "name": "ZR",
+     "type": "M",
+     "battery": "EN-EL15C"
+    },
+    {
+     "name": "Z50",
+     "type": "M"
+    },
+    {
+     "name": "Z fc",
+     "type": "M"
+    },
+    {
+     "name": "Z30",
+     "type": "M"
+    },
+    {
+     "name": "D3100",
+     "type": "D",
+     "battery": "EN-EL14a"
+    },
+    {
+     "name": "D3200",
+     "type": "D",
+     "battery": "EN-EL14a"
+    },
+    {
+     "name": "D3300",
+     "type": "D",
+     "battery": "EN-EL14a"
+    },
+    {
+     "name": "D3400",
+     "type": "D",
+     "battery": "EN-EL14a"
+    },
+    {
+     "name": "D3500",
+     "type": "D",
+     "battery": "EN-EL14a"
+    },
+    {
+     "name": "D5100",
+     "type": "D",
+     "battery": "EN-EL14a"
+    },
+    {
+     "name": "D5200",
+     "type": "D",
+     "battery": "EN-EL14a"
+    },
+    {
+     "name": "D5300",
+     "type": "D",
+     "battery": "EN-EL14a"
+    },
+    {
+     "name": "D5500",
+     "type": "D",
+     "battery": "EN-EL14a"
+    },
+    {
+     "name": "D5600",
+     "type": "D",
+     "battery": "EN-EL14a"
+    },
+    {
+     "name": "D7000",
+     "type": "D",
+     "battery": "EN-EL15C"
+    },
+    {
+     "name": "D7100",
+     "type": "D",
+     "battery": "EN-EL15C"
+    },
+    {
+     "name": "D7200",
+     "type": "D",
+     "battery": "EN-EL15C"
+    },
+    {
+     "name": "D7500",
+     "type": "D",
+     "battery": "EN-EL15C"
+    },
+    {
+     "name": "D750",
+     "type": "D",
+     "battery": "EN-EL15C"
+    },
+    {
+     "name": "D850",
+     "type": "D",
+     "battery": "EN-EL15C"
+    },
+    {
+     "name": "Coolpix P1000",
+     "type": "C",
+     "battery": "EN-EL20"
+    },
+    {
+     "name": "Nikon 1",
+     "type": "M",
+     "battery": "EN-EL20"
+    }
+   ]
+  },
+  {
+   "id": "sony",
+   "name": "סוני",
+   "models": [
+    {
+     "name": "A5000",
+     "type": "M",
+     "battery": "NP-FW50"
+    },
+    {
+     "name": "A6000",
+     "type": "M",
+     "battery": "NP-FW50"
+    },
+    {
+     "name": "A6100",
+     "type": "M",
+     "battery": "NP-FW50"
+    },
+    {
+     "name": "A6300",
+     "type": "M",
+     "battery": "NP-FW50"
+    },
+    {
+     "name": "A6400",
+     "type": "M",
+     "battery": "NP-FW50"
+    },
+    {
+     "name": "A6500",
+     "type": "M",
+     "battery": "NP-FW50"
+    },
+    {
+     "name": "A6600",
+     "type": "M",
+     "battery": "NP-FZ100"
+    },
+    {
+     "name": "ZV-E10",
+     "type": "M",
+     "battery": "NP-FW50"
+    },
+    {
+     "name": "ZV-E1",
+     "type": "M",
+     "battery": "NP-FZ100"
+    },
+    {
+     "name": "A7 II",
+     "type": "M",
+     "battery": "NP-FW50"
+    },
+    {
+     "name": "A7 III",
+     "type": "M",
+     "battery": "NP-FZ100"
+    },
+    {
+     "name": "A7 IV",
+     "type": "M",
+     "battery": "NP-FZ100"
+    },
+    {
+     "name": "A7 V",
+     "type": "M"
+    },
+    {
+     "name": "A7R III",
+     "type": "M",
+     "battery": "NP-FZ100"
+    },
+    {
+     "name": "A7R V",
+     "type": "M"
+    },
+    {
+     "name": "A7S III",
+     "type": "M",
+     "battery": "NP-FZ100"
+    },
+    {
+     "name": "A9",
+     "type": "M",
+     "battery": "NP-FZ100"
+    },
+    {
+     "name": "A1",
+     "type": "M"
+    },
+    {
+     "name": "FX3",
+     "type": "M",
+     "battery": "NP-FZ100"
+    },
+    {
+     "name": "FX30",
+     "type": "M",
+     "battery": "NP-FZ100"
+    },
+    {
+     "name": "ZV-1",
+     "type": "C",
+     "battery": "NP-BX1"
+    },
+    {
+     "name": "RX100",
+     "type": "C",
+     "battery": "NP-BX1"
+    },
+    {
+     "name": "FDR-X3000",
+     "type": "A",
+     "battery": "NP-BX1"
+    }
+   ]
+  },
+  {
+   "id": "fuji",
+   "name": "פוג'יפילם",
+   "models": [
+    {
+     "name": "X-T20",
+     "type": "M",
+     "battery": "NP-W126S"
+    },
+    {
+     "name": "X-T3",
+     "type": "M",
+     "battery": "NP-W126S"
+    },
+    {
+     "name": "X-T30",
+     "type": "M",
+     "battery": "NP-W126S"
+    },
+    {
+     "name": "X-T50",
+     "type": "M",
+     "battery": "NP-W126S"
+    },
+    {
+     "name": "X-S10",
+     "type": "M",
+     "battery": "NP-W126S"
+    },
+    {
+     "name": "X-E4",
+     "type": "M",
+     "battery": "NP-W126S"
+    },
+    {
+     "name": "X-E5",
+     "type": "M",
+     "battery": "NP-W126S"
+    },
+    {
+     "name": "X-Pro2",
+     "type": "M",
+     "battery": "NP-W126S"
+    },
+    {
+     "name": "X100V",
+     "type": "C"
+    },
+    {
+     "name": "X100VI",
+     "type": "C",
+     "battery": "NP-W126S"
+    }
+   ]
+  },
+  {
+   "id": "ricoh",
+   "name": "ריקו",
+   "models": [
+    {
+     "name": "GR IV",
+     "type": "C",
+     "battery": "DB-120"
+    }
+   ]
+  },
+  {
+   "id": "phone",
+   "name": "טלפון",
+   "models": [
+    {
+     "name": "אייפון",
+     "type": "P"
+    },
+    {
+     "name": "אנדרואיד",
+     "type": "P"
+    }
+   ]
+  },
+  {
+   "id": "action",
+   "name": "מצלמת אקשן",
+   "models": [
+    {
+     "name": "GoPro",
+     "type": "A"
+    },
+    {
+     "name": "DJI Osmo Action",
+     "type": "A"
+    },
+    {
+     "name": "Insta360",
+     "type": "A"
+    }
+   ]
+  },
+  {
+   "id": "dji",
+   "name": "די ג'יי איי",
+   "models": [
+    {
+     "name": "Osmo Pocket",
+     "type": "K"
+    },
+    {
+     "name": "Avata 2",
+     "type": "R"
+    },
+    {
+     "name": "Mini 5 Pro",
+     "type": "R"
+    }
+   ]
+  }
+ ]
+}

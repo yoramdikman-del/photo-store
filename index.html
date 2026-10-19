@@ -128,6 +128,31 @@ nav.cols button.deals-tab[aria-current="page"]{background:var(--accent);color:va
 .coupon button{font:inherit;font-weight:700;cursor:pointer;border:0;background:var(--accent);color:var(--accent-ink);padding:9px 14px;border-radius:10px;white-space:nowrap}
 .coupon .valid{font-size:.82rem;color:var(--ink-soft)}
 .deals-note{font-size:.85rem;color:var(--ink-soft);margin-top:16px;max-width:75ch}
+/* מה מתאים למצלמה שלי */
+.finder-bar{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;justify-content:space-between;margin-top:14px;background:var(--card);border:2px solid var(--ink);border-radius:14px;padding:12px 16px;text-decoration:none;color:var(--ink)}
+.finder-bar b{font-family:var(--f-display);font-size:1.1rem}
+.finder-bar span.go{background:var(--ink);color:var(--paper);font-weight:700;padding:6px 14px;border-radius:999px;white-space:nowrap}
+nav.cols button.cam-tab{border-color:var(--ink);color:var(--ink);font-weight:700}
+nav.cols button.cam-tab[aria-current="page"]{background:var(--ink);color:var(--paper)}
+#cam-res{scroll-margin-top:150px}
+@media (max-width:560px){#cam .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}#cam .body{padding:10px}#cam .title{font-size:.92rem}#cam .buy{font-size:.88rem;padding:9px 6px}}
+#cam{padding-block:28px 6px}
+#cam h1{font-family:var(--f-display);font-weight:800;font-size:clamp(1.8rem,4.5vw,2.6rem);line-height:1.15;margin:0 0 8px}
+#cam .lead{margin:0 0 18px;color:var(--ink-soft);max-width:62ch}
+.step{margin:0 0 18px}
+.step h2{font-family:var(--f-display);font-size:1.15rem;margin:0 0 10px}
+.picks{display:flex;flex-wrap:wrap;gap:8px}
+.picks button{font:inherit;font-size:.98rem;cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:9px 16px;border-radius:12px}
+.picks button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.picks.models button{font-size:.92rem;padding:7px 12px;direction:ltr}
+.picks .sub{width:100%;font-size:.85rem;color:var(--ink-soft);margin-top:4px}
+.tier{padding-block:18px 6px}
+.tier > h2{font-family:var(--f-display);font-size:1.4rem;margin:0 0 4px}
+.tier > p{margin:0 0 12px;color:var(--ink-soft);font-size:.92rem}
+.tier h3{font-size:1.05rem;margin:18px 0 10px;color:var(--ink-soft)}
+.more-btn{font:inherit;font-weight:700;cursor:pointer;margin-top:12px;border:1px solid var(--ink);background:none;color:var(--ink);padding:9px 16px;border-radius:12px}
+.miss{background:var(--chip);border-radius:12px;padding:12px 14px;margin:6px 0 12px}
+.miss a{color:var(--ink);font-weight:700}
 @media (max-width:560px){.how{flex-direction:column;gap:4px}.brand span{display:none}.bar a.social{display:none}}
 </style>
 </head>
@@ -149,7 +174,9 @@ nav.cols button.deals-tab[aria-current="page"]{background:var(--accent);color:va
 <main class="wrap">
   <a class="promo" id="promo" href="#deals" hidden></a>
   <section id="deals" hidden aria-labelledby="deals-h"></section>
+  <section id="cam" hidden aria-labelledby="cam-h"></section>
   <div id="shop">
+  <a class="finder-bar" href="#cam"><b>📷 מה מתאים למצלמה שלי?</b><span class="go">בחרו מצלמה ←</span></a>
   <div class="hero">
     <h1 id="h1"></h1>
     <p id="intro"></p>
@@ -242,7 +269,7 @@ function dealsBanner(){
 }
 
 function showDeals(){
-  $('shop').hidden = true; $('promo').hidden = true; const sec = $('deals'); sec.hidden = false;
+  $('shop').hidden = true; $('cam').hidden = true; $('promo').hidden = true; const sec = $('deals'); sec.hidden = false;
   [...$('cols').querySelectorAll('button')].forEach(b => b.dataset.id === 'deals' ? b.setAttribute('aria-current','page') : b.removeAttribute('aria-current'));
   const ev = liveEvents(), cps = liveCoupons();
   let h = '<h1 id="deals-h">מבצעים וקופונים</h1><p>קופונים ומבצעים של אלי אקספרס שבדקנו. מעתיקים את הקוד ומדביקים אותו בעגלה, בשלב התשלום.</p>';
@@ -258,7 +285,63 @@ function showDeals(){
   });
   scrollTo(0, 0);
 }
-function showShop(){ $('deals').hidden = true; $('shop').hidden = false; dealsBanner(); }
+function showShop(){ $('deals').hidden = true; $('cam').hidden = true; $('shop').hidden = false; dealsBanner(); }
+
+// ---- מה מתאים למצלמה שלי: data/cameras.json + תיוג המוצרים (for / models / brand_for) ----
+let CAMS = null;
+const COLL_NAME = id => (DB.collections.find(c => c.id === id) || {}).name || '';
+function setTabs(id){ [...$('cols').querySelectorAll('button')].forEach(b => b.dataset.id === id ? b.setAttribute('aria-current','page') : b.removeAttribute('aria-current')); }
+function showCam(brandId, modelName){
+  $('shop').hidden = true; $('deals').hidden = true; $('promo').hidden = true; const sec = $('cam'); sec.hidden = false; setTabs('cam');
+  const brand = CAMS.brands.find(b => b.id === brandId);
+  const model = brand && brand.models.find(m => m.name === modelName);
+  let h = '<h1 id="cam-h">מה מתאים למצלמה שלי?</h1><p class="lead">בוחרים מותג ודגם, ורואים את כל מה שמתאים מכל החנות: קודם מה שמתאים בדיוק לדגם, ואחר כך אביזרים שמתאימים לכל מצלמה מהסוג הזה.</p>';
+  h += '<div class="step"><h2>1. המותג</h2><div class="picks">' + CAMS.brands.map(b => `<button type="button" data-b="${b.id}" aria-pressed="${b.id === brandId}">${esc(b.name)}</button>`).join('') + '</div></div>';
+  if (brand) {
+    h += `<div class="step"><h2>2. הדגם</h2><div class="picks models">` + brand.models.map(m => `<button type="button" data-m="${esc(m.name)}" aria-pressed="${m.name === modelName}">${esc(m.name)}</button>`).join('') + `<div class="sub">הדגם לא ברשימה? <a href="#contact">כתבו לנו</a> ונבדק בשבילכם.</div></div></div>`;
+  }
+  if (model) h += camResults(brand, model);
+  sec.innerHTML = h;
+  sec.querySelectorAll('.more-btn').forEach(btn => btn.onclick = () => { btn.previousElementSibling.querySelectorAll('[data-more]').forEach(a => a.hidden = false); btn.remove(); });
+  sec.querySelectorAll('[data-b]').forEach(b => b.onclick = () => go('#cam/' + b.dataset.b));
+  sec.querySelectorAll('[data-m]').forEach(b => b.onclick = () => go('#cam/' + brand.id + '/' + encodeURIComponent(b.dataset.m)));
+  const c = sec.querySelector('a[href="#contact"]'); if (c && model) c.onclick = () => { $('f-camera').value = brand.name + ' ' + model.name; };
+  if (model) { const r = $('cam-res'); if (r) r.scrollIntoView({block: 'start'}); } else if (!brand) scrollTo(0, 0);
+}
+function go(hash){ history.replaceState(null, '', hash); route(); }
+function camResults(brand, model){
+  const full = (brand.id === 'phone' || brand.id === 'action' || brand.id === 'dji') ? model.name : brand.name + ' ' + model.name;
+  const typeName = CAMS.types[model.type];
+  const exact = DB.products.filter(p => (p.models || []).includes(model.name)).sort((a,b) => b.sold - a.sold);
+  const byBrand = DB.products.filter(p => p.brand_for === brand.id && (p.for || []).includes(model.type)).sort((a,b) => b.sold - a.sold);
+  const general = DB.products.filter(p => !p.models && !p.brand_for && (p.for || []).includes(model.type));
+  let h = `<div id="cam-res"></div>`;
+  h += `<section class="tier"><h2>מתאים בדיוק ל-<bdi>${esc(full)}</bdi></h2>`;
+  const camTypes = ['M','D','C'];
+  if (camTypes.includes(model.type) && !exact.some(p => p.collection === 'batteries'))
+    h += `<div class="miss">עוד אין בחנות סוללה שבדקנו ל-<bdi>${esc(full)}</bdi>. <a href="#contact" onclick="$('f-camera').value='${esc(full).replace(/'/g,'')}'">כתבו לנו</a>, ונחפש סוללה מחנות רשמית.</div>`;
+  h += exact.length ? `${model.battery ? `<p>קוד הסוללה: <span dir="ltr">${esc(model.battery)}</span></p>` : ''}<div class="grid">${exact.map(card).join('')}</div>` : (camTypes.includes(model.type) ? '' : '<p>אין עדיין מוצרים לדגם הזה בדיוק. האביזרים הכלליים מופיעים למטה.</p>');
+  h += '</section>';
+  if (byBrand.length) h += `<section class="tier"><h2>למצלמות ${esc(brand.name)}</h2><p>כל מוצר מתאים לעדשה או לאביזר מסוים, שכתוב על הכרטיס.</p><div class="grid">${byBrand.map(p => card({...p, note: p.lens_note || p.note})).join('')}</div></section>`;
+  if (general.length) {
+    h += `<section class="tier"><h2>מתאים לכל ${esc(typeName)}</h2><p>אביזרים שלא תלויים בדגם: תיקים, חצובות, רצועות, ניקוי ועוד.${['M','D'].includes(model.type) ? ' בפילטרים בוחרים לפי הקוטר שכתוב על העדשה, למשל ⌀58.' : ''}</p>`;
+    DB.collections.forEach(c => {
+      const part = general.filter(p => p.collection === c.id).sort((a,b) => b.sold - a.sold);
+      if (part.length) h += `<h3>${esc(c.name)} <small>(${part.length})</small></h3><div class="grid">${part.map((p,i) => i < 4 ? card(p) : card(p).replace('<article class="card"', '<article class="card" hidden data-more')).join('')}</div>${part.length > 4 ? `<button type="button" class="more-btn">עוד ${part.length - 4} ב${esc(c.name)}</button>` : ''}`;
+    });
+    h += '</section>';
+  }
+  return h;
+}
+function route(){
+  const hsh = location.hash.slice(1);
+  if (hsh === 'deals' && hasDeals()) return showDeals();
+  if (hsh.startsWith('cam') && CAMS) { const [, b, m] = hsh.split('/'); return showCam(b, m ? decodeURIComponent(m) : null); }
+  $('cam').hidden = true;
+  if (DB.collections.some(c => c.id === hsh)) { setCollection(hsh); scrollTo(0, 0); }
+  else if (!coll) setCollection('');
+  else showShop();
+}
 
 function setCollection(id){
   showShop();
@@ -299,10 +382,11 @@ function render(){
   $('count').textContent = n + ' מוצרים מוצגים';
 }
 
-Promise.all([fetch('data/products.json', {cache: 'no-cache'}).then(r => r.json()), fetch('data/deals.json', {cache: 'no-cache'}).then(r => r.ok ? r.json() : null).catch(() => null)]).then(([data, deals]) => {
-  if (deals) DEALS = deals;
+Promise.all([fetch('data/products.json', {cache: 'no-cache'}).then(r => r.json()), fetch('data/deals.json', {cache: 'no-cache'}).then(r => r.ok ? r.json() : null).catch(() => null), fetch('data/cameras.json', {cache: 'no-cache'}).then(r => r.ok ? r.json() : null).catch(() => null)]).then(([data, deals, cams]) => {
+  if (deals) DEALS = deals; CAMS = cams;
   DB = data; DB.products = DB.products.filter(p => p.status !== 'missing');
   const nav = $('cols');
+  if (CAMS) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'cam'; b.className = 'cam-tab'; b.textContent = '📷 מה מתאים למצלמה שלי'; b.onclick = () => go('#cam'); nav.appendChild(b); }
   if (hasDeals()) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'deals'; b.className = 'deals-tab'; b.textContent = '🏷️ מבצעים וקופונים'; b.onclick = () => { history.replaceState(null, '', '#deals'); showDeals(); }; nav.appendChild(b); }
   DB.collections.forEach(c => {
     const has = DB.products.some(p => p.collection === c.id);
@@ -313,11 +397,12 @@ Promise.all([fetch('data/products.json', {cache: 'no-cache'}).then(r => r.json()
   });
   const [y,m,d] = DB.updated.split('-');
   $('checked').textContent = `המחירים, הדירוגים ומספר ההזמנות נבדקו ב-${+d}/${+m}/${y} ויכולים להשתנות. המחיר המעודכן מופיע בדף המוצר.`;
-  if (location.hash === '#deals' && hasDeals()) { setCollection(''); showDeals(); } else setCollection(location.hash.slice(1));
+  setCollection(DB.collections.some(c => c.id === location.hash.slice(1)) ? location.hash.slice(1) : '');
+  if (location.hash.slice(1).startsWith('cam') || location.hash === '#deals') route();
 }).catch(() => { $('list').innerHTML = '<p class="empty">לא הצלחנו לטעון את המוצרים. נסו לרענן את העמוד.</p>'; });
 
 $('q').addEventListener('input', () => render());
-window.addEventListener('hashchange', () => { const id = location.hash.slice(1); if (id === 'deals' && DB) { showDeals(); return; } if (DB && DB.collections.some(c => c.id === id)) { setCollection(id); scrollTo(0, 0); } });
+window.addEventListener('hashchange', () => { if (DB && location.hash !== '#contact') route(); });
 
 $('form').addEventListener('submit', async e => {
   e.preventDefault();
