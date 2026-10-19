@@ -13,8 +13,8 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
       - run: pip install requests
@@ -23,7 +23,7 @@ jobs:
           ALI_APP_SECRET: ${{ secrets.ALI_APP_SECRET }}
         run: python scripts/refresh.py
       - name: פתיחת בקשת שינוי לאישור
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v8
         with:
           branch: weekly-refresh
           delete-branch: true
