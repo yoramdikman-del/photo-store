@@ -46,7 +46,7 @@ for q in queries:
                     'orig_price': x.get('target_original_price'), 'rating': x.get('evaluate_rate'),
                     'sold': x.get('lastest_volume'), 'img': x.get('product_main_image_url'),
                     'url': (x.get('product_detail_url') or '').split('?')[0],
-                    'commission': x.get('hot_product_commission_rate') or x.get('commission_rate'),
+                    'commission': max([x.get('hot_product_commission_rate'), x.get('commission_rate')], key=lambda v: float(str(v or 0).replace('%', '') or 0)),
                     'category': x.get('second_level_category_name') or x.get('first_level_category_name'),
                     'queries': []})
                 if q not in r['queries']:
