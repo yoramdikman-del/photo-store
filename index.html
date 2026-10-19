@@ -26,6 +26,7 @@
   --paper:#141b2b; --ink:#eef1f7; --ink-soft:#a5afc4; --line:#2b3550;
   --card:#1c2538; --tile:#ffffff; --accent:#f5a85a; --accent-ink:#141b2b; --chip:#25304a; --good:#6cc39b; color-scheme:dark}
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html,body{margin:0}
 body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55}
 .wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
@@ -61,6 +62,7 @@ section.group h2 small{font-weight:400;font-size:.9rem;color:var(--ink-soft)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
 .img{background:var(--tile);aspect-ratio:1/1;max-width:100%;display:grid;place-items:center;position:relative}
 .img img{width:100%;height:100%;object-fit:contain}
+.img img.ph{width:38%;height:auto;opacity:.35}
 .code-tag{position:absolute;top:10px;inset-inline-start:10px;font-family:var(--f-code);font-size:.85rem;background:var(--ink);color:#fff;padding:3px 9px;border-radius:7px;direction:ltr}
 .body{padding:14px 14px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
 .kind{font-size:.78rem;font-weight:500;letter-spacing:.02em;color:var(--ink-soft)}
@@ -160,12 +162,12 @@ let DB, coll, group = 'all';
 function card(p){
   const price = p.price ? 'כ-' + Math.round(p.price) + '$' : '';
   return `<article class="card">
-    <div class="img"><img loading="lazy" src="${esc(p.img)}" alt="${esc(p.title)}">${p.code ? `<span class="code-tag">${esc(p.code)}</span>` : ''}</div>
+    <div class="img">${p.img ? `<img loading="lazy" src="${esc(p.img)}" alt="${esc(p.title)}">` : `<img class="ph" src="logo.png" alt="">`}${p.code ? `<span class="code-tag">${esc(p.code)}</span>` : ''}</div>
     <div class="body">
-      <span class="kind">${esc(p.kind)}</span>
-      <h3 class="title"><span class="b">${esc(p.brand)}</span> – ${esc(p.title)}</h3>
+      ${p.kind ? `<span class="kind">${esc(p.kind)}</span>` : ''}
+      <h3 class="title">${p.brand ? `<span class="b">${esc(p.brand)}</span> – ` : ''}${esc(p.title)}</h3>
       ${p.fits ? `<div class="fits">מתאים ל: <bdi dir="ltr">${esc(p.fits)}</bdi></div>` : ''}
-      <div class="meta"><span class="rate">${p.rating}% חיובי</span><span>${Number(p.sold).toLocaleString('he-IL')} נמכרו</span><span>${price}</span></div>
+      <div class="meta">${p.rating ? `<span class="rate">${p.rating}% חיובי</span>` : ''}<span>${Number(p.sold).toLocaleString('he-IL')} נמכרו</span><span>${price}</span></div>
       ${p.note ? `<span class="note">${esc(p.note)}</span>` : ''}
       <a class="buy" href="${esc(p.link)}" target="_blank" rel="noopener sponsored">לרכישה באלי אקספרס ←</a>
     </div></article>`;
@@ -225,6 +227,7 @@ fetch('data/products.json', {cache: 'no-cache'}).then(r => r.json()).then(data =
 }).catch(() => { $('list').innerHTML = '<p class="empty">לא הצלחנו לטעון את המוצרים. נסו לרענן את העמוד.</p>'; });
 
 $('q').addEventListener('input', () => render());
+window.addEventListener('hashchange', () => { const id = location.hash.slice(1); if (DB && DB.collections.some(c => c.id === id)) { setCollection(id); scrollTo(0, 0); } });
 
 $('form').addEventListener('submit', async e => {
   e.preventDefault();
