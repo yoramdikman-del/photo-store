@@ -78,6 +78,7 @@ section.group h2 small{font-weight:400;font-size:.9rem;color:var(--ink-soft)}
 .empty{padding:30px 0;color:var(--ink-soft)}
 footer{margin-top:36px;border-top:1px solid var(--line);padding-block:22px 34px;color:var(--ink-soft);font-size:.9rem}
 footer p{margin:.3em 0;max-width:70ch}
+footer .copy{margin-top:14px;font-weight:500;color:var(--ink)}
 @media (prefers-reduced-motion:no-preference){.card{transition:transform .15s ease}.card:hover{transform:translateY(-2px)}}
 
 nav.cols button{flex:none;font:inherit;font-size:.92rem;cursor:pointer;color:var(--ink-soft);background:none;padding:6px 12px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
@@ -160,10 +161,12 @@ a.social:hover{background:var(--chip)}
     <p>המחירים ודמי המשלוח נקבעים על ידי המוכרים באלי אקספרס, ואינם קבועים. הם משתנים לפי המוכר, המבצעים, שיטת המשלוח והכמות. המחיר הקובע הוא המחיר שמופיע בדף המוצר בזמן הרכישה.</p>
     <p>הקנייה, המשלוח, האחריות וההחזרות הם מול המוכר ובכפוף לתנאי אלי אקספרס.</p>
     <p>הזמנה עד 75$ פטורה ממע"מ לפי הכללים היום.</p>
+    <p class="copy">© <span id="year">2026</span> צילום בכל גיל. כל הזכויות שמורות. תמונות המוצרים ושמות המותגים שייכים לבעליהם.</p>
   </div>
 </footer>
 
 <script>
+document.getElementById('year').textContent = new Date().getFullYear();
 const FORM_ENDPOINT = 'https://formsubmit.co/ajax/gadgetphoto2024@gmail.com';
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
