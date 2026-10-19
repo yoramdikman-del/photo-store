@@ -288,6 +288,8 @@ function showDeals(){
   const ev = liveEvents(), cps = liveCoupons();
   let h = '<h1 id="deals-h">מבצעים וקופונים</h1><p>קופונים ומבצעים של אלי אקספרס שבדקנו. מעתיקים את הקוד ומדביקים אותו בעגלה, בשלב התשלום.</p>';
   h += ev.map(e => `<div class="event"><h2>${esc(e.title)}</h2><div class="when">${heDate(e.start)}–${heDate(e.end)}</div>${e.text ? `<p>${esc(e.text)}</p>` : ''}</div>`).join('');
+  const picks = (DEALS.picks || []).map(id => DB.products.find(p => p.id === id)).filter(Boolean);
+  if (picks.length && ev.length) h += `<h2 style="font-family:var(--f-display);margin:26px 0 6px">${esc(DEALS.picks_title || 'הכי שווה לסמן לקראת המבצע')}</h2><p style="margin:0 0 14px;color:var(--ink-soft)">${esc(DEALS.picks_text || 'מוצרים שבדקנו ושכדאי להוסיף לעגלה כבר עכשיו, כדי לראות את המחיר ביום המבצע.')}</p><div class="grid">${picks.map(card).join('')}</div><div style="height:22px"></div>`;
   if (cps.length) h += '<div class="coupons">' + cps.map((c,i) => `<div class="coupon"><div class="off">${esc(c.title)}</div>${c.cond ? `<div class="cond">${esc(c.cond)}</div>` : ''}<div class="code-row"><code id="cp${i}">${esc(c.code)}</code><button type="button" data-i="${i}">העתקה</button></div><div class="valid">בתוקף עד ${heDate(c.end)}${c.checked ? ` · נבדק ב-${heDate(c.checked)}` : ''}</div></div>`).join('') + '</div>';
   else h += '<p class="empty">כרגע אין קופונים פעילים. הם יופיעו כאן ברגע שיתפרסמו.</p>';
   h += '<p class="deals-note">הקופונים והמבצעים שייכים לאלי אקספרס, ומספר המימושים בהם מוגבל. ייתכן שקופון ייגמר לפני תאריך התפוגה, או לא יתאים לכל מוצר או חשבון. התנאים הקובעים הם אלה שמופיעים באלי אקספרס בזמן הרכישה.</p>';
