@@ -99,7 +99,12 @@ a.contact-link{margin-inline-start:auto;flex:none;text-decoration:none;font-size
 .status{font-weight:500}
 .status.ok{color:var(--good)} .status.err{color:#c0392b}
 .hp{position:absolute;inset-inline-start:-9999px}
-@media (max-width:560px){.how{flex-direction:column;gap:4px}.brand span{display:none}}
+a.social{flex:none;text-decoration:none;font-size:.92rem;padding:6px 12px;border-radius:999px;border:1px solid var(--line);color:var(--ink);font-weight:500;white-space:nowrap}
+a.social:hover{background:var(--chip)}
+.follow{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:0 0 14px}
+.follow b{color:var(--ink)}
+.follow a{text-decoration:none;font-weight:700;padding:9px 16px;border-radius:12px;background:var(--ink);color:var(--paper)}
+@media (max-width:560px){.how{flex-direction:column;gap:4px}.brand span{display:none}.bar a.social{display:none}}
 </style>
 </head>
 <body>
@@ -109,6 +114,8 @@ a.contact-link{margin-inline-start:auto;flex:none;text-decoration:none;font-size
       <img src="logo.png" alt="לוגו צילום בכל גיל">
       <div class="brand"><b>צילום בכל גיל</b><span>ציוד צילום מחנויות רשמיות, נבדק ומסודר בעברית</span></div>
       <a class="contact-link" href="#contact">צור קשר</a>
+      <a class="social" href="https://www.facebook.com/410550432142304" target="_blank" rel="noopener">פייסבוק</a>
+      <a class="social" href="https://www.instagram.com/photographyexpret20242024/" target="_blank" rel="noopener">אינסטגרם</a>
     </div>
     <nav class="cols" id="cols" aria-label="אוספים"></nav>
   </div>
@@ -147,6 +154,7 @@ a.contact-link{margin-inline-start:auto;flex:none;text-decoration:none;font-size
 
 <footer>
   <div class="wrap">
+    <div class="follow"><b>עקבו אחרינו:</b><a href="https://www.facebook.com/410550432142304" target="_blank" rel="noopener">פייסבוק</a><a href="https://www.instagram.com/photographyexpret20242024/" target="_blank" rel="noopener">אינסטגרם</a></div>
     <p><b>קישורי שותפים:</b> אם תקנו דרך הקישורים באתר אקבל עמלה קטנה, בלי עלות נוספת לכם.</p>
     <p id="checked"></p>
     <p>הזמנה עד 75$ פטורה ממע"מ לפי הכללים היום.</p>
