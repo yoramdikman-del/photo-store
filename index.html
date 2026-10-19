@@ -106,6 +106,28 @@ a.social:hover{background:var(--chip)}
 .follow b{color:var(--ink)}
 .follow a.wa{background:#1f8f4e;color:#fff}
 .follow a{text-decoration:none;font-weight:700;padding:9px 16px;border-radius:12px;background:var(--ink);color:var(--paper)}
+/* מבצעים וקופונים */
+.promo{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;justify-content:space-between;margin-top:18px;background:var(--ink);color:var(--paper);border-radius:14px;padding:12px 16px;text-decoration:none}
+.promo b{font-family:var(--f-display);font-size:1.1rem}
+.promo span.go{background:var(--accent);color:var(--accent-ink);font-weight:700;padding:6px 14px;border-radius:999px;white-space:nowrap}
+nav.cols button.deals-tab{border-color:var(--accent);color:var(--ink);font-weight:700}
+nav.cols button.deals-tab[aria-current="page"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+#deals{padding-block:28px 6px}
+#deals h1{font-family:var(--f-display);font-weight:800;font-size:clamp(1.8rem,4.5vw,2.6rem);line-height:1.15;margin:0 0 8px}
+#deals > p{margin:0 0 18px;color:var(--ink-soft);max-width:62ch}
+.event{background:var(--card);border:2px solid var(--accent);border-radius:18px;padding:18px 20px;margin-bottom:22px}
+.event h2{font-family:var(--f-display);margin:0 0 4px;font-size:1.4rem}
+.event .when{color:var(--ink-soft);font-weight:500}
+.event p{margin:.5em 0 0;max-width:70ch}
+.coupons{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.coupon{background:var(--card);border:2px dashed var(--line);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.coupon .off{font-family:var(--f-display);font-weight:800;font-size:1.35rem}
+.coupon .cond{color:var(--ink-soft);font-size:.92rem}
+.coupon .code-row{display:flex;gap:8px;align-items:center;margin-top:auto}
+.coupon code{flex:1;min-width:0;font-family:var(--f-code);font-size:1rem;background:var(--chip);border-radius:10px;padding:9px 10px;text-align:center;direction:ltr;overflow-wrap:anywhere}
+.coupon button{font:inherit;font-weight:700;cursor:pointer;border:0;background:var(--accent);color:var(--accent-ink);padding:9px 14px;border-radius:10px;white-space:nowrap}
+.coupon .valid{font-size:.82rem;color:var(--ink-soft)}
+.deals-note{font-size:.85rem;color:var(--ink-soft);margin-top:16px;max-width:75ch}
 @media (max-width:560px){.how{flex-direction:column;gap:4px}.brand span{display:none}.bar a.social{display:none}}
 </style>
 </head>
@@ -125,6 +147,9 @@ a.social:hover{background:var(--chip)}
 </header>
 
 <main class="wrap">
+  <a class="promo" id="promo" href="#deals" hidden></a>
+  <section id="deals" hidden aria-labelledby="deals-h"></section>
+  <div id="shop">
   <div class="hero">
     <h1 id="h1"></h1>
     <p id="intro"></p>
@@ -137,6 +162,7 @@ a.social:hover{background:var(--chip)}
   </div>
   <div class="count" id="count" aria-live="polite"></div>
   <div id="list"><p class="empty">טוען מוצרים…</p></div>
+  </div>
 
   <section id="contact" aria-labelledby="contact-h">
     <h2 id="contact-h">צור קשר</h2>
@@ -194,7 +220,48 @@ function card(p){
     </div></article>`;
 }
 
+
+// ---- מבצעים וקופונים: נטען מ-data/deals.json. מה שפג תוקפו נעלם לבד ----
+let DEALS = {events: [], coupons: []};
+const today = () => new Date().toLocaleDateString('en-CA', {timeZone: 'Asia/Jerusalem'});
+const heDate = s => { const [y,m,d] = s.split('-'); return `${+d}/${+m}`; };
+const liveEvents = () => (DEALS.events || []).filter(e => (e.show_from || e.start) <= today() && today() <= e.end);
+const liveCoupons = () => (DEALS.coupons || []).filter(c => (!c.start || c.start <= today()) && today() <= c.end);
+const hasDeals = () => liveEvents().length || liveCoupons().length;
+
+function dealsBanner(){
+  const ev = liveEvents()[0], b = $('promo');
+  if (!ev && !liveCoupons().length) { b.hidden = true; return; }
+  let t;
+  if (ev) {
+    const days = Math.round((new Date(ev.start) - new Date(today())) / 864e5);
+    t = days > 0 ? `${esc(ev.title)} מתחיל בעוד ${days} ימים` : `${esc(ev.title)} פעיל עכשיו, עד ${heDate(ev.end)}`;
+  } else t = 'יש קופונים פעילים לאלי אקספרס';
+  b.innerHTML = `<b>${t}</b><span class="go">לקופונים ולמבצעים ←</span>`;
+  b.hidden = location.hash === '#deals';
+}
+
+function showDeals(){
+  $('shop').hidden = true; $('promo').hidden = true; const sec = $('deals'); sec.hidden = false;
+  [...$('cols').querySelectorAll('button')].forEach(b => b.dataset.id === 'deals' ? b.setAttribute('aria-current','page') : b.removeAttribute('aria-current'));
+  const ev = liveEvents(), cps = liveCoupons();
+  let h = '<h1 id="deals-h">מבצעים וקופונים</h1><p>קופונים ומבצעים של אלי אקספרס שבדקנו. מעתיקים את הקוד ומדביקים אותו בעגלה, בשלב התשלום.</p>';
+  h += ev.map(e => `<div class="event"><h2>${esc(e.title)}</h2><div class="when">${heDate(e.start)}–${heDate(e.end)}</div>${e.text ? `<p>${esc(e.text)}</p>` : ''}</div>`).join('');
+  if (cps.length) h += '<div class="coupons">' + cps.map((c,i) => `<div class="coupon"><div class="off">${esc(c.title)}</div>${c.cond ? `<div class="cond">${esc(c.cond)}</div>` : ''}<div class="code-row"><code id="cp${i}">${esc(c.code)}</code><button type="button" data-i="${i}">העתקה</button></div><div class="valid">בתוקף עד ${heDate(c.end)}${c.checked ? ` · נבדק ב-${heDate(c.checked)}` : ''}</div></div>`).join('') + '</div>';
+  else h += '<p class="empty">כרגע אין קופונים פעילים. הם יופיעו כאן ברגע שיתפרסמו.</p>';
+  h += '<p class="deals-note">הקופונים והמבצעים שייכים לאלי אקספרס, ומספר המימושים בהם מוגבל. ייתכן שקופון ייגמר לפני תאריך התפוגה, או לא יתאים לכל מוצר או חשבון. התנאים הקובעים הם אלה שמופיעים באלי אקספרס בזמן הרכישה.</p>';
+  sec.innerHTML = h;
+  sec.querySelectorAll('.coupon button').forEach(btn => btn.onclick = async () => {
+    const code = $('cp' + btn.dataset.i).textContent;
+    try { await navigator.clipboard.writeText(code); btn.textContent = 'הועתק ✓'; } catch { btn.textContent = 'סמנו והעתיקו'; }
+    setTimeout(() => btn.textContent = 'העתקה', 2000);
+  });
+  scrollTo(0, 0);
+}
+function showShop(){ $('deals').hidden = true; $('shop').hidden = false; dealsBanner(); }
+
 function setCollection(id){
+  showShop();
   coll = DB.collections.find(c => c.id === id && DB.products.some(p => p.collection === c.id))
       || DB.collections.find(c => DB.products.some(p => p.collection === c.id));
   group = 'all';
@@ -232,9 +299,11 @@ function render(){
   $('count').textContent = n + ' מוצרים מוצגים';
 }
 
-fetch('data/products.json', {cache: 'no-cache'}).then(r => r.json()).then(data => {
+Promise.all([fetch('data/products.json', {cache: 'no-cache'}).then(r => r.json()), fetch('data/deals.json', {cache: 'no-cache'}).then(r => r.ok ? r.json() : null).catch(() => null)]).then(([data, deals]) => {
+  if (deals) DEALS = deals;
   DB = data; DB.products = DB.products.filter(p => p.status !== 'missing');
   const nav = $('cols');
+  if (hasDeals()) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'deals'; b.className = 'deals-tab'; b.textContent = '🏷️ מבצעים וקופונים'; b.onclick = () => { history.replaceState(null, '', '#deals'); showDeals(); }; nav.appendChild(b); }
   DB.collections.forEach(c => {
     const has = DB.products.some(p => p.collection === c.id);
     const b = document.createElement('button'); b.type = 'button'; b.dataset.id = c.id;
@@ -244,11 +313,11 @@ fetch('data/products.json', {cache: 'no-cache'}).then(r => r.json()).then(data =
   });
   const [y,m,d] = DB.updated.split('-');
   $('checked').textContent = `המחירים, הדירוגים ומספר ההזמנות נבדקו ב-${+d}/${+m}/${y} ויכולים להשתנות. המחיר המעודכן מופיע בדף המוצר.`;
-  setCollection(location.hash.slice(1));
+  if (location.hash === '#deals' && hasDeals()) { setCollection(''); showDeals(); } else setCollection(location.hash.slice(1));
 }).catch(() => { $('list').innerHTML = '<p class="empty">לא הצלחנו לטעון את המוצרים. נסו לרענן את העמוד.</p>'; });
 
 $('q').addEventListener('input', () => render());
-window.addEventListener('hashchange', () => { const id = location.hash.slice(1); if (DB && DB.collections.some(c => c.id === id)) { setCollection(id); scrollTo(0, 0); } });
+window.addEventListener('hashchange', () => { const id = location.hash.slice(1); if (id === 'deals' && DB) { showDeals(); return; } if (DB && DB.collections.some(c => c.id === id)) { setCollection(id); scrollTo(0, 0); } });
 
 $('form').addEventListener('submit', async e => {
   e.preventDefault();
