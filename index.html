@@ -157,6 +157,27 @@ nav.cols button.cam-tab[aria-current="page"]{background:var(--ink);color:var(--p
 .miss{background:var(--chip);border-radius:12px;padding:12px 14px;margin:6px 0 12px}
 .miss a{color:var(--ink);font-weight:700}
 @media (max-width:560px){.how{flex-direction:column;gap:4px}.brand span{display:none}.bar a.social{display:none}}
+/* תפריט קטגוריות בטלפון: כפתור אחד שפותח את כל הקטגוריות ברשת, במקום שורה שנחתכת בצד */
+.menu-btn{display:none}
+@media (max-width:560px){
+  .menu-btn{display:flex;align-items:center;gap:10px;width:100%;font:inherit;font-weight:700;font-size:1rem;cursor:pointer;text-align:start;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin-bottom:12px}
+  .menu-btn .lbl{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .menu-btn .lbl small{font-weight:400;color:var(--ink-soft);margin-inline-end:6px}
+  .menu-btn .arr{flex:none;transition:transform .15s ease}
+  header.menu-open .menu-btn .arr{transform:rotate(180deg)}
+  nav.cols{display:none}
+  header.menu-open nav.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;overflow:visible;max-height:65vh;overflow-y:auto;padding-bottom:14px}
+  header.menu-open nav.cols button{white-space:normal;text-align:center;line-height:1.3;padding:10px 8px;border-radius:12px;font-size:.95rem}
+  header.menu-open nav.cols button.cam-tab,header.menu-open nav.cols button.deals-tab{grid-column:1/-1}
+  .hero{padding-block:16px 4px}
+  .finder-bar{margin-top:12px}
+}
+/* פס "מה מתאים למצלמה שלי": שורה דקה אחת, כדי שהמוצרים יעלו למסך הראשון */
+.finder-bar{flex-wrap:nowrap;padding:8px 12px;border-width:1px;border-radius:12px}
+.finder-bar b{font-size:.98rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.finder-bar span.go{padding:5px 12px;font-size:.9rem}
+/* במחשב הלשונית כבר נראית בשורת הקטגוריות, אז הפס מיותר */
+@media (min-width:561px){.finder-bar{display:none}nav.cols{flex-wrap:wrap;overflow:visible}}
 </style>
 </head>
 <body>
@@ -171,6 +192,7 @@ nav.cols button.cam-tab[aria-current="page"]{background:var(--ink);color:var(--p
       <a class="social" href="https://www.instagram.com/photographyexpret20242024/" target="_blank" rel="noopener">אינסטגרם</a>
       <a class="social" href="https://chat.whatsapp.com/LlntXSR4SJL8tLl1S3lF6t" target="_blank" rel="noopener">קבוצת ווצאפ</a>
     </div>
+    <button type="button" class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="cols"><span aria-hidden="true">☰</span><span class="lbl" id="menu-lbl"><small>קטגוריה:</small>טוען…</span><span class="arr" aria-hidden="true">▾</span></button>
     <nav class="cols" id="cols" aria-label="אוספים"></nav>
   </div>
 </header>
@@ -180,7 +202,7 @@ nav.cols button.cam-tab[aria-current="page"]{background:var(--ink);color:var(--p
   <section id="deals" hidden aria-labelledby="deals-h"></section>
   <section id="cam" hidden aria-labelledby="cam-h"></section>
   <div id="shop">
-  <a class="finder-bar" href="#cam"><b>📷 מה מתאים למצלמה שלי?</b><span class="go">בחרו מצלמה ←</span></a>
+  <a class="finder-bar" href="#cam"><b>📷 מה מתאים למצלמה שלי?</b><span class="go">בחרו ←</span></a>
   <div class="hero">
     <h1 id="h1"></h1>
     <p id="intro"></p>
@@ -422,6 +444,19 @@ Promise.all([fetch('data/products.json', {cache: 'no-cache'}).then(r => r.json()
 }).catch(() => { $('list').innerHTML = '<p class="empty">לא הצלחנו לטעון את המוצרים. נסו לרענן את העמוד.</p>'; });
 
 $('q').addEventListener('input', () => render());
+
+// ---- תפריט קטגוריות בטלפון ----
+const hdr = document.querySelector('header'), mbtn = $('menu-btn');
+function menuOpen(on){ hdr.classList.toggle('menu-open', on); mbtn.setAttribute('aria-expanded', on); }
+mbtn.onclick = () => menuOpen(!hdr.classList.contains('menu-open'));
+$('cols').addEventListener('click', e => { if (e.target.closest('button')) menuOpen(false); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') menuOpen(false); });
+document.addEventListener('click', e => { if (hdr.classList.contains('menu-open') && !hdr.contains(e.target)) menuOpen(false); });
+function syncMenu(){
+  const cur = $('cols').querySelector('[aria-current="page"]');
+  $('menu-lbl').innerHTML = '<small>קטגוריה:</small>' + esc(cur ? cur.textContent.replace(/^[^\p{L}]+/u, '') : 'כל הקטגוריות');
+}
+new MutationObserver(syncMenu).observe($('cols'), {subtree: true, childList: true, attributes: true, attributeFilter: ['aria-current']});
 window.addEventListener('hashchange', () => { if (DB && location.hash !== '#contact' && location.hash !== '#about') route(); });
 
 $('form').addEventListener('submit', async e => {
