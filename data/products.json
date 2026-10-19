@@ -3875,8 +3875,6 @@
    "link": "https://s.click.aliexpress.com/e/_c3RrL8Vb",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sd390fbd8441242fa9cbda66da4165776a.jpg",
    "tid": "website",
-   "no_commission": true,
-   "alt_query": "EF to RF adapter autofocus",
    "brand_for": "canon",
    "for": [
     "M"
@@ -3921,8 +3919,6 @@
    "link": "https://s.click.aliexpress.com/e/_c34SsnlP",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S3e8a2d2987234a62b02c959ed00d198e0.jpg",
    "tid": "website",
-   "no_commission": true,
-   "alt_query": "EF to RF adapter autofocus",
    "brand_for": "canon",
    "for": [
     "M"
@@ -3945,8 +3941,6 @@
    "link": "https://s.click.aliexpress.com/e/_c3byMAM1",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S98b31a7893b24256ba67e9485b451ffdE.jpg",
    "tid": "website",
-   "no_commission": true,
-   "alt_query": "Nikon F to Z adapter autofocus",
    "brand_for": "nikon",
    "for": [
     "M"
@@ -4013,8 +4007,6 @@
    "link": "https://s.click.aliexpress.com/e/_c3lIl5Yd",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S99b2743f30ea4f0185755a7cc97071b8i.jpg",
    "tid": "website",
-   "no_commission": true,
-   "alt_query": "Nikon F to Sony E adapter autofocus",
    "brand_for": "sony",
    "for": [
     "M"
@@ -4037,8 +4029,6 @@
    "link": "https://s.click.aliexpress.com/e/_c3FV0cfR",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sdabcf507edde461c8e9bd711109a7070N.png",
    "tid": "website",
-   "no_commission": true,
-   "alt_query": "Sony E to Nikon Z adapter autofocus",
    "brand_for": "nikon",
    "for": [
     "M"
@@ -4061,8 +4051,6 @@
    "link": "https://s.click.aliexpress.com/e/_c4NeR2l7",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sddeb1a2709004f76a59e375afc88508cw.jpg",
    "tid": "website",
-   "no_commission": true,
-   "alt_query": "Sony E to Nikon Z adapter autofocus",
    "brand_for": "nikon",
    "for": [
     "M"
@@ -4085,8 +4073,6 @@
    "link": "https://s.click.aliexpress.com/e/_c4qTXHUN",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S0f31a3915abc4d17be9b6e151d8d2f65U.jpg",
    "tid": "website",
-   "no_commission": true,
-   "alt_query": "EF to Nikon Z adapter autofocus",
    "brand_for": "nikon",
    "for": [
     "M"
@@ -4153,8 +4139,6 @@
    "link": "https://s.click.aliexpress.com/e/_c39qbnnL",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sf0cf9e83717141fa8a566c4440eb5dc5u.jpg",
    "tid": "website",
-   "no_commission": true,
-   "alt_query": "EF to Fuji X adapter autofocus",
    "brand_for": "fuji",
    "for": [
     "M"
@@ -4177,8 +4161,6 @@
    "link": "https://s.click.aliexpress.com/e/_c4DMHBxb",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sb95ecb355f0e47a6b7d170fab10f59a70.jpg",
    "tid": "website",
-   "no_commission": true,
-   "alt_query": "Nikon F to Fuji X adapter autofocus",
    "brand_for": "fuji",
    "for": [
     "M"
@@ -4200,9 +4182,7 @@
    "sold": 207,
    "link": "https://s.click.aliexpress.com/e/_c4Uc8v0N",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S03de4e92c3944a69938276df4dda4a43M.png",
-   "tid": "website",
-   "no_commission": true,
-   "alt_query": "EF to L mount adapter autofocus"
+   "tid": "website"
   },
   {
    "collection": "adapters",
@@ -4220,8 +4200,6 @@
    "link": "https://s.click.aliexpress.com/e/_c3gkA9WZ",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sf665b783b05f4bfaa74549cd77c57821Z.jpg",
    "tid": "website",
-   "no_commission": true,
-   "alt_query": "Viltrox speed booster",
    "brand_for": "sony",
    "for": [
     "M"
@@ -4243,9 +4221,7 @@
    "sold": 13,
    "link": "https://s.click.aliexpress.com/e/_c4KLcwQV",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S5cf0380718c14b478bf6cf0a64812fe1m.png",
-   "tid": "website",
-   "no_commission": true,
-   "alt_query": "Canon EF to EOS M speed booster"
+   "tid": "website"
   },
   {
    "collection": "adapters",
@@ -4262,9 +4238,7 @@
    "sold": 27,
    "link": "https://s.click.aliexpress.com/e/_c3BKvSBf",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S89290b522dcf4baaa960bdc61ba3d07ev.png",
-   "tid": "website",
-   "no_commission": true,
-   "alt_query": "EF to M43 speed booster"
+   "tid": "website"
   },
   {
    "collection": "adapters",
