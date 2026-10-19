@@ -70,13 +70,29 @@ for p in prods:
     if new_sold is not None: p['sold'] = int(new_sold)
     if x.get('product_main_image_url'): p['img'] = x['product_main_image_url']
 
+# קישורי שותפים עם מזהה המעקב website לכל מוצר שעדיין אין לו
+TRACKING = 'website'
+new_links = 0
+todo = [p for p in prods if p.get('tid') != TRACKING and p['id'] in found]
+for i in range(0, len(todo), 20):
+    part = todo[i:i + 20]
+    urls = [(found[p['id']].get('product_detail_url') or f"https://www.aliexpress.com/item/{p['id']}.html").split('?')[0] for p in part]
+    res = call('aliexpress.affiliate.link.generate', promotion_link_type=0, source_values=','.join(urls), tracking_id=TRACKING)
+    root = res.get('aliexpress_affiliate_link_generate_response', {}).get('resp_result', {})
+    got = {str(l.get('source_value', '')).split('?')[0]: l.get('promotion_link') for l in
+           ((root.get('result') or {}).get('promotion_links') or {}).get('promotion_link', [])}
+    for p, u in zip(part, urls):
+        if got.get(u):
+            p['link'] = got[u]; p['tid'] = TRACKING; new_links += 1
+    time.sleep(0.5)
+
 today = datetime.date.today().isoformat()
 db['updated'] = today
 json.dump(db, open(DATA, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 
 name = lambda p: f"{p['brand']} – {p['title']} {p.get('code', '')}".strip()
 lines = [f'# רענון מוצרים – {today}', '',
-         f'נבדקו {len(prods)} מוצרים. נמצאו {len(found)}.', '']
+         f'נבדקו {len(prods)} מוצרים. נמצאו {len(found)}. קישורי website חדשים: {new_links}.', '']
 lines += ['## מוצרים שלא נמצאו (מוסתרים באתר עד החלטה)'] + ([f'- {name(p)} ({p["id"]})' for p in missing] or ['- אין']) + ['']
 lines += ['## מוצרים שחזרו'] + ([f'- {name(p)}' for p in back] or ['- אין']) + ['']
 lines += [f'## שינויי מחיר מעל {int(PRICE_ALERT * 100)}%'] + ([f'- {name(p)}: {a}$ → {b}$' for p, a, b in price_moves] or ['- אין']) + ['']
