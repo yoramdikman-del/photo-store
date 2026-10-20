@@ -1,14 +1,14 @@
 {
- "batteries": ["camera battery LP-E17", "camera battery EN-EL15", "camera battery NP-FZ100", "camera battery NP-W235", "camera battery charger USB-C dual"],
- "cleaning": ["camera cleaning kit", "lens cleaning pen", "air blower camera", "sensor cleaning swab"],
- "cards": ["SD card V30", "micro SD card", "card reader USB C SD", "memory card case"],
- "bags": ["camera sling bag", "camera backpack", "camera shoulder bag", "camera insert bag", "lens pouch"],
- "tripods": ["travel tripod", "carbon fiber tripod", "phone tripod", "mini tripod", "monopod"],
- "straps": ["camera strap", "camera wrist strap", "quick release camera strap", "camera clip backpack"],
- "lighting": ["LED video light", "RGB light", "camera flash", "light stand", "softbox"],
- "filters": ["ND filter", "CPL filter", "UV filter", "variable ND filter", "lens hood"],
- "phone": ["phone tripod remote", "phone gimbal", "phone wireless microphone", "phone lens clip", "phone LED light"],
- "video": ["action camera mount", "camera cage", "magic arm", "camera monitor", "gimbal stabilizer"],
- "nature": ["camera rain cover", "lens camouflage cover", "photography hide tent", "bean bag camera", "binoculars"],
- "adapters": ["lens mount adapter autofocus", "M42 adapter", "speed booster"]
+ "batteries": {"q": ["camera battery LP-E17", "camera battery EN-EL15", "camera battery NP-FZ100", "camera battery NP-W235", "camera battery charger dual"], "must": [["battery", "charger"], ["camera", "canon", "nikon", "sony", "fuji", "lp-e", "en-el", "np-"]]},
+ "cleaning": {"q": ["camera cleaning kit", "lens cleaning pen", "air blower camera", "sensor cleaning swab"], "must": [["clean", "blower", "swab", "brush", "wipe", "duster"], ["camera", "lens", "sensor", "dslr"]]},
+ "cards": {"q": ["SD card V30", "micro SD card", "card reader SD", "memory card case"], "must": [["sd card", "sdxc", "microsd", "micro sd", "memory card", "card reader", "card case", "cfexpress"]]},
+ "bags": {"q": ["camera sling bag", "camera backpack", "camera shoulder bag", "camera insert bag", "lens pouch"], "must": [["bag", "backpack", "pouch", "case", "sling", "insert"], ["camera", "lens", "photography", "dslr"]]},
+ "tripods": {"q": ["travel tripod", "carbon fiber tripod", "phone tripod", "mini tripod", "monopod"], "must": [["tripod", "monopod"]]},
+ "straps": {"q": ["camera strap", "camera wrist strap", "quick release camera strap", "camera clip backpack"], "must": [["strap", "clip", "sling"], ["camera", "dslr", "mirrorless"]]},
+ "lighting": {"q": ["LED video light", "RGB light camera", "camera flash speedlite", "light stand photography", "softbox"], "must": [["light", "flash", "speedlite", "softbox", "led"], ["camera", "photography", "video", "studio", "vlog", "fill"]]},
+ "filters": {"q": ["ND filter", "CPL filter", "UV filter", "variable ND filter", "lens hood"], "must": [["filter", "hood"], ["lens", "camera", "nd", "cpl", "uv", "mm"]]},
+ "phone": {"q": ["phone tripod remote", "phone gimbal", "phone wireless microphone", "phone lens clip", "phone LED light"], "must": [["phone", "smartphone", "iphone"], ["tripod", "gimbal", "microphone", "lens", "light", "selfie", "stabilizer"]]},
+ "video": {"q": ["action camera mount", "camera cage", "magic arm camera", "camera monitor", "camera gimbal stabilizer"], "must": [["mount", "cage", "arm", "monitor", "gimbal", "stabilizer", "clamp", "rig"], ["camera", "gopro", "dslr", "action"]]},
+ "nature": {"q": ["camera rain cover", "lens camouflage cover", "photography hide tent", "bean bag camera", "binoculars"], "must": [["rain cover", "camouflage", "hide", "bean bag", "binocular", "blind", "lens coat"]]},
+ "adapters": {"q": ["lens mount adapter autofocus", "M42 lens adapter", "speed booster focal reducer"], "must": [["adapter", "booster", "reducer"], ["lens", "mount"]]}
 }

@@ -1,4 +1,5 @@
 # "מועמדים לחנות": סריקה שבועית לכל אוסף לפי data/collection_queries.json.
+# כל אוסף מגדיר מילות חיפוש (q) ומילים שחייבות להופיע בשם המוצר (must), כדי לסנן מוצרים לא קשורים.
 # מסננים לפי הכללים של יורם: חנות רשמית, דירוג 94% ומעלה, 100 מכירות לפחות, עד 200$, משלוח לישראל, עם עמלה,
 # ורק מוצרים שעוד לא בחנות. לכל אוסף נשמרים עד 3 מועמדים. מסמנים גם מוצרים חלשים בחנות (דירוג ירד או נעלמו).
 # התוצאה ב-data/store_candidates.json. לא מוצגת באתר: Claude ממליץ על עד 5 מוצרים בשבוע, ויורם מאשר.
@@ -43,7 +44,9 @@ db = json.load(open('data/products.json', encoding='utf-8'))
 have = {p['id'] for p in db['products']}
 queries = json.load(open('data/collection_queries.json', encoding='utf-8'))
 out, errors, taken = {}, [], set()
-for coll, qs in queries.items():
+EXCLUDE = ['dash cam', 'lash', 'controller', 'earbud', 'headphone', 'car phone holder', 'car charger', 'baby monitor', 'aux', 'nvme', 'glue', 'watch', 'drone propeller']
+for coll, spec in queries.items():
+    qs, must = spec['q'], spec.get('must', [])
     cand = {}
     for q in qs:
         res = call('aliexpress.affiliate.product.query', keywords=q, ship_to_country='IL', target_currency='USD',
@@ -56,7 +59,10 @@ for coll, qs in queries.items():
             shop = (x.get('shop_name') or '').lower()
             rate, sold, price = num(x.get('evaluate_rate')) or 0, int(num(x.get('lastest_volume')) or 0), num(x.get('target_sale_price')) or 0
             comm = max(num(x.get('hot_product_commission_rate')) or 0, num(x.get('commission_rate')) or 0)
+            title = (x.get('product_title') or '').lower()
             if pid in have or pid in taken or 'official' not in shop:
+                continue
+            if any(w in title for w in EXCLUDE) or not all(any(w in title for w in grp) for grp in must):
                 continue
             if rate < MIN_RATE or sold < MIN_SOLD or not price or price > MAX_PRICE or comm <= 0:
                 continue
