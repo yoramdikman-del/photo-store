@@ -31,6 +31,13 @@
    ]
   },
   {
+   "id": "gadgets",
+   "name": "גאדג'טים קטנים, וואו גדול",
+   "title": "גאדג'טים קטנים, וואו גדול",
+   "intro": "אביזרים קטנים וזולים, עד 25 דולר, מהמותגים הגדולים. כאלה שגורמים להגיד: איך לא חשבתי על זה קודם?",
+   "groups": []
+  },
+  {
    "id": "cleaning",
    "name": "ניקוי ותחזוקה",
    "title": "ניקוי ותחזוקה לציוד",
@@ -4500,6 +4507,204 @@
     "D"
    ],
    "lens_note": "לעדשות Nikon F"
+  },
+  {
+   "collection": "gadgets",
+   "group": "",
+   "id": "1005007637019062",
+   "brand": "Ulanzi",
+   "title": "חצובה לטלפון עם קרבינר, נתלית על התרמיל",
+   "code": "",
+   "kind": "טלפון",
+   "fits": "",
+   "note": "",
+   "price": 20.03,
+   "rating": 96.4,
+   "sold": 123,
+   "link": "https://www.aliexpress.com/item/1005007637019062.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S372b802cba9e46a1b0b74103f771b891p.jpg",
+   "tid": "",
+   "status": "pending",
+   "for": [
+    "P"
+   ]
+  },
+  {
+   "collection": "gadgets",
+   "group": "",
+   "id": "1005008835824997",
+   "brand": "Ulanzi",
+   "title": "מחזיק מגנטי דו־צדדי: טלפון מצד אחד, תאורה או מיקרופון מהשני",
+   "code": "",
+   "kind": "טלפון",
+   "fits": "",
+   "note": "",
+   "price": 18.51,
+   "rating": 100.0,
+   "sold": 124,
+   "link": "https://www.aliexpress.com/item/1005008835824997.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S3d04c797ac7e41f58bdbe937f409c6e39.jpg",
+   "tid": "",
+   "status": "pending",
+   "for": [
+    "P"
+   ]
+  },
+  {
+   "collection": "gadgets",
+   "group": "",
+   "id": "1005006539781754",
+   "brand": "Ulanzi",
+   "title": "תאורת מגסייף שהיא גם מעמד לטלפון",
+   "code": "",
+   "kind": "טלפון",
+   "fits": "",
+   "note": "",
+   "price": 15.1,
+   "rating": 97.0,
+   "sold": 213,
+   "link": "https://www.aliexpress.com/item/1005006539781754.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sd3127a0fe4f84228aca82ba35a4284e7i.jpg",
+   "tid": "",
+   "status": "pending",
+   "for": [
+    "P"
+   ]
+  },
+  {
+   "collection": "gadgets",
+   "group": "",
+   "id": "1005012394960935",
+   "brand": "Ulanzi",
+   "title": "שלושה בתוך אחד: קורא כרטיסים, נרתיק כרטיסים ומעמד לטלפון",
+   "code": "",
+   "kind": "כרטיסים",
+   "fits": "",
+   "note": "",
+   "price": 15.55,
+   "rating": 96.0,
+   "sold": 123,
+   "link": "https://www.aliexpress.com/item/1005012394960935.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S73185ff95379477a91d656853dc68a10Q.jpg",
+   "tid": "",
+   "status": "pending",
+   "for": [
+    "M",
+    "D",
+    "C",
+    "P"
+   ]
+  },
+  {
+   "collection": "gadgets",
+   "group": "",
+   "id": "1005008050813077",
+   "brand": "JJC",
+   "title": "כפתור צמצם רך, ללחיצה נעימה ומדויקת",
+   "code": "",
+   "kind": "מצלמה",
+   "fits": "",
+   "note": "למצלמות עם כפתור צמצם מוברג (פוג׳י ועוד) – לבדוק בדף",
+   "price": 3.19,
+   "rating": 96.5,
+   "sold": 589,
+   "link": "https://www.aliexpress.com/item/1005008050813077.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S81b7892bb2b340ba8847e8e588650a4eU.png",
+   "tid": "",
+   "status": "pending",
+   "for": [
+    "M",
+    "D",
+    "C"
+   ]
+  },
+  {
+   "collection": "gadgets",
+   "group": "",
+   "id": "4000415681268",
+   "brand": "BEXIN",
+   "title": "ראש כדורי מיני לנעל המצלמה, לתאורה או למיקרופון",
+   "code": "",
+   "kind": "מצלמה",
+   "fits": "",
+   "note": "",
+   "price": 5.56,
+   "rating": 97.6,
+   "sold": 476,
+   "link": "https://www.aliexpress.com/item/4000415681268.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S1c568cb43e1940a9aa3075926f002859k.jpg",
+   "tid": "",
+   "status": "pending",
+   "for": [
+    "M",
+    "D",
+    "C",
+    "P"
+   ]
+  },
+  {
+   "collection": "gadgets",
+   "group": "",
+   "id": "1005003234867674",
+   "brand": "Ulanzi",
+   "title": "מחזיק טלפון לחצובה, עם נעל לתאורה או מיקרופון",
+   "code": "",
+   "kind": "טלפון",
+   "fits": "",
+   "note": "",
+   "price": 7.2,
+   "rating": 95.6,
+   "sold": 562,
+   "link": "https://www.aliexpress.com/item/1005003234867674.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sc1ca3866b8c144058313d95f4f035776l.jpg",
+   "tid": "",
+   "status": "pending",
+   "for": [
+    "P"
+   ]
+  },
+  {
+   "collection": "gadgets",
+   "group": "",
+   "id": "1005006292179391",
+   "brand": "Ulanzi",
+   "title": "סופטבוקס כדורי קטן לפלאש ולתאורה, 30 ס״מ",
+   "code": "",
+   "kind": "תאורה",
+   "fits": "",
+   "note": "",
+   "price": 24.95,
+   "rating": 98.7,
+   "sold": 111,
+   "link": "https://www.aliexpress.com/item/1005006292179391.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S91f43fe0b1344ec6a06eae57e765f88dc.jpg",
+   "tid": "",
+   "status": "pending",
+   "for": [
+    "M",
+    "D"
+   ]
+  },
+  {
+   "collection": "gadgets",
+   "group": "",
+   "id": "1005010183433142",
+   "brand": "JJC",
+   "title": "אחיזת אגודל ממתכת לריקו GR IV",
+   "code": "",
+   "kind": "מצלמה",
+   "fits": "",
+   "note": "",
+   "price": 13.28,
+   "rating": 97.4,
+   "sold": 164,
+   "link": "https://www.aliexpress.com/item/1005010183433142.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S2b4a9c5a0f944156a52357a70608e70eQ.png",
+   "tid": "",
+   "status": "pending",
+   "models": [
+    "GR IV"
+   ]
   }
  ]
 }
