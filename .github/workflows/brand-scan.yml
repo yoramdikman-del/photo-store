@@ -1,0 +1,35 @@
+name: חדש מהמותגים – סריקה שבועית
+
+on:
+  schedule:
+    - cron: '30 3 * * 0'   # כל יום ראשון ב-06:30 שעון ישראל (חורף), לפני הכנת "מה חדש השבוע"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: brand-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - name: סריקת חנויות רשמיות
+        env:
+          ALI_APP_SECRET: ${{ secrets.ALI_APP_SECRET }}
+        run: python scripts/brand_scan.py
+      - name: שמירת התוצאות (לא מוצגות באתר)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          git add data/brand_new.json data/brand_seen.json
+          git commit -m "חדש מהמותגים – תוצאות סריקה" || exit 0
+          git pull --rebase
+          git push
