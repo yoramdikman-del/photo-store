@@ -1,0 +1,531 @@
+{
+ "date": "2026-10-20",
+ "rules": {
+  "min_rating": 94,
+  "min_sold": 100,
+  "max_price": 200,
+  "official_store": true
+ },
+ "errors": [],
+ "candidates": {
+  "batteries": [
+   {
+    "id": "1005006314485852",
+    "collection": "batteries",
+    "query": "camera battery NP-FZ100",
+    "title": "JJC Battery Storage Pouch Camera Battery Case for Canon LP-E6N  LP-E6NH LP-E17 AAA 18650 CR2032 Sony NP-FW50 NP-FZ100 NP FW50",
+    "shop": "JJC Official Store",
+    "price": 8.09,
+    "rating": 98.7,
+    "sold": 276,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sdb6554431ead40c4bfca09ef45e328e57.jpg",
+    "url": "https://www.aliexpress.com/item/1005006314485852.html",
+    "link": "https://s.click.aliexpress.com/e/_c33Nl9wZ"
+   },
+   {
+    "id": "1005006314777318",
+    "collection": "batteries",
+    "query": "camera battery LP-E17",
+    "title": "JJC Camera Battery Case for Canon LP-E17 LP-E6 LP-E6N LP-E10 Nikon EN-EL15a EN-EL14 Fuji NP-W126 NP-W126S Sony NP-FW50 NP-FW100",
+    "shop": "JJC Official Store",
+    "price": 3.89,
+    "rating": 97.9,
+    "sold": 124,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sfc73374b553e495cbf28d3b3275ffd54o.jpg",
+    "url": "https://www.aliexpress.com/item/1005006314777318.html",
+    "link": "https://s.click.aliexpress.com/e/_c4MbJd49"
+   },
+   {
+    "id": "32856761519",
+    "collection": "batteries",
+    "query": "camera battery NP-FZ100",
+    "title": "Probty NP-FZ100 NP FZ100 NPFZ100 Camera Battery LCD Dual Charger for Sony Alpha 9 A9 9R A9R 9S A9S A7RIII A7R3 BC-QZ1",
+    "shop": "probty Official Store",
+    "price": 9.28,
+    "rating": 96.7,
+    "sold": 112,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/HTB1Nq3gaQUmBKNjSZFOq6yb2XXaC.jpg",
+    "url": "https://www.aliexpress.com/item/32856761519.html",
+    "link": "https://s.click.aliexpress.com/e/_c3w0bXCN"
+   }
+  ],
+  "cleaning": [],
+  "cards": [
+   {
+    "id": "1005007867161940",
+    "collection": "cards",
+    "query": "micro SD card",
+    "title": "70mai M310 Plus 2K 1440P Dash Cam 143°FOV f/1.55 Large Aperture Smart Voice Control 24H Parking Guard Night Vision Car Camera",
+    "shop": "70mai Official Store",
+    "price": 32.43,
+    "rating": 96.4,
+    "sold": 5258,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S11d30d69ea834e9aba2d779372f1d5bfg.jpg",
+    "url": "https://www.aliexpress.com/item/1005007867161940.html",
+    "link": "https://s.click.aliexpress.com/e/_c2IRPAmz"
+   },
+   {
+    "id": "1005005784770916",
+    "collection": "cards",
+    "query": "micro SD card",
+    "title": "70mai A810S 4K Dash Cam IMX678 Dual HDR Supercapacitor 4G LTE Remote Control Wi-Fi 6 5GHz Voice Control GPS ADAS Car Camera",
+    "shop": "70mai Official Store",
+    "price": 117.12,
+    "rating": 97.0,
+    "sold": 4356,
+    "commission": 8.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S5e003303d3c24db1abb25122a5896772r.jpg",
+    "url": "https://www.aliexpress.com/item/1005005784770916.html",
+    "link": "https://s.click.aliexpress.com/e/_c4kaQXRT"
+   },
+   {
+    "id": "1005009206119272",
+    "collection": "cards",
+    "query": "card reader USB C SD",
+    "title": "Baseus USB C HUB Dual HDMI 8K 4K Adapter 10-in-1 USB 3.2 10Gbps Splitter with RJ45 SD TF Type C PD 100W for MacBook Pro Air HUB",
+    "shop": "BASEUS Official Store",
+    "price": 18.76,
+    "rating": 96.7,
+    "sold": 4168,
+    "commission": 3.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sb364e2d15f98459db39bb4b2e20b0e33H.jpg",
+    "url": "https://www.aliexpress.com/item/1005009206119272.html",
+    "link": "https://s.click.aliexpress.com/e/_c3bwo9bT"
+   }
+  ],
+  "bags": [
+   {
+    "id": "1005005043290517",
+    "collection": "bags",
+    "query": "camera backpack",
+    "title": "TELESIN 360° Rotation Magnetic Backpack Clip Clamp Mount for GoPro Hero 13 12 11 10 9 8 7 Insta360 DJI Action Camera Accessories",
+    "shop": "TELESIN Official Store",
+    "price": 12.15,
+    "rating": 95.8,
+    "sold": 1083,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S2eca7a0ef9c14587af2a4b80cd5b875bs.jpg",
+    "url": "https://www.aliexpress.com/item/1005005043290517.html",
+    "link": "https://s.click.aliexpress.com/e/_c3CSMfCd"
+   },
+   {
+    "id": "1005006476883955",
+    "collection": "bags",
+    "query": "camera backpack",
+    "title": "JJC Equipment Mounting Strap Cable Cradle Tripod Legs Mounting Bag for Power Bank ,Light Stand, Remote,Photography Accessory",
+    "shop": "JJC Official Store",
+    "price": 10.33,
+    "rating": 97.5,
+    "sold": 525,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S3cd47b009cff461f8326b05a891e0f89W.jpg",
+    "url": "https://www.aliexpress.com/item/1005006476883955.html",
+    "link": "https://s.click.aliexpress.com/e/_c40gG7yN"
+   },
+   {
+    "id": "1005006455870712",
+    "collection": "bags",
+    "query": "camera shoulder bag",
+    "title": "MOYYI INS Korean Style Men Messenger Bags Women Travel Casual Large Hobo Bag Waterproof Nylon Laptop Crossbody Shoulder Bag",
+    "shop": "MOYYI Official Store",
+    "price": 37.43,
+    "rating": 98.8,
+    "sold": 321,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S7deb2259404d4ea7b0e6011cdaecd9877.jpg",
+    "url": "https://www.aliexpress.com/item/1005006455870712.html",
+    "link": "https://s.click.aliexpress.com/e/_c3fV2Y3J"
+   }
+  ],
+  "tripods": [
+   {
+    "id": "1005010708281380",
+    "collection": "tripods",
+    "query": "mini tripod",
+    "title": "TELESIN Mini Quick Release Universal Tripod Hand Grip for GoPro Insta360 DJI Osmo Action Camera With 1/4 Screw Adapter",
+    "shop": "TELESIN Photography Official Store",
+    "price": 8.96,
+    "rating": 96.9,
+    "sold": 2407,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sb40b38f4b8a645eeb587be0851e8ccd2R.jpg",
+    "url": "https://www.aliexpress.com/item/1005010708281380.html",
+    "link": "https://s.click.aliexpress.com/e/_c3GlO6st"
+   },
+   {
+    "id": "1005012079330999",
+    "collection": "tripods",
+    "query": "mini tripod",
+    "title": "9H Tempered Glass For DJI Osmo Pocket 4 3, Ultra-Clear Glass Camera Lens Screen Protector Film For DJI Pocket4 Accessories",
+    "shop": "ONM Official Store",
+    "price": 2.78,
+    "rating": 95.9,
+    "sold": 1367,
+    "commission": 8.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S3074325f7d6845c09d81b22b7916fa098.jpg",
+    "url": "https://www.aliexpress.com/item/1005012079330999.html",
+    "link": "https://s.click.aliexpress.com/e/_c3RCnZkz"
+   },
+   {
+    "id": "1005010434822066",
+    "collection": "tripods",
+    "query": "carbon fiber tripod",
+    "title": "YOCTOP Is Suitable for Insta360 Sports Cameras X3, X4, X5, GO 3S, Ace Pro2 Bluetooth Remote Control Waterproof Accessories",
+    "shop": "yoctop Official Store",
+    "price": 23.53,
+    "rating": 95.5,
+    "sold": 1348,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S01243aed8b944a71bfa48490c64bced4T.jpg",
+    "url": "https://www.aliexpress.com/item/1005010434822066.html",
+    "link": "https://s.click.aliexpress.com/e/_c3tfg669"
+   }
+  ],
+  "straps": [
+   {
+    "id": "1005005789718689",
+    "collection": "straps",
+    "query": "camera strap",
+    "title": "TELESIN Chest Strap Mount Waistcoat Belt Mount for GoPro Hero 13 12 11 10 9 8 7 6 5 Insta360 DJI Action Camera Accessories",
+    "shop": "TELESIN Official Store",
+    "price": 9.55,
+    "rating": 97.7,
+    "sold": 1555,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S76621c4a4c7c4dbd990d4c203422da1dE.jpg",
+    "url": "https://www.aliexpress.com/item/1005005789718689.html",
+    "link": "https://s.click.aliexpress.com/e/_c3mGR7ID"
+   },
+   {
+    "id": "1005008146958796",
+    "collection": "straps",
+    "query": "camera wrist strap",
+    "title": "TELESIN Waterproof Bluetooth Remote Control For GoPro Hero 13 12 11 10 9 8 Max With Wrist Strap For Action Camera Accessories",
+    "shop": "TELESIN Official Store",
+    "price": 15.92,
+    "rating": 94.3,
+    "sold": 1548,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sce8583a8fa3d486d97cd4c534b01294cX.jpg",
+    "url": "https://www.aliexpress.com/item/1005008146958796.html",
+    "link": "https://s.click.aliexpress.com/e/_c3Z297Tj"
+   },
+   {
+    "id": "1005008408189699",
+    "collection": "straps",
+    "query": "quick release camera strap",
+    "title": "PGYTECH Camera Wrist Strap Air Upgrade for Photographers Adjustable Quick Release Camera Hand Strap for Sony Nikon Canon Gopro",
+    "shop": "PGYTECH Official Store",
+    "price": 19.43,
+    "rating": 97.8,
+    "sold": 1514,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sa4a13abaaadf48f7be1bd2883140b20aO.png",
+    "url": "https://www.aliexpress.com/item/1005008408189699.html",
+    "link": "https://s.click.aliexpress.com/e/_c2xX7g3P"
+   }
+  ],
+  "lighting": [
+   {
+    "id": "1005009100479471",
+    "collection": "lighting",
+    "query": "softbox",
+    "title": "FADVAN YY/3D/4D/5D/6D W Shape Lashes M/C/D Curl Premade Volume Fans Faux Mink Eyelashes Brazilian Volume Natural Soft YY Lashes",
+    "shop": "Fadvan Official Store",
+    "price": 2.22,
+    "rating": 97.6,
+    "sold": 9652,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sc0ff1efac8484a9e8ae2275e417dce65Z.jpg",
+    "url": "https://www.aliexpress.com/item/1005009100479471.html",
+    "link": "https://s.click.aliexpress.com/e/_c41I0VY9"
+   },
+   {
+    "id": "1005006897761977",
+    "collection": "lighting",
+    "query": "RGB light",
+    "title": "8BitDo Ultimate C Wired Gaming Controller for Xbox, RGB Lighting Fire Ring and Hall Effect Joysticks, Windows 10/11",
+    "shop": "8Bitdo Official Store",
+    "price": 25.53,
+    "rating": 98.4,
+    "sold": 7325,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S52229e1a36ac488cb280bb57716a0eb9x.png",
+    "url": "https://www.aliexpress.com/item/1005006897761977.html",
+    "link": "https://s.click.aliexpress.com/e/_c3Ory8fn"
+   },
+   {
+    "id": "1005009889116002",
+    "collection": "lighting",
+    "query": "light stand",
+    "title": "UGREEN Qi2.2 25W 15W Magnetic Car Phone Holder Wireless Charger Stand For iPhone 17 16 Pro Max Charging Magnetic Car Charger",
+    "shop": "Ugreen Official Store",
+    "price": 31.49,
+    "rating": 96.5,
+    "sold": 3175,
+    "commission": 9.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S1a72b31081c44d5292d81b1df86be9d2w.jpg",
+    "url": "https://www.aliexpress.com/item/1005009889116002.html",
+    "link": "https://s.click.aliexpress.com/e/_c4BKiVxb"
+   }
+  ],
+  "filters": [
+   {
+    "id": "1005010302846967",
+    "collection": "filters",
+    "query": "variable ND filter",
+    "title": "Freewell 3 Pack Magnetic Filters ND, UV, CPL, ND/PL, Glow Mist 1/4 Filter Compatibility DJI Neo 2 Camera Photography Accessories",
+    "shop": "FREEWELL Official Store",
+    "price": 29.99,
+    "rating": 97.4,
+    "sold": 1553,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S044b375263054f2988bd338aefdd8b63P.jpg",
+    "url": "https://www.aliexpress.com/item/1005010302846967.html",
+    "link": "https://s.click.aliexpress.com/e/_c3U61ZP3"
+   },
+   {
+    "id": "1005009278082726",
+    "collection": "filters",
+    "query": "CPL filter",
+    "title": "TELESIN Lens Filter Set for DJI OSMO Pocket 3 4 CPL ND16 ND32 ND64 ND256 Black Diffusion Lens  Filter Kit Set For DJI Pocket 4 3",
+    "shop": "TELESIN Official Store",
+    "price": 7.33,
+    "rating": 96.3,
+    "sold": 996,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S8ebfc18334c040659828fdf869892fcfE.jpg",
+    "url": "https://www.aliexpress.com/item/1005009278082726.html",
+    "link": "https://s.click.aliexpress.com/e/_c4WyYcD3"
+   },
+   {
+    "id": "1005012394406685",
+    "collection": "filters",
+    "query": "variable ND filter",
+    "title": "Freewell 4 Pack Filter Kit, White Black Options, ND/PL, LPR, Glow Mist, CPL Filters for DJI Osmo Pocket 4P ＆ Xtra Muse 2 Pro",
+    "shop": "FREEWELL Official Store",
+    "price": 49.99,
+    "rating": 98.9,
+    "sold": 838,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S9a5b09f4438147d08ab907ddec45b94dz.jpg",
+    "url": "https://www.aliexpress.com/item/1005012394406685.html",
+    "link": "https://s.click.aliexpress.com/e/_c3D4UM8v"
+   }
+  ],
+  "phone": [
+   {
+    "id": "1005011755232439",
+    "collection": "phone",
+    "query": "phone wireless microphone",
+    "title": "HAYLOU Flowbuds N55 Wireless Earbuds 54dB Adaptive ANC Bluetooth 6.0 LDAC Hi-Res Audio 6-Mic HD Call Earphones 40H Playback IPX5",
+    "shop": "Haylou Official Store",
+    "price": 26.58,
+    "rating": 94.3,
+    "sold": 4684,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/A2563652351614352acbd49927c1345c4c.jpg",
+    "url": "https://www.aliexpress.com/item/1005011755232439.html",
+    "link": "https://s.click.aliexpress.com/e/_c3YzFPOt"
+   },
+   {
+    "id": "1005005544072940",
+    "collection": "phone",
+    "query": "phone LED light",
+    "title": "Baseus Magnetic Wireless Charger Car Phone Holder 15W Fast Charging Wireless Car Charger Holder For iPhone 16 15 14 13 Car Mount",
+    "shop": "BASEUS Official Store",
+    "price": 21.54,
+    "rating": 97.0,
+    "sold": 2287,
+    "commission": 9.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Saa58a49466a344de925dd450e1c64985S.jpg",
+    "url": "https://www.aliexpress.com/item/1005005544072940.html",
+    "link": "https://s.click.aliexpress.com/e/_c3Qi7NBT"
+   },
+   {
+    "id": "1005011994304897",
+    "collection": "phone",
+    "query": "phone gimbal",
+    "title": "FeiyuTech VB4 Face Tracking Cell Phone Gimbal Stabilizer for Vlogging iPhone 17 Pro Max Samsung Galaxy, Built-in Selfie Stick",
+    "shop": "FeiyuTech Official Store",
+    "price": 50.31,
+    "rating": 97.1,
+    "sold": 445,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S9adeb9ec3ca14bfab5d10c53fd278243I.jpg",
+    "url": "https://www.aliexpress.com/item/1005011994304897.html",
+    "link": "https://s.click.aliexpress.com/e/_c3jJwO2z"
+   }
+  ],
+  "video": [
+   {
+    "id": "32758327548",
+    "collection": "video",
+    "query": "camera monitor",
+    "title": "Vention Jack 3.5mm Aux Cable Male to Male 3.5mm Audio Cable Jack for JBL Xiaomi Oneplus Headphones Speaker Cable Car Aux Cord",
+    "shop": "VEnTIOn Official Store",
+    "price": 1.98,
+    "rating": 96.6,
+    "sold": 5288,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sa44a7acc0d794fc79a9bac0101090b50M.jpg",
+    "url": "https://www.aliexpress.com/item/32758327548.html",
+    "link": "https://s.click.aliexpress.com/e/_c3OcK0Zj"
+   },
+   {
+    "id": "1423864616",
+    "collection": "video",
+    "query": "camera monitor",
+    "title": "Vention Jack 3.5 Aux Extension Cable for Car Laptop Mini PC TV Xiaomi Huawei Stereo 3.5 mm Jack Headphone Speaker Cable Auxiliar",
+    "shop": "VEnTIOn Official Store",
+    "price": 2.08,
+    "rating": 96.8,
+    "sold": 4508,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S8a685a9a633b4e2394466c0b6f87677eu.jpg",
+    "url": "https://www.aliexpress.com/item/1423864616.html",
+    "link": "https://s.click.aliexpress.com/e/_c3FyJ6K5"
+   },
+   {
+    "id": "1005001604803924",
+    "collection": "video",
+    "query": "camera monitor",
+    "title": "New 5 inch Video Baby Monitor with Camera and Audio, 4X Zoom, 22Hrs Battery, 1000ft Range 2-Way Audio Temperature Sensor Lullaby",
+    "shop": "MBOSS Official Store",
+    "price": 69.61,
+    "rating": 97.5,
+    "sold": 3453,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S9e3eb1cd6a8d4d71aa06654bd5b4c759P.png",
+    "url": "https://www.aliexpress.com/item/1005001604803924.html",
+    "link": "https://s.click.aliexpress.com/e/_c31itYbP"
+   }
+  ],
+  "nature": [
+   {
+    "id": "1005008886375120",
+    "collection": "nature",
+    "query": "camera rain cover",
+    "title": "JJC Small Reusable Dehumidifier Electronic Moisture Absorbing For DSLR Microscopes Moisture-proof Case Camera Accessories",
+    "shop": "JJC Official Store",
+    "price": 9.29,
+    "rating": 96.8,
+    "sold": 1489,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S540b2b21fd09434eadfe6b4ecd8ef2bc5.jpg",
+    "url": "https://www.aliexpress.com/item/1005008886375120.html",
+    "link": "https://s.click.aliexpress.com/e/_c3qJYZmv"
+   },
+   {
+    "id": "1005007197845231",
+    "collection": "nature",
+    "query": "camera rain cover",
+    "title": "JJC 2Pack Clear Stabilizer Rain Cover Gimbal Stabilizer for Camera Raincoat For DJI RS 4 Pro RS 4 RS 3 Mini Pro RSC 2 RS 2",
+    "shop": "JJC Official Store",
+    "price": 10.43,
+    "rating": 97.4,
+    "sold": 194,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S41e66237eba44e6585269e61f66e02d3i.png",
+    "url": "https://www.aliexpress.com/item/1005007197845231.html",
+    "link": "https://s.click.aliexpress.com/e/_c4F9MLwD"
+   },
+   {
+    "id": "1005006216290242",
+    "collection": "nature",
+    "query": "camera rain cover",
+    "title": "Adjustable DSLR Camera Lens Dew Heater Strip USB Lens Warmer Heater Photography Photo Shooting Temperature Control Dew Heater",
+    "shop": "KIWIFOTOS Official Store",
+    "price": 15.99,
+    "rating": 95.0,
+    "sold": 168,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S42f13711aad247df8f0c6b88c191df35c.jpg",
+    "url": "https://www.aliexpress.com/item/1005006216290242.html",
+    "link": "https://s.click.aliexpress.com/e/_c41SytT3"
+   }
+  ],
+  "adapters": [
+   {
+    "id": "1005007096930006",
+    "collection": "adapters",
+    "query": "M42 adapter",
+    "title": "JEYI M.2 NVME to PCIe 4.0 X16 Adapter, M.2 NVMe SSD to PCI-e 4.0 Expansion Card, Supports 2280/60/42/30 Solid State Drives",
+    "shop": "JEYI Official Store",
+    "price": 3.65,
+    "rating": 95.7,
+    "sold": 344,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S2f900302806f4ed98e624c131f5743d9l.jpg",
+    "url": "https://www.aliexpress.com/item/1005007096930006.html",
+    "link": "https://s.click.aliexpress.com/e/_c2ytjNu5"
+   },
+   {
+    "id": "1005009310319805",
+    "collection": "adapters",
+    "query": "M42 adapter",
+    "title": "Svbony SV226 M42/M54 Filter Drawer Double Magnet Reinforcement Dual-Holder Switching for Deep-Sky Telescope Photography",
+    "shop": "svbony Official Store",
+    "price": 56.39,
+    "rating": 99.1,
+    "sold": 137,
+    "commission": 8.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S29f4d0fa46c74025aaf1a6f5b52cc9464.jpg",
+    "url": "https://www.aliexpress.com/item/1005009310319805.html",
+    "link": "https://s.click.aliexpress.com/e/_c34n5L1P"
+   },
+   {
+    "id": "1005008231531954",
+    "collection": "adapters",
+    "query": "speed booster",
+    "title": "Sense Lashes 15ml Lash Glue Speed Accelerant Retention & Speed Booster Improve Lash Retention and Treatment Time",
+    "shop": "Sense Lashes Official Store",
+    "price": 11.66,
+    "rating": 96.9,
+    "sold": 126,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sa0a3ed9af62e46798450270b0ca09933K.png",
+    "url": "https://www.aliexpress.com/item/1005008231531954.html",
+    "link": "https://s.click.aliexpress.com/e/_c4qYlKA9"
+   }
+  ]
+ },
+ "weak": [
+  {
+   "id": "1005002519399773",
+   "collection": "lighting",
+   "brand": "Ulanzi",
+   "title": "פנס לד צבעוני קטן למצלמה ולטלפון",
+   "rating": 97.5,
+   "status": "missing"
+  },
+  {
+   "id": "1005007937952410",
+   "collection": "adapters",
+   "brand": "Fringer",
+   "title": "מתאם EF-FX Pro III לעדשות Canon EF למצלמות Fuji X",
+   "rating": 84.0,
+   "status": null
+  },
+  {
+   "id": "1005008548063264",
+   "collection": "adapters",
+   "brand": "Viltrox",
+   "title": "מכווץ מוקד 0.71x לעדשות Canon EF למצלמות Canon EOS M",
+   "rating": 90.0,
+   "status": null
+  },
+  {
+   "id": "1005007354380569",
+   "collection": "adapters",
+   "brand": "K&F",
+   "title": "מתאם לעדשות Nikon F ידניות (AI/AIS) למצלמות Nikon Z",
+   "rating": 80.0,
+   "status": null
+  }
+ ]
+}
