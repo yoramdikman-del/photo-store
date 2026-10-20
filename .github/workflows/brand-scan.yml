@@ -1,4 +1,4 @@
-name: חדש מהמותגים – סריקה שבועית
+name: סריקה שבועית – חדש מהמותגים ומועמדים לחנות
 
 on:
   schedule:
@@ -25,11 +25,15 @@ jobs:
         env:
           ALI_APP_SECRET: ${{ secrets.ALI_APP_SECRET }}
         run: python scripts/brand_scan.py
+      - name: מועמדים לחנות לפי אוספים
+        env:
+          ALI_APP_SECRET: ${{ secrets.ALI_APP_SECRET }}
+        run: python scripts/collection_scan.py
       - name: שמירת התוצאות (לא מוצגות באתר)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898+github-actions[bot]@users.noreply.github.com"
-          git add data/brand_new.json data/brand_seen.json
-          git commit -m "חדש מהמותגים – תוצאות סריקה" || exit 0
+          git add data/brand_new.json data/brand_seen.json data/store_candidates.json
+          git commit -m "סריקה שבועית – חדש מהמותגים ומועמדים לחנות" || exit 0
           git pull --rebase
           git push

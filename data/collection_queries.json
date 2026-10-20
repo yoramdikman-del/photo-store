@@ -1,0 +1,14 @@
+{
+ "batteries": ["camera battery LP-E17", "camera battery EN-EL15", "camera battery NP-FZ100", "camera battery NP-W235", "camera battery charger USB-C dual"],
+ "cleaning": ["camera cleaning kit", "lens cleaning pen", "air blower camera", "sensor cleaning swab"],
+ "cards": ["SD card V30", "micro SD card", "card reader USB C SD", "memory card case"],
+ "bags": ["camera sling bag", "camera backpack", "camera shoulder bag", "camera insert bag", "lens pouch"],
+ "tripods": ["travel tripod", "carbon fiber tripod", "phone tripod", "mini tripod", "monopod"],
+ "straps": ["camera strap", "camera wrist strap", "quick release camera strap", "camera clip backpack"],
+ "lighting": ["LED video light", "RGB light", "camera flash", "light stand", "softbox"],
+ "filters": ["ND filter", "CPL filter", "UV filter", "variable ND filter", "lens hood"],
+ "phone": ["phone tripod remote", "phone gimbal", "phone wireless microphone", "phone lens clip", "phone LED light"],
+ "video": ["action camera mount", "camera cage", "magic arm", "camera monitor", "gimbal stabilizer"],
+ "nature": ["camera rain cover", "lens camouflage cover", "photography hide tent", "bean bag camera", "binoculars"],
+ "adapters": ["lens mount adapter autofocus", "M42 adapter", "speed booster"]
+}
