@@ -276,12 +276,34 @@ nav.cols button.news-tab[aria-current="page"]{background:var(--good);color:#fff;
     <p>המחירים ודמי המשלוח נקבעים על ידי המוכרים באלי אקספרס, ואינם קבועים. הם משתנים לפי המוכר, המבצעים, שיטת המשלוח והכמות. המחיר הקובע הוא המחיר שמופיע בדף המוצר בזמן הרכישה.</p>
     <p>הקנייה, המשלוח, האחריות וההחזרות הם מול המוכר ובכפוף לתנאי אלי אקספרס.</p>
     <p>הזמנה עד 75$ פטורה ממע"מ לפי הכללים היום.</p>
+    <p>האתר אוסף סטטיסטיקת שימוש אנונימית (Google Analytics), כדי לדעת אילו אוספים ומוצרים מעניינים את הגולשים.</p>
     <p class="copy">© <span id="year">2026</span> צילום בכל גיל. כל הזכויות שמורות. תמונות המוצרים ושמות המותגים שייכים לבעליהם.</p>
   </div>
 </footer>
 
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
+// ---- סטטיסטיקה: Google Analytics 4. פעיל רק כשמוגדר GA_ID ----
+const GA_ID = '';
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push(arguments); }
+if (GA_ID) {
+  const sc = document.createElement('script'); sc.async = true; sc.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID; document.head.appendChild(sc);
+  gtag('js', new Date()); gtag('config', GA_ID, {send_page_view: false});
+}
+function track(name, params){ try { if (GA_ID) gtag('event', name, params || {}); } catch {} }
+let lastView = '';
+function trackView(title){
+  const where = location.hash || '#home';
+  if (where === lastView) return; lastView = where;
+  track('page_view', {page_location: location.href, page_path: '/' + where, page_title: title || document.title});
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('a.buy');
+  if (b) { track('click_buy', {item_id: b.dataset.id, item_brand: b.dataset.brand, item_category: b.dataset.coll, item_name: b.dataset.title, section: (location.hash || '#home').slice(1)}); return; }
+  const a = e.target.closest('a[href]');
+  if (a && /facebook\.com|instagram\.com|chat\.whatsapp\.com/.test(a.href)) track('click_social', {network: a.hostname, place: a.closest('header') ? 'header' : a.closest('footer') ? 'footer' : 'page'});
+});
 const FORM_ENDPOINT = 'https://formsubmit.co/ajax/gadgetphoto2024@gmail.com';
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -302,7 +324,7 @@ function card(p){
       ${p.fits ? `<div class="fits">מתאים ל: <bdi dir="ltr">${esc(p.fits)}</bdi></div>` : ''}
       <div class="meta">${p.rating ? `<span class="rate">${p.rating}% חיובי</span>` : ''}${p.sold > 0 ? `<span>${Number(p.sold).toLocaleString('he-IL')} נמכרו</span>` : ''}<span>${price}</span></div>
       ${p.isNew ? '<span class="new-badge">חדש, עוד מעט ביקורות</span>' : ''}${p.note ? `<span class="note">${esc(p.note)}</span>` : ''}
-      <a class="buy" href="${esc(p.link)}" target="_blank" rel="noopener sponsored">לרכישה באלי אקספרס ←</a>
+      <a class="buy" href="${esc(p.link)}" target="_blank" rel="noopener sponsored" data-id="${esc(p.id)}" data-brand="${esc(p.brand)}" data-coll="${esc(p.collection)}" data-title="${esc(p.title)}">לרכישה באלי אקספרס ←</a>
     </div></article>`;
 }
 
@@ -328,6 +350,7 @@ function dealsBanner(){
 }
 
 function showDeals(){
+  trackView('מבצעים וקופונים');
   $('shop').hidden = true; $('cam').hidden = true; $('news').hidden = true; $('promo').hidden = true; const sec = $('deals'); sec.hidden = false;
   [...$('cols').querySelectorAll('button')].forEach(b => b.dataset.id === 'deals' ? b.setAttribute('aria-current','page') : b.removeAttribute('aria-current'));
   const ev = liveEvents(), cps = liveCoupons();
@@ -356,6 +379,8 @@ function showCam(brandId, modelName){
   $('shop').hidden = true; $('deals').hidden = true; $('news').hidden = true; $('promo').hidden = true; const sec = $('cam'); sec.hidden = false; setTabs('cam');
   const brand = CAMS.brands.find(b => b.id === brandId);
   const model = brand && brand.models.find(m => m.name === modelName);
+  trackView(model ? 'מצלמה: ' + brand.name + ' ' + model.name : 'מה מתאים למצלמה שלי');
+  if (model) track('select_camera', {camera_brand: brand.name, camera_model: model.name});
   let h = '<h1 id="cam-h">מה מתאים למצלמה שלי?</h1><p class="lead">בוחרים מותג ודגם, ורואים את כל מה שמתאים מכל החנות: קודם מה שמתאים בדיוק לדגם, ואחר כך אביזרים שמתאימים לכל מצלמה מהסוג הזה.</p>';
   h += '<div class="step"><h2>1. המותג</h2><div class="picks">' + CAMS.brands.map(b => `<button type="button" data-b="${b.id}" aria-pressed="${b.id === brandId}">${esc(b.name)}</button>`).join('') + '</div></div>';
   if (brand) {
@@ -417,6 +442,7 @@ function issueHtml(is, first){
   return h;
 }
 function showNews(){
+  trackView('מה חדש השבוע');
   $('shop').hidden = true; $('deals').hidden = true; $('cam').hidden = true; $('promo').hidden = true;
   const sec = $('news'); sec.hidden = false; setTabs('news');
   const [cur, ...old] = NEWS;
@@ -443,6 +469,7 @@ function setCollection(id){
       || DB.collections.find(c => DB.products.some(p => p.collection === c.id));
   group = 'all';
   [...$('cols').querySelectorAll('button')].forEach(b => b.dataset.id === coll.id ? b.setAttribute('aria-current','page') : b.removeAttribute('aria-current'));
+  trackView('אוסף: ' + coll.name);
   $('h1').textContent = coll.title || coll.name;
   $('intro').textContent = coll.intro || '';
   if (!$('how').dataset.orig) $('how').dataset.orig = $('how').innerHTML;
@@ -498,7 +525,8 @@ Promise.all([fetch('data/products.json', {cache: 'no-cache'}).then(r => r.json()
   if (location.hash.slice(1).startsWith('cam') || location.hash === '#deals' || location.hash === '#news') route();
 }).catch(() => { $('list').innerHTML = '<p class="empty">לא הצלחנו לטעון את המוצרים. נסו לרענן את העמוד.</p>'; });
 
-$('q').addEventListener('input', () => render());
+let searchTimer;
+$('q').addEventListener('input', () => { render(); clearTimeout(searchTimer); const t = $('q').value.trim(); if (t.length >= 2) searchTimer = setTimeout(() => track('search', {search_term: t, collection: coll && coll.id, results: $('count').textContent}), 1500); });
 
 // ---- תפריט קטגוריות בטלפון ----
 const hdr = document.querySelector('header'), mbtn = $('menu-btn');
@@ -525,7 +553,7 @@ $('form').addEventListener('submit', async e => {
   try {
     const r = await fetch(FORM_ENDPOINT, {method: 'POST', headers: {'Content-Type': 'application/json', 'Accept': 'application/json'}, body: JSON.stringify(body)});
     if (!r.ok) throw 0;
-    f.reset(); st.className = 'status full ok'; st.textContent = 'ההודעה נשלחה. נחזור אליכם במייל בהקדם.';
+    track('contact_sent', {type: body['סוג פנייה']}); f.reset(); st.className = 'status full ok'; st.textContent = 'ההודעה נשלחה. נחזור אליכם במייל בהקדם.';
   } catch { st.className = 'status full err'; st.textContent = 'השליחה לא הצליחה. נסו שוב בעוד כמה דקות.'; }
   $('send').disabled = false;
 });
