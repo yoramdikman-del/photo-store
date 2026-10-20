@@ -44,7 +44,7 @@ db = json.load(open('data/products.json', encoding='utf-8'))
 have = {p['id'] for p in db['products']}
 queries = json.load(open('data/collection_queries.json', encoding='utf-8'))
 out, errors, taken = {}, [], set()
-EXCLUDE = ['dash cam', 'lash', 'controller', 'earbud', 'headphone', 'car phone holder', 'car charger', 'baby monitor', 'aux', 'nvme', 'glue', 'watch', 'drone propeller']
+EXCLUDE = ['dash cam', 'lash', 'controller', 'earbud', 'headphone', 'car phone holder', 'car charger', 'baby monitor', 'aux', 'nvme', 'glue', 'watch', 'drone propeller', 'projector', 'gamer', 'gaming']
 for coll, spec in queries.items():
     qs, must = spec['q'], spec.get('must', [])
     cand = {}
