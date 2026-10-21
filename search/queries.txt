@@ -1,8 +1,5 @@
-# UGREEN לחנות הצילום 2026-10-21
-UGREEN SD card reader USB C
-UGREEN USB C hub SD card
-UGREEN electronics organizer case
-UGREEN magnetic phone cooler
-UGREEN magnetic power bank
-UGREEN GaN charger 65W
-UGREEN USB C cable 100W
+# סוללות גיבוי UGREEN בקיבולת גבוהה 2026-10-21
+UGREEN power bank 20000mAh
+UGREEN power bank 25000mAh
+UGREEN power bank 10000mAh
+UGREEN power bank 65W laptop
