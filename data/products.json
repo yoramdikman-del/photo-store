@@ -94,6 +94,13 @@
    "groups": []
   },
   {
+   "id": "screen",
+   "name": "מסך גדול למצלמה",
+   "title": "מסך גדול למצלמה: טלפון, אייפד וחיבורים",
+   "intro": "המסך של המצלמה קטן והעינית מעייפת? הדרך החינמית היא אפליקציית היצרן (בסוני Imaging Edge או Creators' App, בקנון Camera Connect), שמציגה את התמונה בטלפון באלחוט. לווידאו בלי עיכוב: כבל HDMI וכרטיס לכידה לאייפד או לטלפון עם USB-C.",
+   "groups": []
+  },
+  {
    "id": "video",
    "name": "וידאו ואקסטרים",
    "title": "וידאו, מצלמות אקשן ורחפנים",
@@ -5023,6 +5030,114 @@
    "for": [
     "M",
     "D"
+   ]
+  },
+  {
+   "collection": "screen",
+   "group": "",
+   "id": "1005008667238358",
+   "brand": "SmallRig",
+   "title": "מחזיק טלפון מגנטי לנעל המצלמה: הטלפון הופך למסך שני",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "לאייפון 12 ומעלה (MagSafe) או עם טבעת מגנטית",
+   "price": 19.59,
+   "rating": 98.7,
+   "sold": 258,
+   "link": "https://s.click.aliexpress.com/e/_c4WBPkZ7",
+   "img": "media/1005008667238358/img_01.jpg",
+   "tid": "website",
+   "for": [
+    "M",
+    "D"
+   ]
+  },
+  {
+   "collection": "screen",
+   "group": "",
+   "id": "1005003479392038",
+   "brand": "SmallRig",
+   "title": "זרוע מפרקית 9.5 אינץ' למסך או לטלפון, בזווית הנוחה לעיניים",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 9.7,
+   "rating": 98.8,
+   "sold": 828,
+   "link": "https://s.click.aliexpress.com/e/_c33ihT3T",
+   "img": "media/1005003479392038/img_01.jpg",
+   "tid": "website",
+   "for": [
+    "M",
+    "D"
+   ]
+  },
+  {
+   "collection": "screen",
+   "group": "",
+   "id": "1005006393443463",
+   "brand": "UGREEN",
+   "title": "כרטיס לכידה HDMI ל-USB-C ‏1080P@60, תמונה מהמצלמה לאייפד",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "לאייפד או לטלפון עם USB-C, עם אפליקציית צפייה",
+   "price": 21.99,
+   "rating": 98.8,
+   "sold": 271,
+   "link": "https://s.click.aliexpress.com/e/_c3B1GJoH",
+   "img": "media/1005006393443463/img_01.jpg",
+   "tid": "website",
+   "for": [
+    "M",
+    "D",
+    "C"
+   ]
+  },
+  {
+   "collection": "screen",
+   "group": "",
+   "id": "1005010586936330",
+   "brand": "UGREEN",
+   "title": "כרטיס לכידה עם טעינה 100W, מטעין את האייפד בזמן הצילום",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "לאייפד או לטלפון עם USB-C, עם אפליקציית צפייה",
+   "price": 39.99,
+   "rating": 99.1,
+   "sold": 104,
+   "link": "https://s.click.aliexpress.com/e/_c2vJppjL",
+   "img": "media/1005010586936330/img_01.jpg",
+   "tid": "website",
+   "for": [
+    "M",
+    "D",
+    "C"
+   ]
+  },
+  {
+   "collection": "screen",
+   "group": "",
+   "id": "1005008726269191",
+   "brand": "UGREEN",
+   "title": "מתאם מיקרו HDMI ל-HDMI",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "ליציאת מיקרו HDMI, למשל Sony A7 III ו-A7R III",
+   "price": 5.05,
+   "rating": 99.1,
+   "sold": 151,
+   "link": "https://s.click.aliexpress.com/e/_c3XaKwNT",
+   "img": "media/1005008726269191/img_01.jpg",
+   "tid": "website",
+   "for": [
+    "M",
+    "D",
+    "C"
    ]
   }
  ]
