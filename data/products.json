@@ -3360,6 +3360,66 @@
    ]
   },
   {
+   "collection": "phone",
+   "group": "",
+   "id": "1005006713514328",
+   "brand": "UGREEN",
+   "title": "סוללת גיבוי מגנטית דקה 5000mAh, נצמדת לגב הטלפון",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "לאייפון עם MagSafe או טבעת מגנטית",
+   "price": 39.89,
+   "rating": 95.9,
+   "sold": 2613,
+   "link": "https://s.click.aliexpress.com/e/_c3fcGKgD",
+   "img": "media/1005006713514328/img_01.jpg",
+   "tid": "website",
+   "for": [
+    "P"
+   ]
+  },
+  {
+   "collection": "phone",
+   "group": "",
+   "id": "1005006134491427",
+   "brand": "UGREEN",
+   "title": "סוללת גיבוי מגנטית קטנה 5000mAh",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "לאייפון עם MagSafe או טבעת מגנטית",
+   "price": 28.62,
+   "rating": 95.7,
+   "sold": 1051,
+   "link": "https://s.click.aliexpress.com/e/_c32obuNT",
+   "img": "media/1005006134491427/img_01.jpg",
+   "tid": "website",
+   "for": [
+    "P"
+   ]
+  },
+  {
+   "collection": "phone",
+   "group": "",
+   "id": "1005003416182958",
+   "brand": "UGREEN",
+   "title": "מטען GaN ‏65W: מטען אחד למצלמה, לטלפון ולמחשב",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "לבחור תקע EU, מתאים לשקע בישראל",
+   "price": 28.53,
+   "rating": 98.1,
+   "sold": 7037,
+   "link": "https://s.click.aliexpress.com/e/_c2xd22S9",
+   "img": "media/1005003416182958/img_01.jpg",
+   "tid": "website",
+   "for": [
+    "P"
+   ]
+  },
+  {
    "collection": "video",
    "group": "",
    "id": "1005009031516961",
@@ -3790,6 +3850,26 @@
     "A7 IV",
     "A7S III",
     "FX3"
+   ]
+  },
+  {
+   "collection": "cards",
+   "group": "",
+   "id": "1005009235813882",
+   "brand": "UGREEN",
+   "title": "קורא כרטיסים SD ו-microSD בנרתיק אחסון, לטלפון ולמחשב",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 10.01,
+   "rating": 97.1,
+   "sold": 295,
+   "link": "https://s.click.aliexpress.com/e/_c4KjP9nb",
+   "img": "media/1005009235813882/img_01.jpg",
+   "tid": "website",
+   "for": [
+    "P"
    ]
   },
   {
@@ -4798,6 +4878,46 @@
    "sold": 147,
    "link": "https://s.click.aliexpress.com/e/_c3oldJ7L",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S6f786e1cec6e43f58ce798a27f4e61ael.jpg",
+   "tid": "website",
+   "for": [
+    "P"
+   ]
+  },
+  {
+   "collection": "gadgets",
+   "group": "",
+   "id": "1005002965907702",
+   "brand": "UGREEN",
+   "title": "כבל USB-C ל-USB-C ‏100W לטעינה ולהעברת קבצים",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 4.43,
+   "rating": 98.9,
+   "sold": 9119,
+   "link": "https://s.click.aliexpress.com/e/_c3o7KUMt",
+   "img": "media/1005002965907702/img_01.jpg",
+   "tid": "website",
+   "for": [
+    "P"
+   ]
+  },
+  {
+   "collection": "gadgets",
+   "group": "",
+   "id": "4000322129879",
+   "brand": "UGREEN",
+   "title": "כבל USB-C בזווית 90 מעלות, לטעינה על חצובה",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 2.14,
+   "rating": 98.8,
+   "sold": 5186,
+   "link": "https://s.click.aliexpress.com/e/_c3thEtzB",
+   "img": "media/4000322129879/img_01.jpg",
    "tid": "website",
    "for": [
     "P"
