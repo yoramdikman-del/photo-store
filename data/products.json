@@ -5285,6 +5285,54 @@
     "C",
     "P"
    ]
+  },
+  {
+   "collection": "product",
+   "group": "",
+   "id": "1005011541497355",
+   "brand": "Ulanzi",
+   "title": "מכונת עשן ניידת FM01, 40 וואט, עם שלט אלחוטי",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "מוצר חדש בחנות הזו. לאותו דגם בחנות אחרת יש 118 ביקורות בדירוג 4.6. לא לצלם כך אוכל שאוכלים, ובבית העשן עלול להפעיל גלאי עשן.",
+   "price": 79.29,
+   "rating": 96.9,
+   "sold": 15,
+   "link": "",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/Scfcebf1833b94f58b4bccc35fdd079c68.jpg",
+   "tid": "website",
+   "for": [
+    "M",
+    "D",
+    "C",
+    "P"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "product",
+   "group": "",
+   "id": "1005008187935313",
+   "brand": "Ulanzi",
+   "title": "נוזל מילוי למכונת העשן FM01, 60 מ״ל",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "דירוג 5.0 מ־10 ביקורות. נשלח לישראל.",
+   "price": 18.95,
+   "rating": 100.0,
+   "sold": 150,
+   "link": "",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S7ac9cf666400491ba6b99b16dcc9eb19J.jpg",
+   "tid": "website",
+   "for": [
+    "M",
+    "D",
+    "C",
+    "P"
+   ],
+   "status": "pending"
   }
  ]
 }
