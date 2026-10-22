@@ -80,6 +80,13 @@
    "groups": []
   },
   {
+   "id": "product",
+   "name": "צילום מוצרים",
+   "title": "צילום מוצרים ואוכל בבית",
+   "intro": "רפלקטורים, קופסאות צילום ותפסים: כל מה שצריך כדי לצלם מוצר, מנה או פרח בבית, באור שאתם בונים בעצמכם. צילום מאהבה.",
+   "groups": []
+  },
+  {
    "id": "filters",
    "name": "פילטרים ואביזרי עדשה",
    "title": "פילטרים, מכסים ואביזרי עדשה",
@@ -2103,7 +2110,7 @@
    ]
   },
   {
-   "collection": "lighting",
+   "collection": "product",
    "group": "",
    "id": "1005010684850696",
    "brand": "NEEWER",
@@ -3510,7 +3517,7 @@
    ]
   },
   {
-   "collection": "video",
+   "collection": "product",
    "group": "",
    "id": "1005011881582519",
    "brand": "K&F",
@@ -4864,7 +4871,7 @@
    ]
   },
   {
-   "collection": "gadgets",
+   "collection": "product",
    "group": "",
    "id": "1005006292179391",
    "brand": "Ulanzi",
@@ -5139,6 +5146,151 @@
     "D",
     "C"
    ]
+  },
+  {
+   "collection": "product",
+   "group": "",
+   "id": "1005007001661776",
+   "brand": "NEEWER",
+   "title": "רפלקטור 5 ב־1 אובלי, 60×90 ס״מ: לבן, שחור, זהב, כסף ומפזר",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 20.8,
+   "rating": 100.0,
+   "sold": 122,
+   "link": "",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S0563749dd2df4f6bb8a889f7bc2a5477t.jpg",
+   "tid": "website",
+   "for": [
+    "M",
+    "D",
+    "C",
+    "P"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "product",
+   "group": "",
+   "id": "1005008300667079",
+   "brand": "K&F",
+   "title": "רפלקטור 5 ב־1 עגול עם ידית, מחזיקים ביד אחת",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 16.99,
+   "rating": 96.1,
+   "sold": 282,
+   "link": "",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S360b64ef8bda40349aa86f4de7cb99b44.jpg",
+   "tid": "website",
+   "for": [
+    "M",
+    "D",
+    "C",
+    "P"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "product",
+   "group": "",
+   "id": "1005001961002358",
+   "brand": "PULUZ",
+   "title": "קופסת צילום מתקפלת עם תאורת לד, לצילום מוצרים",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 59.99,
+   "rating": 96.2,
+   "sold": 253,
+   "link": "",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/H5fe0e0c1404f4ffd8f1f076ccd9dff29v.jpg",
+   "tid": "website",
+   "for": [
+    "M",
+    "D",
+    "C",
+    "P"
+   ],
+   "status": "pending",
+   "variant": "40 ס״מ, תאורת לד ב־3 מצבים"
+  },
+  {
+   "collection": "product",
+   "group": "",
+   "id": "1005007336704942",
+   "brand": "SmallRig",
+   "title": "זרוע מתכווננת עם תפס, מחזיקה רפלקטור, תאורה או טלפון",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 33.83,
+   "rating": 98.2,
+   "sold": 3000,
+   "link": "",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S27753ec1b6fd426a8633c2097d84a793j.jpg",
+   "tid": "website",
+   "for": [
+    "M",
+    "D",
+    "C",
+    "P"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "product",
+   "group": "",
+   "id": "32740598248",
+   "brand": "SmallRig",
+   "title": "זוג תפסי סופר קלמפ לתאורה ולרפלקטורים",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 7.99,
+   "rating": 99.6,
+   "sold": 183,
+   "link": "",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S0af7a582dcba4ced9af539fd484bea5fD.jpg",
+   "tid": "website",
+   "for": [
+    "M",
+    "D",
+    "C",
+    "P"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "product",
+   "group": "",
+   "id": "1005003496456006",
+   "brand": "SmallRig",
+   "title": "תפס עם זרוע גמישה של 24 ס״מ",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 9.9,
+   "rating": 97.4,
+   "sold": 2000,
+   "link": "",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S5aa7d6a19e1948e997f5429bd4f34638I.jpg",
+   "tid": "website",
+   "for": [
+    "M",
+    "D",
+    "C",
+    "P"
+   ],
+   "status": "pending"
   }
  ]
 }
