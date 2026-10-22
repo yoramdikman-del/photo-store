@@ -5168,8 +5168,7 @@
     "D",
     "C",
     "P"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "product",
@@ -5192,8 +5191,7 @@
     "D",
     "C",
     "P"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "product",
@@ -5217,7 +5215,6 @@
     "C",
     "P"
    ],
-   "status": "pending",
    "variant": "40 ס״מ, תאורת לד ב־3 מצבים"
   },
   {
@@ -5241,8 +5238,7 @@
     "D",
     "C",
     "P"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "product",
@@ -5265,8 +5261,7 @@
     "D",
     "C",
     "P"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "product",
@@ -5289,8 +5284,7 @@
     "D",
     "C",
     "P"
-   ],
-   "status": "pending"
+   ]
   }
  ]
 }
