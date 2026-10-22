@@ -36,7 +36,7 @@ for i in range(0, len(ids), 20):
         out.append({'id': pid, 'title': x.get('product_title', ''), 'shop': x.get('shop_name', ''),
                     'shop_url': x.get('shop_url', ''), 'price': x.get('target_sale_price'),
                     'rating': x.get('evaluate_rate'), 'sold': x.get('lastest_volume'),
-                    'commission': x.get('commission_rate'),
+                    'commission': x.get('commission_rate'), 'img': x.get('product_main_image_url'),
                     'category': x.get('second_level_category_name') or x.get('first_level_category_name')})
     for pid in chunk:
         if pid not in got:
