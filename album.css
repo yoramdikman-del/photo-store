@@ -1,0 +1,75 @@
+/* עיצוב "אלבום" – צילום מאהבה. נטען אחרי העיצוב הבסיסי ודורס אותו. */
+@font-face{font-family:'Amatic SC';font-weight:700;font-display:swap;src:url(fonts/amatic-sc-hebrew-700-normal.woff2) format('woff2');unicode-range:U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F}
+@font-face{font-family:'Amatic SC';font-weight:700;font-display:swap;src:url(fonts/amatic-sc-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+2000-206F}
+@font-face{font-family:'Assistant';font-weight:400;font-display:swap;src:url(fonts/assistant-hebrew-400-normal.woff2) format('woff2');unicode-range:U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F}
+@font-face{font-family:'Assistant';font-weight:400;font-display:swap;src:url(fonts/assistant-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+2000-206F}
+@font-face{font-family:'Assistant';font-weight:600;font-display:swap;src:url(fonts/assistant-hebrew-600-normal.woff2) format('woff2');unicode-range:U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F}
+@font-face{font-family:'Assistant';font-weight:600;font-display:swap;src:url(fonts/assistant-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+2000-206F}
+@font-face{font-family:'Assistant';font-weight:700;font-display:swap;src:url(fonts/assistant-hebrew-700-normal.woff2) format('woff2');unicode-range:U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F}
+@font-face{font-family:'Assistant';font-weight:700;font-display:swap;src:url(fonts/assistant-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+2000-206F}
+@font-face{font-family:'Assistant';font-weight:800;font-display:swap;src:url(fonts/assistant-hebrew-800-normal.woff2) format('woff2');unicode-range:U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F}
+@font-face{font-family:'Assistant';font-weight:800;font-display:swap;src:url(fonts/assistant-latin-800-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+2000-206F}
+
+:root:not(#_),:root[data-theme]:not(#_){--paper:#e9eef4;--card:#fff;--ink:#22304d;--ink-soft:#56637f;--line:#cdd6e3;--chip:#dde5ef;--accent:#ef8a2c;--accent-ink:#22304d;--tile:#fff;--good:#2f7d5b;
+  --f-body:"Assistant","Rubik","Arial Hebrew",Arial,sans-serif;--f-hand:"Amatic SC","Assistant",sans-serif;--f-display:var(--f-body);color-scheme:light}
+body{font-family:var(--f-body);font-size:17px;background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='7'%3E%3Ccircle cx='1' cy='1' r='.7' fill='%23bac6d8'/%3E%3C/svg%3E")}
+header{background:rgba(233,238,244,.94);backdrop-filter:blur(8px)}
+.brand b{font-family:var(--f-hand);font-size:1.9rem;line-height:1;font-weight:700}
+
+/* כותרות בכתב יד */
+.hero h1,#deals h1,#cam h1{font-family:var(--f-hand);font-weight:700;font-size:clamp(2.8rem,7vw,4rem);line-height:.95;letter-spacing:0}
+section.group h2,.tier>h2,#about h2,#contact h2,.event h2{font-family:var(--f-hand);font-weight:700;font-size:2.4rem;line-height:1;letter-spacing:0}
+section.group h2 small{font-family:var(--f-body)}
+
+/* פתיחה: ערימת תמונות */
+.al-hero{display:grid;grid-template-columns:1.05fr 1fr;gap:24px;align-items:center;padding-top:30px}
+.al-copy h2{font-family:var(--f-hand);font-weight:700;font-size:clamp(4.2rem,11vw,7rem);line-height:.85;margin:0}
+.al-copy p{font-size:1.18rem;color:var(--ink-soft);max-width:40ch;margin:.5em 0 1.1em}
+.al-btn{display:inline-block;background:var(--ink);color:#fff;font-weight:700;padding:12px 24px;border-radius:999px;text-decoration:none}
+.al-btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.pile{position:relative;height:340px}
+.pol{position:absolute;margin:0;background:#fff;padding:10px 10px 36px;box-shadow:0 12px 26px rgba(34,48,77,.2);width:170px}
+.pol img{width:150px;height:150px;object-fit:contain;display:block}
+.pol figcaption{position:absolute;bottom:4px;inset-inline:0;text-align:center;font:700 24px/1.2 var(--f-hand);color:var(--ink)}
+.pol.p0{top:8px;inset-inline-start:4%;transform:rotate(-7deg)}
+.pol.p1{top:44px;inset-inline-start:33%;transform:rotate(4deg)}
+.pol.p2{top:132px;inset-inline-start:14%;transform:rotate(2deg)}
+.pol.p3{top:146px;inset-inline-start:46%;transform:rotate(-5deg)}
+.pol.p4{top:0;inset-inline-start:62%;transform:rotate(8deg)}
+@media (prefers-reduced-motion:no-preference){.pile .pol{animation:drop .7s cubic-bezier(.2,.8,.2,1) both}.pol.p1{animation-delay:.08s}.pol.p2{animation-delay:.16s}.pol.p3{animation-delay:.24s}.pol.p4{animation-delay:.32s}}
+@keyframes drop{from{opacity:0;translate:0 -30px}to{opacity:1;translate:0 0}}
+
+/* קטגוריות כתמונות */
+.al-tiles{display:flex;gap:18px;overflow-x:auto;padding:24px 6px 14px;scrollbar-width:thin;scroll-snap-type:x proximity}
+.al-tile{flex:none;width:150px;background:#fff;padding:8px 8px 10px;box-shadow:0 6px 14px rgba(34,48,77,.13);text-decoration:none;color:var(--ink);display:grid;gap:2px;transform:rotate(-1.5deg);scroll-snap-align:start}
+.al-tile:nth-child(even){transform:rotate(1.5deg)}
+.al-tile:hover,.al-tile:focus-visible{transform:rotate(0) scale(1.04);outline:none;box-shadow:0 10px 22px rgba(34,48,77,.2)}
+.al-tile .ti{aspect-ratio:1;display:grid;place-items:center}
+.al-tile img{width:100%;height:100%;object-fit:contain}
+.al-tile b{font:700 25px/1.05 var(--f-hand);text-align:center}
+.al-tile small{text-align:center;color:var(--ink-soft);font-size:.85rem}
+
+/* כרטיסי מוצר כתמונות מודפסות */
+.card{border:0;border-radius:4px;box-shadow:0 6px 16px rgba(34,48,77,.11);padding:8px}
+.card .img{border-radius:2px;background:#fff}
+.card:hover{box-shadow:0 12px 26px rgba(34,48,77,.18)}
+.body{padding:12px 6px 8px}
+.title{font-weight:700;font-size:1.05rem}
+.buy{border-radius:999px;font-weight:800}
+.chip,nav.cols button,nav.cols a,a.social,.contact-link{border-radius:999px}
+.chip{background:#fff}
+.how,#about,#contact,.event,.coupon,.finder-bar{border:0;border-radius:6px;box-shadow:0 6px 16px rgba(34,48,77,.1)}
+.search input{border-radius:999px;background:#fff}
+.code-tag{border-radius:4px}
+
+@media (max-width:700px){
+  .al-hero{grid-template-columns:1fr;gap:6px;padding-top:18px}
+  .pile{height:300px;order:-1}
+  .pol.p2{top:112px}
+  .pol.p3{top:124px}
+  .pol{width:128px;padding:8px 8px 30px}
+  .pol img{width:112px;height:112px}
+  .pol figcaption{font-size:20px}
+  .pol.p4{inset-inline-start:58%}
+  .al-copy h2{font-size:4.4rem}
+}
