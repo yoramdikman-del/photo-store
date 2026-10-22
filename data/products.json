@@ -5331,6 +5331,29 @@
     "C",
     "P"
    ]
+  },
+  {
+   "collection": "bags",
+   "group": "",
+   "id": "1005008012620534",
+   "brand": "PGYTECH",
+   "title": "מחיצות נוספות לתרמיל OneMo: מסדרים את התיק מחדש לפי הציוד",
+   "code": "",
+   "kind": "",
+   "fits": "מתאים רק לתרמילי PGYTECH OneMo 2 ו־OneMo Lite",
+   "note": "8 גדלים (A עד H). המחיר משתנה לפי הגודל, 4.90$ עד 6.90$.",
+   "price": 4.9,
+   "rating": 100.0,
+   "sold": 427,
+   "link": "",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sbe346d3662df4551bf136705bea1f33dj.jpg",
+   "tid": "website",
+   "for": [
+    "M",
+    "D",
+    "C"
+   ],
+   "status": "pending"
   }
  ]
 }
