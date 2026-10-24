@@ -138,6 +138,7 @@ nav.cols button.deals-tab[aria-current="page"]{background:var(--accent);color:va
 .finder-bar{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;justify-content:space-between;margin-top:14px;background:var(--card);border:2px solid var(--ink);border-radius:14px;padding:12px 16px;text-decoration:none;color:var(--ink)}
 .finder-bar b{font-family:var(--f-display);font-size:1.1rem}
 .finder-bar span.go{background:var(--ink);color:var(--paper);font-weight:700;padding:6px 14px;border-radius:999px;white-space:nowrap}
+nav.cols a.lp-tab{flex:none;text-decoration:none;font-size:.92rem;padding:6px 12px;border-radius:999px;border:1px solid var(--accent);color:var(--ink);font-weight:700;white-space:nowrap;background:#fff}
 nav.cols button.cam-tab{border-color:var(--ink);color:var(--ink);font-weight:700}
 nav.cols button.cam-tab[aria-current="page"]{background:var(--ink);color:var(--paper)}
 #cam-res{scroll-margin-top:150px}
@@ -515,6 +516,7 @@ Promise.all([fetch('data/products.json', {cache: 'no-cache'}).then(r => r.json()
   DB = data; DB.products = DB.products.filter(p => p.status !== 'missing' && p.status !== 'pending');
   const nav = $('cols');
   if (CAMS) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'cam'; b.className = 'cam-tab'; b.textContent = '📷 מה מתאים למצלמה שלי'; b.onclick = () => go('#cam'); nav.appendChild(b); }
+  { const a = document.createElement('a'); a.href = 'iphone.html'; a.className = 'lp-tab'; a.textContent = '📱 צילום באייפון'; nav.appendChild(a); }
   if (NEWS.length) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'news'; b.className = 'news-tab'; b.textContent = '📡 מה חדש השבוע'; b.onclick = () => go('#news'); nav.appendChild(b); }
   if (hasDeals()) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'deals'; b.className = 'deals-tab'; b.textContent = '🏷️ מבצעים וקופונים'; b.onclick = () => { history.replaceState(null, '', '#deals'); showDeals(); }; nav.appendChild(b); }
   DB.collections.forEach(c => {
@@ -564,5 +566,6 @@ $('form').addEventListener('submit', async e => {
 });
 </script>
 <script src="album.js"></script>
+<script data-goatcounter="https://tzilumbechol.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

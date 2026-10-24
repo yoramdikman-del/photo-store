@@ -352,5 +352,6 @@ fetch('data/products.json', {cache:'no-cache'}).then(r => r.json()).then(db => {
   document.getElementById('pile').innerHTML = pile.map((p,i) => `<figure class="pol p${i}"><img referrerpolicy="no-referrer" src="${esc(p.img)}" alt="" onerror="imgFail(this)"><figcaption>${esc(p.brand||'')}</figcaption></figure>`).join('');
 }).catch(() => { document.getElementById('gear-list').innerHTML = '<p class="empty">לא הצלחנו לטעון את המוצרים. נסו לרענן.</p>'; });
 </script>
+<script data-goatcounter="https://tzilumbechol.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
