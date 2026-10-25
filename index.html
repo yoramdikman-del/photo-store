@@ -519,6 +519,7 @@ Promise.all([fetch('data/products.json', {cache: 'no-cache'}).then(r => r.json()
   const nav = $('cols');
   if (CAMS) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'cam'; b.className = 'cam-tab'; b.textContent = '📷 מה מתאים למצלמה שלי'; b.onclick = () => go('#cam'); nav.appendChild(b); }
   { const a = document.createElement('a'); a.href = 'iphone.html'; a.className = 'lp-tab'; a.textContent = '📱 צילום באייפון'; nav.appendChild(a); }
+  { const a = document.createElement('a'); a.href = 'how-to-buy.html'; a.className = 'lp-tab'; a.textContent = '🛒 איך קונים נכון'; nav.appendChild(a); }
   if (NEWS.length) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'news'; b.className = 'news-tab'; b.textContent = '📡 מה חדש השבוע'; b.onclick = () => go('#news'); nav.appendChild(b); }
   if (hasDeals()) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'deals'; b.className = 'deals-tab'; b.textContent = '🏷️ מבצעים וקופונים'; b.onclick = () => { history.replaceState(null, '', '#deals'); showDeals(); }; nav.appendChild(b); }
   DB.collections.forEach(c => {
