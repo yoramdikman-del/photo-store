@@ -5331,6 +5331,76 @@
     "C",
     "P"
    ]
+  },
+  {
+   "id": "1005008408189699",
+   "brand": "PGYTECH",
+   "title": "רצועת יד קלה עם שחרור מהיר",
+   "kind": "רצועה",
+   "price": 19.43,
+   "rating": 97.8,
+   "sold": 1505,
+   "link": "https://s.click.aliexpress.com/e/_c3cOnsPV",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sa4a13abaaadf48f7be1bd2883140b20aO.png",
+   "collection": "straps",
+   "tid": "website",
+   "status": "pending"
+  },
+  {
+   "id": "1005007533137022",
+   "brand": "JJC",
+   "title": "נרתיק מרופד גדול לעדשת טלה (200-600 מ״מ)",
+   "kind": "נרתיק",
+   "price": 36.69,
+   "rating": 95.7,
+   "sold": 243,
+   "link": "https://s.click.aliexpress.com/e/_c36cvvX1",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sbdb691fef6634c6989cee54f2d39f25bd.jpg",
+   "collection": "bags",
+   "tid": "website",
+   "status": "pending"
+  },
+  {
+   "id": "1005007473445172",
+   "brand": "APEXEL",
+   "title": "עדשת מאקרו לטלפון, לצילום פרחים וחרקים מקרוב",
+   "kind": "עדשה לטלפון",
+   "price": 14.5,
+   "rating": 94.3,
+   "sold": 355,
+   "link": "https://s.click.aliexpress.com/e/_c3h24Q9h",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/H71c30fcde1ff4cfc985a33c7baf01107c.jpg",
+   "collection": "phone",
+   "tid": "website",
+   "status": "pending"
+  },
+  {
+   "id": "1005005046406482",
+   "brand": "BTFOOR",
+   "title": "פנס לד צבעוני קטן למצלמה, עם מסך",
+   "kind": "תאורה",
+   "price": 19.03,
+   "rating": 94.2,
+   "sold": 495,
+   "link": "https://s.click.aliexpress.com/e/_c3Gz6uMB",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S033aa139c2ad48f082a4a60c2f55933fc.jpg",
+   "collection": "lighting",
+   "tid": "website",
+   "status": "pending"
+  },
+  {
+   "id": "1005005569654848",
+   "brand": "BTFOOR",
+   "title": "חצובת אלומיניום קלה לטיולים, 140 ס״מ",
+   "kind": "חצובה",
+   "price": 31.77,
+   "rating": 95.4,
+   "sold": 949,
+   "link": "https://s.click.aliexpress.com/e/_c4r9xGJH",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S8ceb24d5155e43cab5d889a5c30fa51aN.jpg",
+   "collection": "tripods",
+   "tid": "website",
+   "status": "pending"
   }
  ]
 }

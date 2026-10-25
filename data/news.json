@@ -1,6 +1,81 @@
 {
  "issues": [
   {
+   "date": "2026-10-25",
+   "title": "עדשה בהירה וקטנה מסיגמה, מצלמה למאכיל הציפורים, וטיפ לשעון החורף",
+   "intro": "מה קרה השבוע בעולם הצילום, במילים פשוטות. בלי לחץ לקנות: רק מה שחדש, ולמי זה יכול להתאים.",
+   "items": [
+    {
+     "kind": "news",
+     "title": "עדשת 50 מ״מ בהירה, בחצי מהאורך הרגיל",
+     "model": "Sigma 50mm f/1.4 CL DG Contemporary",
+     "text": "סיגמה הכריזה על פיתוח עדשה ראשונה בסדרה חדשה בשם CL, עם גוף מתכת ומראה קלאסי. זו עדשה בהירה מאוד (צמצם 1.4), אבל באורך של כמחצית מעדשת ה-50 מ״מ הבהירה הקודמת של סיגמה, ובמשקל צפוי של כ-375 גרם. יש עליה סקאלת מרחקים, אטימה מפני אבק ונתזים ומכסה מגנטי. היא צפויה להגיע באביב 2027 לתושבות של סוני ושל L-Mount, והמחיר עוד לא פורסם. מתאימה למי שמצלם אנשים ורחוב ורוצה עדשה בהירה שלא מכבידה על הכתף.",
+     "source": {
+      "name": "Digital Camera World",
+      "url": "https://www.digitalcameraworld.com/cameras/lenses/sigma-is-building-an-entirely-new-line-of-retro-metal-lenses-the-first-one-its-a-50mm-f-1-4-thats-unusually-small"
+     }
+    },
+    {
+     "kind": "news",
+     "title": "מאכיל ציפורים עם מצלמה, מ-99 דולר",
+     "model": "Birdbuddy Nook",
+     "text": "בירדבאדי השיקה את הדגם הזול ביותר שלה: מאכיל ציפורים עם מצלמה מובנית, שמצלם תמונות של 5 מגה־פיקסל ווידאו באיכות Full HD. כשציפור מגיעה נשלחת הודעה לטלפון, והאפליקציה, שלפי היצרן חינמית, מזהה את סוג הציפור. הסוללה מחזיקה עד חודש בטעינה אחת בכבל USB-C, ואפשר להוסיף פאנל סולארי שנמכר בנפרד. המשלוחים מתחילים בנובמבר, ועוד לא פורסם אם יש משלוח לישראל. מתאים למי שאוהב ציפורים ורוצה לראות מי מבקר בגינה גם כשהוא לא בבית.",
+     "source": {
+      "name": "Digital Camera World",
+      "url": "https://www.digitalcameraworld.com/cameras/bird-feeder-cameras/birdbuddy-launches-its-lowest-priced-bird-feeder-camera-yet-to-keep-track-of-the-visitors-to-your-garden-this-winter"
+     }
+    },
+    {
+     "kind": "tip",
+     "title": "טיפ השבוע: עברנו לשעון חורף, וגם המצלמה צריכה לעבור",
+     "text": "רוב המצלמות לא מעדכנות את השעה לבד. היכנסו לתפריט ההגדרות ותקנו את השעון, אחרת התאריכים והשעות של התמונות יתבלבלו כשתחפשו אותן אחר כך. ועוד דבר: השמש שוקעת עכשיו בסביבות חמש, אז שעת האור הרך מגיעה מוקדם יותר. צאו לצלם כבר אחרי ארבע, קחו חצובה לרגעים שאחרי השקיעה, ותאורה קטנה לצילום בבית בערב. בקור הסוללה מתרוקנת מהר יותר, אז כדאי לשמור סוללה רזרבית בכיס.",
+     "links": [
+      {
+       "text": "חצובות",
+       "href": "#tripods"
+      },
+      {
+       "text": "תאורה",
+       "href": "#lighting"
+      },
+      {
+       "text": "סוללות ומטענים",
+       "href": "#batteries"
+      }
+     ]
+    }
+   ],
+   "new_products": [
+    {
+     "id": "1005010215591127",
+     "brand": "Fotopro",
+     "kind": "חצובה",
+     "title": "חצובת קרבון לטיולים עד 185 ס״מ, עם רגל שהופכת למונופוד",
+     "price": 182.39,
+     "img": "https://ae-pic-a1.aliexpress-media.com/kf/S30576fc79c234dd1b1d8d6e739dc5fa3I.png",
+     "link": "https://s.click.aliexpress.com/e/_c3m9LZHN"
+    },
+    {
+     "id": "1005004894304556",
+     "brand": "TTArtisan",
+     "kind": "עדשה",
+     "title": "עדשה רחבה 27 מ״מ עם פוקוס אוטומטי, למצלמות עם חיישן קטן",
+     "price": 159.99,
+     "img": "https://ae-pic-a1.aliexpress-media.com/kf/S2c873dbf742848d0bd8dfbcd5ee96da4V.jpg",
+     "link": "https://s.click.aliexpress.com/e/_c4NCA1T1"
+    },
+    {
+     "id": "1005012448603807",
+     "brand": "JJC",
+     "kind": "רצועה",
+     "title": "רצועת צוואר דקה וקלה למצלמת ריקו GR",
+     "price": 6.09,
+     "img": "https://ae-pic-a1.aliexpress-media.com/kf/S36824835ad244a0e9f81d2d142fbb114q.jpg",
+     "link": "https://s.click.aliexpress.com/e/_c3fN8W3l"
+    }
+   ]
+  },
+  {
    "date": "2026-10-20",
    "title": "עדשת פנקייק ב-99 דולר, זום בהיר לחיישן קטן, ושלושה חידושים מהמותגים",
    "intro": "מה קרה השבוע בעולם הצילום, במילים פשוטות. בלי לחץ לקנות: רק מה שחדש, ולמי זה יכול להתאים.",
@@ -10,30 +85,69 @@
      "title": "עדשה רחבה וזעירה לפול פריים, ב-99 דולר",
      "model": "TTArtisan AF 24mm f/3.8",
      "text": "עדשת פנקייק דקה במיוחד עם פוקוס אוטומטי, 24 מ״מ וצמצם 3.8. יש לה מכסה מובנה שנפתח בהזזה, כך שאין מכסה שאפשר לאבד. בשלב הזה לתושבת סוני, וגרסה לניקון בדרך. מתאימה למי שרוצה מצלמה קלה ודיסקרטית לטיולים ולצילום רחוב.",
-     "source": {"name": "Photo Rumors", "url": "https://photorumors.com/2026/10/13/ttartisan-af-24mm-f-3-8-mini-full-frame-pancake-lens-officially-announced-99/amp/"}
+     "source": {
+      "name": "Photo Rumors",
+      "url": "https://photorumors.com/2026/10/13/ttartisan-af-24mm-f-3-8-mini-full-frame-pancake-lens-officially-announced-99/amp/"
+     }
     },
     {
      "kind": "news",
      "title": "זום בהיר אחד לארבעה מותגים של מצלמות עם חיישן קטן",
      "model": "Tamron 16-50mm f/2.8",
      "text": "טמרון הכריזה על זום עם צמצם 2.8 קבוע למצלמות עם חיישן קטן (APS-C) של סוני, קנון, ניקון ופוג'י. משקל של כ-305 גרם, ומיקוד מקרוב מ-15 ס״מ. המחיר מ-529 דולר. מגיע לסוני ולקנון ב-29 באוקטובר, לניקון בנובמבר ולפוג'י בדצמבר.",
-     "source": {"name": "Fstoppers", "url": "https://fstoppers.com/gear/tamrons-16-50mm-f28-brings-fast-zoom-four-aps-c-mounts-529-905047"}
+     "source": {
+      "name": "Fstoppers",
+      "url": "https://fstoppers.com/gear/tamrons-16-50mm-f28-brings-fast-zoom-four-aps-c-mounts-529-905047"
+     }
     },
     {
      "kind": "tip",
      "title": "טיפ השבוע: בדיקת ציוד של 5 דקות לפני טיול",
      "text": "סוללה טעונה וסוללה רזרבית בתיק. כרטיס זיכרון ריק, אחרי שגיביתם את התמונות הקודמות. ניקוי עדשה במשפך אוויר, בלי לגעת בזכוכית. ואם התחזית אומרת גשם, כיסוי גשם קטן שוקל כמעט כלום ושומר על המצלמה.",
      "links": [
-      {"text": "סוללות ומטענים", "href": "#batteries"},
-      {"text": "ניקוי ותחזוקה", "href": "#cleaning"},
-      {"text": "כיסויי גשם", "href": "#nature"}
+      {
+       "text": "סוללות ומטענים",
+       "href": "#batteries"
+      },
+      {
+       "text": "ניקוי ותחזוקה",
+       "href": "#cleaning"
+      },
+      {
+       "text": "כיסויי גשם",
+       "href": "#nature"
+      }
      ]
     }
    ],
    "new_products": [
-    {"id": "1005013107792970", "brand": "Ulanzi", "kind": "תיק", "title": "תיק צד קטן ליוצרים, 3 ליטר", "price": 33.59, "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sdc5787d27a344a9ca5441af140e3b844A.jpg", "link": "https://s.click.aliexpress.com/e/_c4VoXD4z"},
-    {"id": "1005013273993943", "brand": "Ulanzi", "kind": "תאורה", "title": "פלאש קטן שהוא גם תאורה רציפה צבעונית", "price": 45.99, "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sef2f128ab3054254bcdaf104af792719h.jpg", "link": "https://s.click.aliexpress.com/e/_c42AEfBT"},
-    {"id": "1005011645693343", "brand": "NEEWER", "kind": "צילום בטלפון", "title": "תאורת טבעת מגנטית לגב האייפון, 4 וואט", "price": 19.76, "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sb5f667d5814f4d5c89f11975bf47fdcbn.jpg", "link": "https://s.click.aliexpress.com/e/_c3o52fu5"}
+    {
+     "id": "1005013107792970",
+     "brand": "Ulanzi",
+     "kind": "תיק",
+     "title": "תיק צד קטן ליוצרים, 3 ליטר",
+     "price": 33.59,
+     "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sdc5787d27a344a9ca5441af140e3b844A.jpg",
+     "link": "https://s.click.aliexpress.com/e/_c4VoXD4z"
+    },
+    {
+     "id": "1005013273993943",
+     "brand": "Ulanzi",
+     "kind": "תאורה",
+     "title": "פלאש קטן שהוא גם תאורה רציפה צבעונית",
+     "price": 45.99,
+     "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sef2f128ab3054254bcdaf104af792719h.jpg",
+     "link": "https://s.click.aliexpress.com/e/_c42AEfBT"
+    },
+    {
+     "id": "1005011645693343",
+     "brand": "NEEWER",
+     "kind": "צילום בטלפון",
+     "title": "תאורת טבעת מגנטית לגב האייפון, 4 וואט",
+     "price": 19.76,
+     "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sb5f667d5814f4d5c89f11975bf47fdcbn.jpg",
+     "link": "https://s.click.aliexpress.com/e/_c3o52fu5"
+    }
    ]
   }
  ]
