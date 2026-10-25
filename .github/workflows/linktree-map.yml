@@ -1,0 +1,35 @@
+name: מיפוי החנות הישנה בלינקטרי
+
+on:
+  push:
+    paths: ['search/linktree.txt', 'scripts/linktree_map.py']
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: linktree-map
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - name: מיפוי קישורים
+        env:
+          ALI_APP_SECRET: ${{ secrets.ALI_APP_SECRET }}
+        run: python scripts/linktree_map.py
+      - name: שמירת התוצאות (לא מוצגות באתר)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          git add search/linktree.json
+          git commit -m "מיפוי החנות הישנה בלינקטרי" || exit 0
+          git pull --rebase
+          git push
