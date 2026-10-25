@@ -431,6 +431,8 @@ function camResults(brand, model){
 }
 // ---- מה חדש השבוע: data/news.json, גיליון חדש כל שבוע (באישור יורם) ----
 let NEWS = [];
+// אם הגיליון האחרון ישן מ-10 ימים, לא כותבים "השבוע"
+function newsLabel(){ const d = NEWS.length ? (Date.now() - Date.parse(NEWS[0].date + 'T00:00:00')) / 864e5 : 99; return d <= 10 ? '📡 מה חדש השבוע' : '📡 מה חדש'; }
 const heFull = s => { const [y,m,d] = s.split('-'); return `${+d}.${+m}.${y}`; };
 function newsItem(it){
   const cls = it.kind === 'tip' ? 'news-item tip' : 'news-item';
@@ -454,7 +456,7 @@ function showNews(){
   $('shop').hidden = true; $('deals').hidden = true; $('cam').hidden = true; $('promo').hidden = true;
   const sec = $('news'); sec.hidden = false; setTabs('news');
   const [cur, ...old] = NEWS;
-  let h = '<h1 id="news-h">📡 מה חדש השבוע</h1>' + issueHtml(cur, true);
+  let h = '<h1 id="news-h">' + newsLabel() + '</h1>' + issueHtml(cur, true);
   if (old.length) h += `<details><summary>גיליונות קודמים (${old.length})</summary>${old.map(is => '<div style="margin-top:22px">' + issueHtml(is) + '</div>').join('')}</details>`;
   sec.innerHTML = h;
   sec.querySelectorAll('.links a').forEach(a => a.onclick = e => { e.preventDefault(); go(a.getAttribute('href')); scrollTo(0, 0); });
@@ -520,7 +522,7 @@ Promise.all([fetch('data/products.json', {cache: 'no-cache'}).then(r => r.json()
   if (CAMS) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'cam'; b.className = 'cam-tab'; b.textContent = '📷 מה מתאים למצלמה שלי'; b.onclick = () => go('#cam'); nav.appendChild(b); }
   { const a = document.createElement('a'); a.href = 'iphone.html'; a.className = 'lp-tab'; a.textContent = '📱 צילום באייפון'; nav.appendChild(a); }
   { const a = document.createElement('a'); a.href = 'how-to-buy.html'; a.className = 'lp-tab'; a.textContent = '🛒 איך קונים נכון'; nav.appendChild(a); }
-  if (NEWS.length) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'news'; b.className = 'news-tab'; b.textContent = '📡 מה חדש השבוע'; b.onclick = () => go('#news'); nav.appendChild(b); }
+  if (NEWS.length) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'news'; b.className = 'news-tab'; b.textContent = newsLabel(); b.onclick = () => go('#news'); nav.appendChild(b); }
   if (hasDeals()) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'deals'; b.className = 'deals-tab'; b.textContent = '🏷️ מבצעים וקופונים'; b.onclick = () => { history.replaceState(null, '', '#deals'); showDeals(); }; nav.appendChild(b); }
   DB.collections.forEach(c => {
     const has = DB.products.some(p => p.collection === c.id);
