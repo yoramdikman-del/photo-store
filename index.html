@@ -141,6 +141,7 @@ nav.cols button.deals-tab[aria-current="page"]{background:var(--accent);color:va
 .finder-bar b{font-family:var(--f-display);font-size:1.1rem}
 .finder-bar span.go{background:var(--ink);color:var(--paper);font-weight:700;padding:6px 14px;border-radius:999px;white-space:nowrap}
 nav.cols a.lp-tab{flex:none;text-decoration:none;font-size:.92rem;padding:6px 12px;border-radius:999px;border:1px solid var(--accent);color:var(--ink);font-weight:700;white-space:nowrap;background:#fff}
+nav.cols a.lp-tab.gift{background:#f4b942;border-color:#f4b942;color:#1e2a44}
 nav.cols button.cam-tab{border-color:var(--ink);color:var(--ink);font-weight:700}
 nav.cols button.cam-tab[aria-current="page"]{background:var(--ink);color:var(--paper)}
 #cam-res{scroll-margin-top:150px}
@@ -530,6 +531,7 @@ Promise.all([fetch('data/products.json', {cache: 'no-cache'}).then(r => r.json()
   const nav = $('cols');
   if (CAMS) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'cam'; b.className = 'cam-tab'; b.textContent = '📷 מה מתאים למצלמה שלי'; b.onclick = () => go('#cam'); nav.appendChild(b); }
   { const a = document.createElement('a'); a.href = 'iphone.html'; a.className = 'lp-tab'; a.textContent = '📱 צילום באייפון'; nav.appendChild(a); }
+  { const a = document.createElement('a'); a.href = 'guide.html'; a.className = 'lp-tab gift'; a.textContent = '🎁 מדריך חינמי'; a.setAttribute('data-goatcounter-click','tab-guide'); nav.appendChild(a); }
   { const a = document.createElement('a'); a.href = 'how-to-buy.html'; a.className = 'lp-tab'; a.textContent = '🛒 איך קונים נכון'; nav.appendChild(a); }
   if (NEWS.length) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'news'; b.className = 'news-tab'; b.textContent = newsLabel(); b.onclick = () => go('#news'); nav.appendChild(b); }
   if (hasDeals()) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'deals'; b.className = 'deals-tab'; b.textContent = '🏷️ מבצעים וקופונים'; b.onclick = () => { history.replaceState(null, '', '#deals'); showDeals(); }; nav.appendChild(b); }
