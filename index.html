@@ -340,9 +340,13 @@ function card(p){
 // ---- מבצעים וקופונים: נטען מ-data/deals.json. מה שפג תוקפו נעלם לבד ----
 let DEALS = {events: [], coupons: []};
 const today = () => new Date().toLocaleDateString('en-CA', {timeZone: 'Asia/Jerusalem'});
-const heDate = s => { const [y,m,d] = s.split('-'); return `${+d}/${+m}`; };
-const liveEvents = () => (DEALS.events || []).filter(e => (e.show_from || e.start) <= today() && today() <= e.end);
-const liveCoupons = () => (DEALS.coupons || []).filter(c => (!c.start || c.start <= today()) && today() <= c.end);
+// end יכול להיות תאריך (עד סוף היום) או תאריך ושעה בשעון ישראל, למשל 2026-10-27T08:59
+const nowIL = () => new Date().toLocaleString('sv-SE', {timeZone: 'Asia/Jerusalem'}).slice(0,16).replace(' ', 'T');
+const heDate = s => { const [y,m,d] = s.slice(0,10).split('-'); return `${+d}/${+m}` + (s.length > 10 ? ` בשעה ${s.slice(11,16)}` : ''); };
+const notOver = end => end.length > 10 ? nowIL() <= end : today() <= end;
+const started = st => !st || (st.length > 10 ? st <= nowIL() : st <= today());
+const liveEvents = () => (DEALS.events || []).filter(e => started(e.show_from || e.start) && notOver(e.end));
+const liveCoupons = () => (DEALS.coupons || []).filter(c => started(c.start) && notOver(c.end));
 const hasDeals = () => liveEvents().length || liveCoupons().length;
 
 function dealsBanner(){
@@ -352,7 +356,11 @@ function dealsBanner(){
   if (ev) {
     const days = Math.round((new Date(ev.start) - new Date(today())) / 864e5);
     t = days > 0 ? `${esc(ev.title)} מתחיל בעוד ${days} ימים` : `${esc(ev.title)} פעיל עכשיו, עד ${heDate(ev.end)}`;
-  } else t = 'יש קופונים פעילים לאלי אקספרס';
+  } else {
+    const cps = liveCoupons(), best = cps.reduce((a, c) => (c.amount || 0) > (a.amount || 0) ? c : a, cps[0]);
+    const soon = cps.reduce((a, c) => c.end < a ? c.end : a, cps[0].end);
+    t = `🏷️ ${cps.length > 1 ? cps.length + ' קופונים פעילים לאלי אקספרס' : 'קופון פעיל לאלי אקספרס'}${best.amount ? `, עד ${best.amount} ₪ הנחה` : ''} · בתוקף עד ${heDate(soon)}`;
+  }
   b.innerHTML = `<b>${t}</b><span class="go">לקופונים ולמבצעים ←</span>`;
   b.hidden = location.hash === '#deals';
 }
@@ -372,6 +380,7 @@ function showDeals(){
   sec.innerHTML = h;
   sec.querySelectorAll('.coupon button').forEach(btn => btn.onclick = async () => {
     const code = $('cp' + btn.dataset.i).textContent;
+    track('coupon_copy', {code});
     try { await navigator.clipboard.writeText(code); btn.textContent = 'הועתק ✓'; } catch { btn.textContent = 'סמנו והעתיקו'; }
     setTimeout(() => btn.textContent = 'העתקה', 2000);
   });
