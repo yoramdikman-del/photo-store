@@ -337,11 +337,11 @@ const GROUPS = [
 ];
 function card(p){
   const price = p.price ? 'החל מ-' + Math.round(p.price) + '$' : '';
-  return `<article class="card"><a class="img pimg" href="${esc(p.link)}" target="_blank" rel="noopener sponsored" aria-label="לרכישה: ${esc(p.title)}">${p.img ? `<img loading="lazy" referrerpolicy="no-referrer" src="${esc(p.img)}" alt="${esc(p.title)}" onerror="imgFail(this)">` : `<img class="ph" src="logo.png" alt="">`}</a>
+  return `<article class="card"><a class="img pimg" data-id="${esc(p.id)}" data-brand="${esc(p.brand||'')}" data-coll="${esc(p.collection||'')}" data-title="${esc(p.title)}" href="${esc(p.link)}" target="_blank" rel="noopener sponsored" aria-label="לרכישה: ${esc(p.title)}">${p.img ? `<img loading="lazy" referrerpolicy="no-referrer" src="${esc(p.img)}" alt="${esc(p.title)}" onerror="imgFail(this)">` : `<img class="ph" src="logo.png" alt="">`}</a>
     <div class="body">${p.kind ? `<span class="kind">${esc(p.kind)}</span>` : ''}<h3 class="title">${p.brand ? `<span class="b">${esc(p.brand)}</span> – ` : ''}${esc(p.title)}</h3>
     <div class="meta">${p.rating ? `<span class="rate">${p.rating}% חיובי</span>` : ''}${p.sold ? `<span>${Number(p.sold).toLocaleString('he-IL')} נמכרו</span>` : ''}<span>${price}</span></div>
     ${p.note ? `<span class="note">${esc(p.note)}</span>` : ''}
-    <a class="buy" href="${esc(p.link)}" target="_blank" rel="noopener sponsored">לרכישה באלי אקספרס ←</a></div></article>`;
+    <a class="buy" data-id="${esc(p.id)}" data-brand="${esc(p.brand||'')}" data-coll="${esc(p.collection||'')}" data-title="${esc(p.title)}" href="${esc(p.link)}" target="_blank" rel="noopener sponsored">לרכישה באלי אקספרס ←</a></div></article>`;
 }
 fetch('data/products.json', {cache:'no-cache'}).then(r => r.json()).then(db => {
   const by = {}; db.products.filter(p => p.status !== 'missing' && p.status !== 'pending').forEach(p => by[p.id] = p);
@@ -354,5 +354,6 @@ fetch('data/products.json', {cache:'no-cache'}).then(r => r.json()).then(db => {
 }).catch(() => { document.getElementById('gear-list').innerHTML = '<p class="empty">לא הצלחנו לטעון את המוצרים. נסו לרענן.</p>'; });
 </script>
 <script data-goatcounter="https://tzilumbechol.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script src="analytics.js" defer></script>
 </body>
 </html>
