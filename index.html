@@ -349,11 +349,21 @@ const notOver = end => end.length > 10 ? nowIL() <= end : today() <= end;
 const started = st => !st || (st.length > 10 ? st <= nowIL() : st <= today());
 const liveEvents = () => (DEALS.events || []).filter(e => started(e.show_from || e.start) && notOver(e.end));
 const liveCoupons = () => (DEALS.coupons || []).filter(c => started(c.start) && notOver(c.end));
-const hasDeals = () => liveEvents().length || liveCoupons().length;
+// רשימת קניות למבצע: picks_groups [{title, ids}] (או picks שטוח), מוצגת עד picks_until (כולל) גם בלי אירוע מאומת
+const pickGroups = () => {
+  if (DEALS.picks_until && today() > DEALS.picks_until) return [];
+  const raw = DEALS.picks_groups || (DEALS.picks ? [{title: '', ids: DEALS.picks}] : []);
+  return raw.map(g => ({title: g.title || '', items: (g.ids || []).map(id => DB.products.find(p => p.id === id)).filter(Boolean)})).filter(g => g.items.length);
+};
+const hasDeals = () => liveEvents().length || liveCoupons().length || pickGroups().length;
 
 function dealsBanner(){
   const ev = liveEvents()[0], b = $('promo');
-  if (!ev && !liveCoupons().length) { b.hidden = true; return; }
+  if (!ev && !liveCoupons().length) {
+    if (!pickGroups().length) { b.hidden = true; return; }
+    b.innerHTML = `<b>${esc(DEALS.picks_banner || '🛒 רשימת קניות לצלמים לקראת המבצע')}</b><span class="go">לרשימה ←</span>`;
+    b.hidden = location.hash === '#deals'; return;
+  }
   let t;
   if (ev) {
     const days = Math.round((new Date(ev.start) - new Date(today())) / 864e5);
@@ -374,8 +384,12 @@ function showDeals(){
   const ev = liveEvents(), cps = liveCoupons();
   let h = '<h1 id="deals-h">מבצעים וקופונים</h1><p>קופונים ומבצעים של אלי אקספרס שבדקנו. מעתיקים את הקוד ומדביקים אותו בעגלה, בשלב התשלום.</p>';
   h += ev.map(e => `<div class="event"><h2>${esc(e.title)}</h2><div class="when">${heDate(e.start)}–${heDate(e.end)}</div>${e.text ? `<p>${esc(e.text)}</p>` : ''}</div>`).join('');
-  const picks = (DEALS.picks || []).map(id => DB.products.find(p => p.id === id)).filter(Boolean);
-  if (picks.length && ev.length) h += `<h2 style="font-family:var(--f-display);margin:26px 0 6px">${esc(DEALS.picks_title || 'הכי שווה לסמן לקראת המבצע')}</h2><p style="margin:0 0 14px;color:var(--ink-soft)">${esc(DEALS.picks_text || 'מוצרים שבדקנו ושצלמים באמת צריכים. אם תכננתם לקנות אחד מהם, ביום המבצע בדקו את המחיר בדף המוצר.')}</p><div class="grid">${picks.map(card).join('')}</div><div style="height:22px"></div>`;
+  const groups = pickGroups();
+  if (groups.length) {
+    h += `<h2 style="font-family:var(--f-display);margin:26px 0 6px">${esc(DEALS.picks_title || 'הכי שווה לסמן לקראת המבצע')}</h2><p style="margin:0 0 14px;color:var(--ink-soft);max-width:75ch">${esc(DEALS.picks_text || 'מוצרים שבדקנו ושצלמים באמת צריכים. אם תכננתם לקנות אחד מהם, ביום המבצע בדקו את המחיר בדף המוצר.')}</p>`;
+    h += groups.map(g => (g.title ? `<h3 style="margin:18px 0 10px">${esc(g.title)}</h3>` : '') + `<div class="grid">${g.items.map(card).join('')}</div>`).join('');
+    h += `<p style="margin:18px 0 0"><a href="https://chat.whatsapp.com/LlntXSR4SJL8tLl1S3lF6t" target="_blank" rel="noopener" data-goatcounter-click="deals-wa" style="display:inline-block;background:#25D366;color:#fff;font-weight:700;text-decoration:none;padding:12px 20px;border-radius:999px;line-height:1.4">${esc(DEALS.picks_wa || 'רוצים לקבל את הקופונים ברגע שהם מתפרסמים? הצטרפו לקהילת הווטסאפ ←')}</a></p><div style="height:22px"></div>`;
+  }
   if (cps.length) h += '<div class="coupons">' + cps.map((c,i) => `<div class="coupon"><div class="off">${esc(c.title)}</div>${c.cond ? `<div class="cond">${esc(c.cond)}</div>` : ''}<div class="code-row"><code id="cp${i}">${esc(c.code)}</code><button type="button" data-i="${i}">העתקה</button></div><div class="valid">בתוקף עד ${heDate(c.end)}${c.checked ? ` · נבדק ב-${heDate(c.checked)}` : ''}</div></div>`).join('') + '</div>';
   else h += '<p class="empty">כרגע אין קופונים פעילים. הם יופיעו כאן ברגע שיתפרסמו.</p>';
   h += '<p class="deals-note">הקופונים והמבצעים שייכים לאלי אקספרס, ומספר המימושים בהם מוגבל. ייתכן שקופון ייגמר לפני תאריך התפוגה, או לא יתאים לכל מוצר או חשבון. התנאים הקובעים הם אלה שמופיעים באלי אקספרס בזמן הרכישה.</p>';
@@ -534,7 +548,7 @@ Promise.all([fetch('data/products.json', {cache: 'no-cache'}).then(r => r.json()
   if (CAMS) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'cam'; b.className = 'cam-tab'; b.textContent = '📷 מה מתאים למצלמה שלי'; b.onclick = () => go('#cam'); nav.appendChild(b); }
   { const a = document.createElement('a'); a.href = 'guides.html'; a.className = 'lp-tab'; a.textContent = '📚 ספריית המדריכים'; a.setAttribute('data-goatcounter-click','tab-guides'); nav.appendChild(a); }
   if (NEWS.length) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'news'; b.className = 'news-tab'; b.textContent = newsLabel(); b.onclick = () => go('#news'); nav.appendChild(b); }
-  if (hasDeals()) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'deals'; b.className = 'deals-tab'; b.textContent = '🏷️ מבצעים וקופונים'; b.onclick = () => { history.replaceState(null, '', '#deals'); showDeals(); }; nav.appendChild(b); }
+  if (hasDeals()) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'deals'; b.className = 'deals-tab'; b.textContent = (!liveEvents().length && !liveCoupons().length && DEALS.picks_tab) || '🏷️ מבצעים וקופונים'; b.onclick = () => { history.replaceState(null, '', '#deals'); showDeals(); }; nav.appendChild(b); }
   DB.collections.forEach(c => {
     const has = DB.products.some(p => p.collection === c.id);
     const b = document.createElement('button'); b.type = 'button'; b.dataset.id = c.id;
