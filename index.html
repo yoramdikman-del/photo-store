@@ -207,6 +207,7 @@ nav.cols button.news-tab[aria-current="page"]{background:var(--good);color:#fff;
 .finder-bar span.go{padding:5px 12px;font-size:.9rem}
 /* במחשב הלשונית כבר נראית בשורת הקטגוריות, אז הפס מיותר */
 @media (min-width:561px){.finder-bar{display:none}nav.cols{flex-wrap:wrap;overflow:visible}}
+.guide-link{display:inline-block;margin-top:8px;padding:6px 14px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-weight:800;text-decoration:none}
 </style>
 <link rel="stylesheet" href="album.css">
 </head>
@@ -492,6 +493,7 @@ function setCollection(id){
   trackView('אוסף: ' + coll.name);
   $('h1').textContent = coll.title || coll.name;
   $('intro').textContent = coll.intro || '';
+  if (coll.guide) { const g = document.createElement('a'); g.href = coll.guide.url; g.className = 'guide-link'; g.textContent = coll.guide.text; g.setAttribute('data-goatcounter-click', 'guide-' + coll.id); g.addEventListener('click', () => track('click_guide', {collection: coll.id})); $('intro').append(' ', g); }
   if (!$('how').dataset.orig) $('how').dataset.orig = $('how').innerHTML;
   if (coll.how) { $('how').innerHTML = `<span>${esc(coll.how[0])}</span><span>${esc(coll.how[1])}</span>`; $('how').hidden = false; }
   else { $('how').innerHTML = $('how').dataset.orig; $('how').hidden = coll.id !== 'batteries'; }
