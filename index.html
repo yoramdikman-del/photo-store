@@ -532,6 +532,7 @@ Promise.all([fetch('data/products.json', {cache: 'no-cache'}).then(r => r.json()
   DB = data; DB.products = DB.products.filter(p => p.status !== 'missing' && p.status !== 'pending');
   const nav = $('cols');
   if (CAMS) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'cam'; b.className = 'cam-tab'; b.textContent = '📷 מה מתאים למצלמה שלי'; b.onclick = () => go('#cam'); nav.appendChild(b); }
+  { const a = document.createElement('a'); a.href = 'guides.html'; a.className = 'lp-tab'; a.textContent = '📚 ספריית המדריכים'; a.setAttribute('data-goatcounter-click','tab-guides'); nav.appendChild(a); }
   { const a = document.createElement('a'); a.href = 'iphone.html'; a.className = 'lp-tab'; a.textContent = '📱 צילום באייפון'; nav.appendChild(a); }
   { const a = document.createElement('a'); a.href = 'guide.html'; a.className = 'lp-tab gift'; a.textContent = '🎁 מדריך חינמי'; a.setAttribute('data-goatcounter-click','tab-guide'); nav.appendChild(a); }
   { const a = document.createElement('a'); a.href = 'how-to-buy.html'; a.className = 'lp-tab'; a.textContent = '🛒 איך קונים נכון'; nav.appendChild(a); }
