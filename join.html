@@ -43,6 +43,8 @@ li span{flex:none;width:28px;height:28px;border-radius:50%;background:var(--pape
 .shop{display:block;text-align:center;color:var(--ink);font-weight:700;margin:4px 0 22px}
 footer{border-top:1px solid var(--line);color:var(--ink-soft);font-size:.85rem}
 footer p{margin:12px 0}
+.go{display:none;text-align:center;font-weight:700;margin:0 0 14px;padding:12px;border-radius:12px;background:var(--paper);border:1px solid var(--line)}
+.go.on{display:block}
 </style>
 </head>
 <body>
@@ -50,6 +52,7 @@ footer p{margin:12px 0}
 
 <main class="wrap">
   <div class="card">
+    <p class="go" id="go" role="status">רגע, פותחים לכם את קבוצת הווצאפ…</p>
     <h1>קבוצת הטיפים של צילום בכל גיל</h1>
     <p class="lead">לכל מי שאוהב לצלם, בטלפון או במצלמה. מה מחכה לכם בקבוצה:</p>
     <ul>
@@ -73,5 +76,21 @@ footer p{margin:12px 0}
 </footer>
 <script data-goatcounter="https://tzilumbechol.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <script src="analytics.js" defer></script>
+<script>
+// מי שמגיע ממודעה של מטא (fbclid או utm של פייסבוק/אינסטגרם) מועבר לבד לקבוצה אחרי שנייה וחצי.
+// מי שמגיע מהחנות או מפוסט רואה את הדף הרגיל. הכפתור נשאר תמיד.
+(function () {
+  var q = new URLSearchParams(location.search);
+  var src = (q.get('utm_source') || '').toLowerCase();
+  var fromAd = q.has('fbclid') || q.get('utm_medium') === 'paid' || /^(fb|ig|facebook|instagram)$/.test(src);
+  if (!fromAd || q.has('stay')) return;
+  var link = document.getElementById('join').href;
+  document.getElementById('go').classList.add('on');
+  setTimeout(function () {
+    try { if (window.gtag) gtag('event', 'join_redirect', { from: src || 'fbclid' }); } catch (e) {}
+    location.href = link;
+  }, 1500);
+})();
+</script>
 </body>
 </html>
