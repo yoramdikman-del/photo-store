@@ -433,7 +433,7 @@
    "price": 12.93,
    "rating": 97.0,
    "sold": 66,
-   "link": "",
+   "link": "https://s.click.aliexpress.com/e/_c3zSUp79",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sbe5ba5070517498ab3e2d10a80627b74p.jpg",
    "collection": "batteries",
    "status": "pending",
@@ -442,7 +442,8 @@
     "Z50",
     "Z fc",
     "Z50 II"
-   ]
+   ],
+   "tid": "website"
   },
   {
    "group": "sony",
@@ -663,7 +664,7 @@
    "price": 13.92,
    "rating": 100.0,
    "sold": 40,
-   "link": "",
+   "link": "https://s.click.aliexpress.com/e/_c3X9c4cT",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Se488c52731234598bca7760c9c523e94X.jpg",
    "collection": "batteries",
    "status": "pending",
@@ -672,7 +673,8 @@
     "X-T4",
     "X-H2S",
     "X-S20"
-   ]
+   ],
+   "tid": "website"
   },
   {
    "collection": "bags",
@@ -3020,7 +3022,7 @@
    "price": 14.99,
    "rating": 100.0,
    "sold": 20,
-   "link": "",
+   "link": "https://s.click.aliexpress.com/e/_c45sen4J",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S3ef96d6a039c4974b7e2091936414034s.jpg",
    "collection": "batteries",
    "status": "pending",
@@ -3032,7 +3034,8 @@
     "70D",
     "80D",
     "90D"
-   ]
+   ],
+   "tid": "website"
   },
   {
    "group": "panasonic",
@@ -3046,7 +3049,7 @@
    "price": 29.39,
    "rating": 100.0,
    "sold": 35,
-   "link": "",
+   "link": "https://s.click.aliexpress.com/e/_c3pJSqLt",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S51a115277e9c4d2e9a860b4148edfcc6a.jpg",
    "collection": "batteries",
    "status": "pending",
@@ -3058,7 +3061,8 @@
     "GH5 II",
     "GH6",
     "GH7"
-   ]
+   ],
+   "tid": "website"
   },
   {
    "group": "panasonic",
@@ -3072,14 +3076,15 @@
    "price": 8.91,
    "rating": 97.8,
    "sold": 23,
-   "link": "",
+   "link": "https://s.click.aliexpress.com/e/_c3Mi35nz",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/H397034ce395849f686eb4c3095d0a6b8h.jpg",
    "collection": "batteries",
    "status": "pending",
    "models": [
     "GH4",
     "GH5"
-   ]
+   ],
+   "tid": "website"
   },
   {
    "group": "panasonic",
@@ -3093,7 +3098,7 @@
    "price": 15.45,
    "rating": 99.0,
    "sold": 39,
-   "link": "",
+   "link": "https://s.click.aliexpress.com/e/_c3iXj2JD",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S971c5053d30c4b2db279591b5c52ac2c8.jpg",
    "collection": "batteries",
    "status": "pending",
@@ -3102,7 +3107,8 @@
     "G80",
     "GX8",
     "FZ1000"
-   ]
+   ],
+   "tid": "website"
   },
   {
    "group": "panasonic",
@@ -3116,7 +3122,7 @@
    "price": 5.99,
    "rating": 100.0,
    "sold": 20,
-   "link": "",
+   "link": "https://s.click.aliexpress.com/e/_c4EN5o03",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/H7fbd8be20c6746bfbab01915da00f8c4b.jpg",
    "collection": "batteries",
    "status": "pending",
@@ -3124,7 +3130,8 @@
     "GX7",
     "GX80",
     "LX100"
-   ]
+   ],
+   "tid": "website"
   },
   {
    "collection": "cards",
