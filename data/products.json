@@ -6,7 +6,7 @@
    "name": "סוללות ומטענים",
    "title": "סוללות ומטענים לפי המצלמה שלכם",
    "intro": "סוללה רזרבית היא הדבר הראשון שנגמר בטיול. ריכזנו סוללות ומטענים מחנויות רשמיות בלבד, עם דירוג גבוה ומשלוח לישראל.",
-   "search": "חיפוש: דגם מצלמה או קוד סוללה (Z6, A6400, LP-E17)",
+   "search": "חיפוש: דגם מצלמה או קוד סוללה (Z6, A6400, LP-E17, S5)",
    "groups": [
     [
      "canon",
@@ -23,6 +23,10 @@
     [
      "fuji",
      "פוג'יפילם"
+    ],
+    [
+     "panasonic",
+     "פנסוניק לומיקס"
     ]
    ]
   },
@@ -418,6 +422,29 @@
    ]
   },
   {
+   "group": "nikon",
+   "id": "1005008676098109",
+   "brand": "probty",
+   "title": "סוללה ומטען כפול מהיר",
+   "code": "EN-EL25",
+   "kind": "סוללה",
+   "fits": "Z30, Z50, Z fc, Z50 II",
+   "note": "",
+   "price": 12.93,
+   "rating": 97.0,
+   "sold": 66,
+   "link": "",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sbe5ba5070517498ab3e2d10a80627b74p.jpg",
+   "collection": "batteries",
+   "status": "pending",
+   "models": [
+    "Z30",
+    "Z50",
+    "Z fc",
+    "Z50 II"
+   ]
+  },
+  {
    "group": "sony",
    "id": "1005008239768088",
    "brand": "PALO",
@@ -622,6 +649,29 @@
     "X-T50",
     "X-E5",
     "X-T30"
+   ]
+  },
+  {
+   "group": "fuji",
+   "id": "1005011578069719",
+   "brand": "PUJIMAX",
+   "title": "סוללה עם טעינה ישירה בכבל טייפ-סי",
+   "code": "NP-W235",
+   "kind": "סוללה",
+   "fits": "X-T5, X-T4, X-H2S, X-S20",
+   "note": "",
+   "price": 13.92,
+   "rating": 100.0,
+   "sold": 40,
+   "link": "",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/Se488c52731234598bca7760c9c523e94X.jpg",
+   "collection": "batteries",
+   "status": "pending",
+   "models": [
+    "X-T5",
+    "X-T4",
+    "X-H2S",
+    "X-S20"
    ]
   },
   {
@@ -2957,6 +3007,124 @@
    "link": "https://s.click.aliexpress.com/e/_c3IXmeFR",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Ha61e1f7b909f4572962b84709a48ffbaC.jpg",
    "tid": "website"
+  },
+  {
+   "group": "canon",
+   "id": "1005012838335434",
+   "brand": "PALO",
+   "title": "סוללה עם שקע טעינה בכבל",
+   "code": "LP-E6NH",
+   "kind": "סוללה",
+   "fits": "R7, 5D Mark II–III, 60D–90D",
+   "note": "",
+   "price": 14.99,
+   "rating": 100.0,
+   "sold": 20,
+   "link": "",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S3ef96d6a039c4974b7e2091936414034s.jpg",
+   "collection": "batteries",
+   "status": "pending",
+   "models": [
+    "R7",
+    "5D Mark II",
+    "5D Mark III",
+    "60D",
+    "70D",
+    "80D",
+    "90D"
+   ]
+  },
+  {
+   "group": "panasonic",
+   "id": "1005008224711274",
+   "brand": "SmallRig",
+   "title": "סוללה עם טעינה ישירה בכבל טייפ-סי",
+   "code": "DMW-BLK22",
+   "kind": "סוללה",
+   "fits": "S5, S5 II, S9, G9 II, GH5 II, GH6, GH7",
+   "note": "",
+   "price": 29.39,
+   "rating": 100.0,
+   "sold": 35,
+   "link": "",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S51a115277e9c4d2e9a860b4148edfcc6a.jpg",
+   "collection": "batteries",
+   "status": "pending",
+   "models": [
+    "S5",
+    "S5 II",
+    "S9",
+    "G9 II",
+    "GH5 II",
+    "GH6",
+    "GH7"
+   ]
+  },
+  {
+   "group": "panasonic",
+   "id": "4000211803120",
+   "brand": "probty",
+   "title": "סוללה ומטען כפול עם מסך",
+   "code": "DMW-BLF19",
+   "kind": "סוללה",
+   "fits": "GH4, GH5",
+   "note": "",
+   "price": 8.91,
+   "rating": 97.8,
+   "sold": 23,
+   "link": "",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/H397034ce395849f686eb4c3095d0a6b8h.jpg",
+   "collection": "batteries",
+   "status": "pending",
+   "models": [
+    "GH4",
+    "GH5"
+   ]
+  },
+  {
+   "group": "panasonic",
+   "id": "1005008352179816",
+   "brand": "probty",
+   "title": "סוללה עם טעינה ישירה בכבל טייפ-סי",
+   "code": "DMW-BLC12",
+   "kind": "סוללה",
+   "fits": "G7, G80, GX8, FZ1000",
+   "note": "",
+   "price": 15.45,
+   "rating": 99.0,
+   "sold": 39,
+   "link": "",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S971c5053d30c4b2db279591b5c52ac2c8.jpg",
+   "collection": "batteries",
+   "status": "pending",
+   "models": [
+    "G7",
+    "G80",
+    "GX8",
+    "FZ1000"
+   ]
+  },
+  {
+   "group": "panasonic",
+   "id": "4000086665730",
+   "brand": "probty",
+   "title": "סוללה",
+   "code": "DMW-BLG10",
+   "kind": "סוללה",
+   "fits": "GX7, GX80, LX100",
+   "note": "",
+   "price": 5.99,
+   "rating": 100.0,
+   "sold": 20,
+   "link": "",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/H7fbd8be20c6746bfbab01915da00f8c4b.jpg",
+   "collection": "batteries",
+   "status": "pending",
+   "models": [
+    "GX7",
+    "GX80",
+    "LX100"
+   ]
   },
   {
    "collection": "cards",

@@ -40,7 +40,8 @@
     },
     {
      "name": "R7",
-     "type": "M"
+     "type": "M",
+     "battery": "LP-E6NH"
     },
     {
      "name": "R6 II",
@@ -183,15 +184,18 @@
     },
     {
      "name": "Z50",
-     "type": "M"
+     "type": "M",
+     "battery": "EN-EL25"
     },
     {
      "name": "Z fc",
-     "type": "M"
+     "type": "M",
+     "battery": "EN-EL25"
     },
     {
      "name": "Z30",
-     "type": "M"
+     "type": "M",
+     "battery": "EN-EL25"
     },
     {
      "name": "D3100",
@@ -272,6 +276,11 @@
      "name": "D850",
      "type": "D",
      "battery": "EN-EL15C"
+    },
+    {
+     "name": "Z50 II",
+     "type": "M",
+     "battery": "EN-EL25"
     },
     {
      "name": "Coolpix P1000",
@@ -451,6 +460,26 @@
      "battery": "NP-W126S"
     },
     {
+     "name": "X-T5",
+     "type": "M",
+     "battery": "NP-W235"
+    },
+    {
+     "name": "X-T4",
+     "type": "M",
+     "battery": "NP-W235"
+    },
+    {
+     "name": "X-H2S",
+     "type": "M",
+     "battery": "NP-W235"
+    },
+    {
+     "name": "X-S20",
+     "type": "M",
+     "battery": "NP-W235"
+    },
+    {
      "name": "X-Pro2",
      "type": "M",
      "battery": "NP-W126S"
@@ -463,6 +492,92 @@
      "name": "X100VI",
      "type": "C",
      "battery": "NP-W126S"
+    }
+   ]
+  },
+  {
+   "id": "panasonic",
+   "name": "פנסוניק לומיקס",
+   "models": [
+    {
+     "name": "S5",
+     "type": "M",
+     "battery": "DMW-BLK22"
+    },
+    {
+     "name": "S5 II",
+     "type": "M",
+     "battery": "DMW-BLK22"
+    },
+    {
+     "name": "S9",
+     "type": "M",
+     "battery": "DMW-BLK22"
+    },
+    {
+     "name": "G9 II",
+     "type": "M",
+     "battery": "DMW-BLK22"
+    },
+    {
+     "name": "GH7",
+     "type": "M",
+     "battery": "DMW-BLK22"
+    },
+    {
+     "name": "GH6",
+     "type": "M",
+     "battery": "DMW-BLK22"
+    },
+    {
+     "name": "GH5 II",
+     "type": "M",
+     "battery": "DMW-BLK22"
+    },
+    {
+     "name": "GH5",
+     "type": "M",
+     "battery": "DMW-BLF19"
+    },
+    {
+     "name": "GH4",
+     "type": "M",
+     "battery": "DMW-BLF19"
+    },
+    {
+     "name": "G80",
+     "type": "M",
+     "battery": "DMW-BLC12"
+    },
+    {
+     "name": "G7",
+     "type": "M",
+     "battery": "DMW-BLC12"
+    },
+    {
+     "name": "GX8",
+     "type": "M",
+     "battery": "DMW-BLC12"
+    },
+    {
+     "name": "GX80",
+     "type": "M",
+     "battery": "DMW-BLG10"
+    },
+    {
+     "name": "GX7",
+     "type": "M",
+     "battery": "DMW-BLG10"
+    },
+    {
+     "name": "FZ1000",
+     "type": "C",
+     "battery": "DMW-BLC12"
+    },
+    {
+     "name": "LX100",
+     "type": "C",
+     "battery": "DMW-BLG10"
     }
    ]
   },
