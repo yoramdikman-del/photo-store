@@ -23,10 +23,6 @@
     [
      "fuji",
      "פוג'יפילם"
-    ],
-    [
-     "ricoh",
-     "ריקו"
     ]
    ]
   },
@@ -626,26 +622,6 @@
     "X-T50",
     "X-E5",
     "X-T30"
-   ]
-  },
-  {
-   "group": "ricoh",
-   "id": "1005010700985694",
-   "brand": "probty",
-   "title": "סוללה עם חיבור טייפ-סי",
-   "code": "DB-120",
-   "kind": "סוללה",
-   "fits": "Ricoh GR IV",
-   "note": "",
-   "price": 12.03,
-   "rating": 96.7,
-   "sold": 159,
-   "link": "https://s.click.aliexpress.com/e/_c4sKStAZ",
-   "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sa5fb17a043bb4fb19d7cbf8831f3241eK.jpg",
-   "collection": "batteries",
-   "tid": "website",
-   "models": [
-    "GR IV"
    ]
   },
   {
@@ -2069,7 +2045,9 @@
    "tid": "website",
    "for": [
     "M",
-    "D"
+    "D",
+    "C",
+    "P"
    ]
   },
   {
@@ -2156,13 +2134,7 @@
    "sold": 251,
    "link": "https://s.click.aliexpress.com/e/_c4PuINoz",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sddeb8f8956c040b187da50274c3f3c81a.jpg",
-   "tid": "website",
-   "for": [
-    "M",
-    "D",
-    "C",
-    "P"
-   ]
+   "tid": "website"
   },
   {
    "collection": "nature",
@@ -3975,7 +3947,9 @@
    "img": "media/1005009235813882/img_01.jpg",
    "tid": "website",
    "for": [
-    "P"
+    "M",
+    "D",
+    "C"
    ]
   },
   {
@@ -4926,26 +4900,6 @@
   {
    "collection": "gadgets",
    "group": "",
-   "id": "1005010183433142",
-   "brand": "JJC",
-   "title": "אחיזת אגודל ממתכת לריקו GR IV",
-   "code": "",
-   "kind": "מצלמה",
-   "fits": "",
-   "note": "",
-   "price": 13.28,
-   "rating": 97.4,
-   "sold": 164,
-   "link": "https://s.click.aliexpress.com/e/_c4lgNql3",
-   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S2b4a9c5a0f944156a52357a70608e70eQ.png",
-   "tid": "website",
-   "models": [
-    "GR IV"
-   ]
-  },
-  {
-   "collection": "gadgets",
-   "group": "",
    "id": "1005006898098816",
    "brand": "JJC",
    "title": "שלט בלוטות' למצלמות סוני",
@@ -5006,6 +4960,9 @@
    "img": "media/1005002965907702/img_01.jpg",
    "tid": "website",
    "for": [
+    "M",
+    "D",
+    "C",
     "P"
    ]
   },
@@ -5026,6 +4983,9 @@
    "img": "media/4000322129879/img_01.jpg",
    "tid": "website",
    "for": [
+    "M",
+    "D",
+    "C",
     "P"
    ]
   },
@@ -5086,11 +5046,7 @@
    "sold": 258,
    "link": "https://s.click.aliexpress.com/e/_c4WBPkZ7",
    "img": "media/1005008667238358/img_01.jpg",
-   "tid": "website",
-   "for": [
-    "M",
-    "D"
-   ]
+   "tid": "website"
   },
   {
    "collection": "screen",
@@ -5107,11 +5063,7 @@
    "sold": 828,
    "link": "https://s.click.aliexpress.com/e/_c33ihT3T",
    "img": "media/1005003479392038/img_01.jpg",
-   "tid": "website",
-   "for": [
-    "M",
-    "D"
-   ]
+   "tid": "website"
   },
   {
    "collection": "screen",
@@ -5128,12 +5080,7 @@
    "sold": 271,
    "link": "https://s.click.aliexpress.com/e/_c3B1GJoH",
    "img": "media/1005006393443463/img_01.jpg",
-   "tid": "website",
-   "for": [
-    "M",
-    "D",
-    "C"
-   ]
+   "tid": "website"
   },
   {
    "collection": "screen",
@@ -5150,12 +5097,7 @@
    "sold": 104,
    "link": "https://s.click.aliexpress.com/e/_c2vJppjL",
    "img": "media/1005010586936330/img_01.jpg",
-   "tid": "website",
-   "for": [
-    "M",
-    "D",
-    "C"
-   ]
+   "tid": "website"
   },
   {
    "collection": "screen",
@@ -5172,12 +5114,7 @@
    "sold": 151,
    "link": "https://s.click.aliexpress.com/e/_c3XaKwNT",
    "img": "media/1005008726269191/img_01.jpg",
-   "tid": "website",
-   "for": [
-    "M",
-    "D",
-    "C"
-   ]
+   "tid": "website"
   },
   {
    "collection": "product",
@@ -5194,13 +5131,7 @@
    "sold": 122,
    "link": "https://s.click.aliexpress.com/e/_c4XK4xqJ",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S0563749dd2df4f6bb8a889f7bc2a5477t.jpg",
-   "tid": "website",
-   "for": [
-    "M",
-    "D",
-    "C",
-    "P"
-   ]
+   "tid": "website"
   },
   {
    "collection": "product",
@@ -5217,13 +5148,7 @@
    "sold": 282,
    "link": "https://s.click.aliexpress.com/e/_c3n28Vd9",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S360b64ef8bda40349aa86f4de7cb99b44.jpg",
-   "tid": "website",
-   "for": [
-    "M",
-    "D",
-    "C",
-    "P"
-   ]
+   "tid": "website"
   },
   {
    "collection": "product",
@@ -5241,12 +5166,6 @@
    "link": "https://s.click.aliexpress.com/e/_c2JNkXMT",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/H5fe0e0c1404f4ffd8f1f076ccd9dff29v.jpg",
    "tid": "website",
-   "for": [
-    "M",
-    "D",
-    "C",
-    "P"
-   ],
    "variant": "40 ס״מ, תאורת לד ב־3 מצבים"
   },
   {
@@ -5264,13 +5183,7 @@
    "sold": 3000,
    "link": "https://s.click.aliexpress.com/e/_c3KlNTu3",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S27753ec1b6fd426a8633c2097d84a793j.jpg",
-   "tid": "website",
-   "for": [
-    "M",
-    "D",
-    "C",
-    "P"
-   ]
+   "tid": "website"
   },
   {
    "collection": "product",
@@ -5287,13 +5200,7 @@
    "sold": 183,
    "link": "https://s.click.aliexpress.com/e/_c3VCmS8J",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S0af7a582dcba4ced9af539fd484bea5fD.jpg",
-   "tid": "website",
-   "for": [
-    "M",
-    "D",
-    "C",
-    "P"
-   ]
+   "tid": "website"
   },
   {
    "collection": "product",
@@ -5310,13 +5217,7 @@
    "sold": 2000,
    "link": "https://s.click.aliexpress.com/e/_c3crxWpD",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S5aa7d6a19e1948e997f5429bd4f34638I.jpg",
-   "tid": "website",
-   "for": [
-    "M",
-    "D",
-    "C",
-    "P"
-   ]
+   "tid": "website"
   },
   {
    "collection": "product",
@@ -5333,13 +5234,7 @@
    "sold": 15,
    "link": "https://s.click.aliexpress.com/e/_c2wCPDJD",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Scfcebf1833b94f58b4bccc35fdd079c68.jpg",
-   "tid": "website",
-   "for": [
-    "M",
-    "D",
-    "C",
-    "P"
-   ]
+   "tid": "website"
   },
   {
    "collection": "product",
@@ -5356,13 +5251,7 @@
    "sold": 150,
    "link": "https://s.click.aliexpress.com/e/_c3BboC79",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S7ac9cf666400491ba6b99b16dcc9eb19J.jpg",
-   "tid": "website",
-   "for": [
-    "M",
-    "D",
-    "C",
-    "P"
-   ]
+   "tid": "website"
   },
   {
    "collection": "cards",
@@ -5381,9 +5270,9 @@
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sc8072839ecfa4da19f11b2d4d75932d28.jpg",
    "tid": "website",
    "for": [
-    "A",
-    "P",
-    "R"
+    "M",
+    "D",
+    "C"
    ]
   },
   {
@@ -5401,10 +5290,7 @@
    "sold": 549,
    "link": "https://s.click.aliexpress.com/e/_c4FRj2FV",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S4261e54043af443687e9c97a5c29dd1aO.jpg",
-   "tid": "website",
-   "for": [
-    "D"
-   ]
+   "tid": "website"
   },
   {
    "collection": "straps",
@@ -5467,7 +5353,9 @@
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S9c564c528ced4d19bae4b79db5122310J.png",
    "tid": "website",
    "for": [
-    "P"
+    "M",
+    "D",
+    "C"
    ]
   },
   {
@@ -5487,8 +5375,9 @@
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S6298b90ea2df4489805654dea0a22c92O.jpg",
    "tid": "website",
    "for": [
-    "A",
-    "P"
+    "M",
+    "D",
+    "C"
    ]
   },
   {
@@ -5576,8 +5465,7 @@
    "for": [
     "M",
     "D",
-    "C",
-    "P"
+    "C"
    ]
   },
   {
@@ -5597,7 +5485,9 @@
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S41265ed268d742a7a9aa46d4eca8b8c1G.jpg",
    "tid": "website",
    "for": [
-    "K"
+    "M",
+    "D",
+    "C"
    ]
   },
   {
@@ -5640,8 +5530,7 @@
    "tid": "website",
    "for": [
     "M",
-    "D",
-    "C"
+    "D"
    ]
   },
   {
@@ -5662,8 +5551,7 @@
    "tid": "website",
    "for": [
     "M",
-    "D",
-    "C"
+    "D"
    ]
   },
   {
@@ -5684,8 +5572,7 @@
    "tid": "website",
    "for": [
     "M",
-    "D",
-    "C"
+    "D"
    ]
   },
   {
@@ -5706,8 +5593,7 @@
    "tid": "website",
    "for": [
     "M",
-    "D",
-    "C"
+    "D"
    ]
   },
   {
@@ -5728,8 +5614,7 @@
    "tid": "website",
    "for": [
     "M",
-    "D",
-    "C"
+    "D"
    ]
   },
   {
@@ -5749,7 +5634,8 @@
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Hdd5b6542836747878e0a24707a3457f5p.jpg",
    "tid": "website",
    "for": [
-    "C"
+    "M",
+    "D"
    ]
   },
   {
@@ -5770,8 +5656,7 @@
    "tid": "website",
    "for": [
     "M",
-    "D",
-    "C"
+    "D"
    ]
   },
   {
@@ -5814,7 +5699,10 @@
     "M",
     "D",
     "C",
-    "P"
+    "P",
+    "A",
+    "K",
+    "R"
    ]
   },
   {
@@ -5834,7 +5722,13 @@
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sed0249852f3e4d8cba8d8b64fbfc012bC.jpg",
    "tid": "website",
    "for": [
-    "M"
+    "M",
+    "D",
+    "C",
+    "P",
+    "A",
+    "K",
+    "R"
    ]
   },
   {
@@ -5855,7 +5749,12 @@
    "tid": "website",
    "for": [
     "M",
-    "D"
+    "D",
+    "C",
+    "P",
+    "A",
+    "K",
+    "R"
    ]
   },
   {
@@ -5878,7 +5777,10 @@
     "M",
     "D",
     "C",
-    "P"
+    "P",
+    "A",
+    "K",
+    "R"
    ]
   },
   {
@@ -5900,7 +5802,11 @@
    "for": [
     "M",
     "D",
-    "C"
+    "C",
+    "P",
+    "A",
+    "K",
+    "R"
    ]
   },
   {
@@ -5941,13 +5847,7 @@
    "sold": 11,
    "link": "https://s.click.aliexpress.com/e/_c4Uyx8Wb",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sed9994fbc8c845e2baf34534e18df701a.jpg",
-   "tid": "website",
-   "for": [
-    "M",
-    "D",
-    "C",
-    "P"
-   ]
+   "tid": "website"
   },
   {
    "collection": "phone",
@@ -5987,7 +5887,9 @@
    "tid": "website",
    "for": [
     "M",
-    "D"
+    "D",
+    "C",
+    "P"
    ]
   },
   {
@@ -6008,7 +5910,9 @@
    "tid": "website",
    "for": [
     "M",
-    "D"
+    "D",
+    "C",
+    "P"
    ]
   },
   {
@@ -6028,7 +5932,10 @@
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S7491ec45da49473c9fde4114675c9623d.jpg",
    "tid": "website",
    "for": [
-    "A"
+    "M",
+    "D",
+    "C",
+    "P"
    ]
   },
   {
@@ -6051,8 +5958,7 @@
     "M",
     "D",
     "C",
-    "P",
-    "A"
+    "P"
    ]
   },
   {
@@ -6073,7 +5979,9 @@
    "tid": "website",
    "for": [
     "M",
-    "D"
+    "D",
+    "C",
+    "P"
    ]
   },
   {
@@ -6116,7 +6024,9 @@
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S2e4d0ce8efb7471aab1d957d8822e2e1O.jpg",
    "tid": "website",
    "for": [
-    "A",
+    "M",
+    "D",
+    "C",
     "P"
    ]
   },
@@ -6136,7 +6046,10 @@
    "link": "https://s.click.aliexpress.com/e/_c3nx18cP",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S050b12fe067c48f9817b7cba03d95a86q.jpg",
    "tid": "website",
-   "for": []
+   "for": [
+    "M",
+    "D"
+   ]
   },
   {
    "collection": "nature",
@@ -6156,8 +6069,7 @@
    "tid": "website",
    "for": [
     "M",
-    "D",
-    "C"
+    "D"
    ]
   },
   {
@@ -6175,11 +6087,7 @@
    "sold": 408,
    "link": "https://s.click.aliexpress.com/e/_c3KI26Jd",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Scbe9ba59feb549d581c30cf677fd8b010.jpg",
-   "tid": "website",
-   "for": [
-    "M",
-    "D"
-   ]
+   "tid": "website"
   },
   {
    "collection": "remote",
@@ -6196,11 +6104,7 @@
    "sold": 265,
    "link": "https://s.click.aliexpress.com/e/_c2zIVwa3",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S0185eaa2e5834e85992cf6f9a806d384e.jpg",
-   "tid": "website",
-   "for": [
-    "M",
-    "D"
-   ]
+   "tid": "website"
   },
   {
    "collection": "remote",
@@ -6217,10 +6121,7 @@
    "sold": 46,
    "link": "https://s.click.aliexpress.com/e/_c4SRAH7p",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S7a42a17e9c8648528b76a490ca13ab637.png",
-   "tid": "website",
-   "for": [
-    "M"
-   ]
+   "tid": "website"
   },
   {
    "collection": "remote",
@@ -6237,12 +6138,7 @@
    "sold": 91,
    "link": "https://s.click.aliexpress.com/e/_c4sezII7",
    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Se41702948a9548d7b7abba1fad7513f6u.jpg",
-   "tid": "website",
-   "for": [
-    "M",
-    "D",
-    "C"
-   ]
+   "tid": "website"
   }
  ]
 }

@@ -467,17 +467,6 @@
    ]
   },
   {
-   "id": "ricoh",
-   "name": "ריקו",
-   "models": [
-    {
-     "name": "GR IV",
-     "type": "C",
-     "battery": "DB-120"
-    }
-   ]
-  },
-  {
    "id": "phone",
    "name": "טלפון",
    "models": [
