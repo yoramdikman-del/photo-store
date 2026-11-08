@@ -1,88 +1,156 @@
-# רענון מוצרים – 2026-10-19
+# רענון מוצרים – 2026-11-08
 
-נבדקו 198 מוצרים. נמצאו 197. קישורי website חדשים: 31.
+נבדקו 283 מוצרים. נמצאו 277. קישורי website חדשים: 1.
 
 ## מוצרים חדשים שעולים לאתר
-- K&F – מתאם עדשות Canon EF למצלמות Canon RF, עם פוקוס אוטומטי EF → RF (קישור שותפים)
-- K&F – מתאם עדשות Canon EF ל-RF, עם פוקוס אוטומטי – הנמכר ביותר EF → RF (קישור שותפים)
-- JJC – מתאם עדשות Canon EF ל-RF, עם פוקוס אוטומטי EF → RF (קישור שותפים)
-- Meike – מתאם עדשות Canon EF ל-RF, עם פוקוס אוטומטי EF → RF (קישור שותפים)
-- Shoten – מתאם אלקטרוני לעדשות Nikon F למצלמות Nikon Z F → Z (קישור שותפים)
-- K&F – מתאם עדשות Canon EF למצלמות Sony E, עם פוקוס אוטומטי EF → Sony E (קישור שותפים)
-- 7artisans – מתאם עדשות Canon EF ל-Sony E, עם פוקוס אוטומטי EF → Sony E (קישור שותפים)
-- Viltrox – מתאם עדשות Nikon F ל-Sony E, עם פוקוס אוטומטי F → Sony E (קישור שותפים)
-- Viltrox – מתאם עדשות Sony E למצלמות Nikon Z, עם פוקוס אוטומטי Sony E → Z (קישור שותפים)
-- Megadap – מתאם ETZ21 Pro+ לעדשות Sony E (כולל Sigma ו-Tamron) למצלמות Nikon Z Sony E → Z (קישור שותפים)
-- Viltrox – מתאם עדשות Canon EF למצלמות Nikon Z, עם פוקוס אוטומטי EF → Z (קישור שותפים)
-- Meike – מתאם עדשות Canon EF ל-Nikon Z, עם פוקוס אוטומטי EF → Z (קישור שותפים)
-- K&F – מתאם עדשות Canon EF למצלמות Fuji X, עם פוקוס אוטומטי EF → Fuji X (קישור שותפים)
-- Fringer – מתאם EF-FX Pro III לעדשות Canon EF למצלמות Fuji X EF → Fuji X (קישור שותפים)
-- Fringer – מתאם NF-FX II לעדשות Nikon F למצלמות Fuji X F → Fuji X (קישור שותפים)
-- Viltrox – מתאם EF-L Pro לעדשות Canon EF למצלמות L-Mount EF → L (קישור שותפים)
-- Viltrox – מכווץ מוקד 0.71x לעדשות Canon EF למצלמות Sony E EF → Sony E (קישור שותפים)
-- Viltrox – מכווץ מוקד 0.71x לעדשות Canon EF למצלמות Canon EOS M EF → EOS M (קישור שותפים)
-- Viltrox – מכווץ מוקד לעדשות Canon EF למצלמות Micro 4/3 EF → M4/3 (קישור שותפים)
-- K&F – מתאם לעדשות וינטג' M42 לכל המצלמות M42 (קישור שותפים)
-- K&F – מתאם M42 ל-Sony E, דגם PRO M42 → Sony E (קישור שותפים)
-- K&F – מתאם לעדשות Nikon F/G ל-Sony E, עם טבעת צמצם F → Sony E (קישור שותפים)
-- K&F – מתאם לעדשות Canon FD ל-Sony E FD → Sony E (קישור שותפים)
-- K&F – מתאם לעדשות Minolta MD ל-Sony E MD → Sony E (קישור שותפים)
-- K&F – מתאם לעדשות Pentax K ל-Sony E PK → Sony E (קישור שותפים)
-- K&F – מתאם לעדשות Leica M למצלמות מירורלס Leica M (קישור שותפים)
-- K&F – מתאם לעדשות Nikon F/G ל-Fuji X, עם טבעת צמצם F → Fuji X (קישור שותפים)
-- K&F – מתאם לעדשות Canon FD ל-Fuji X FD → Fuji X (קישור שותפים)
-- K&F – מתאם M42 ל-Fuji X M42 → Fuji X (קישור שותפים)
-- K&F – מתאם לעדשות Nikon F ידניות (AI/AIS) למצלמות Nikon Z F → Z (קישור שותפים)
-- K&F – מתאם לעדשות Nikon F למצלמות Canon EF (רפלקס) F → EF (קישור שותפים)
+- אין
 
 ## מוצרים שלא נמצאו (מוסתרים באתר עד החלטה)
-- אין
+- K&F Concept – סוללה ומטען כפול LP-E17 (1005008494142686)
+- COMAN – חצובת קרבון קלה עם פלטה מהירה (1005009566109331)
+- COMAN – חצובת קרבון עם ראש וידאו (1005012281538131)
+- UGREEN – סוללת גיבוי מגנטית קטנה 5000mAh (1005006134491427)
+- Taimi – כרטיס זיכרון מיקרו אס-די לווידאו באיכות פור-קיי (1005009843840833)
+- Ulanzi – חצובה לטלפון עם קרבינר, נתלית על התרמיל (1005007637019062)
 
 ## מוצרים שחזרו
-- אין
+- Ulanzi – פנס לד צבעוני קטן למצלמה ולטלפון
 
 ## שינויי מחיר מעל 15%
-- אין
-
-## מוצרים בלי עמלה (13) – חלופות עם עמלה לבדיקה
-**Canon EF to EOS M speed booster**
-- Pixco For EF-for EOS M Focal Reducer Speed Booster Turbo Adapter suit For Canon EF Lens to | Mount Adapter Store Store | 65.29$ | 90.0% | 2 נמכרו | עמלה 7.0% | 32865167587
-- M42-EM Focal Reducer Speed Booster adapter ring for m42 42mm mount lens to canon EF-M EOSM | Shop1105558147 Store | 75.09$ | 100.0% | 1 נמכרו | עמלה 7.0% | 1005012425148598
-- Viltrox EF-EOS M/M2 AF Lens Adapter Auto Focus 0.71X Reducer Speed Booster Mount for Canon | K SALFOTO Store | 39.96$ | 100.0% | 1 נמכרו | עמלה 9.0% | 1005004096510681
-**EF to Fuji X adapter autofocus**
-- K&F Concept EF to FX Auto Focus Adapter for Canon EOS to Fuji X X-Pro3 X-Pro2 X-T5 X-T4 X- | K&F CONCEPT QYCAMERA Store | 199.99$ | 100.0% | 8 נמכרו | עמלה 7.0% | 1005007552888948
-- 7artisans EF-Other -EOS M -SE -R -NZ -FX Auto Focus Lens Adapter for Canon EF Lens to E/EO | QYCAMERA Store | 39.00$ | 90.0% | 4 נמכרו | עמלה 7.0% | 1005006305894807
-- Fringer EF-FX PRO III lens Ultra adapter EF-FX II for Canon EF Lens to Fujifilm Auto Focus | Ruimi Photography Store | 282.45$ | 100.0% | 3 נמכרו | עמלה 7.0% | 1005009297059390
-**EF to L mount adapter autofocus**
-- VILTROX EF-L Pro EF-L Auto Focus Lens Mount Adapter For Canon EF EF-S Lens to L Mount Came | Ruimi Photography Store | 92.30$ | 94.3% | 20 נמכרו | עמלה 7.0% | 1005009248789312
-- Viltrox EF-L Pro AF Mount Adapter Autofocus for EF/EF-S Lenses to L-mount Mirrorless Camer | MoreShot Store | 130.80$ | 97.1% | 16 נמכרו | עמלה 7.0% | 1005010129837972
-- VILTROX EF-L Pro EF-L Auto Focus Lens Mount Adapter For Canon EF EF-S Lens to L Mount Came | Luminote Store | 93.39$ | 100.0% | 5 נמכרו | עמלה 7.0% | 1005010579432463
-**EF to M43 speed booster**
-- Viltrox EF-M2 II Reducer Speed Booster Adapter Electronic Auto Focus for Canon EF Mount to | MoreShot Store | 98.10$ | 100.0% | 8 נמכרו | עמלה 7.0% | 1005010554668995
-- Focal Reducer Speed Booster adapter for canon eos Lens to olympus panasonic m43 GH7 G100 E | myzeng Accessories Store | 71.99$ | 100.0% | 1 נמכרו | עמלה 7.0% | 1005012100715560
-**EF to Nikon Z adapter autofocus**
-- VILTROX EF-Z 2 IS Anti-Shaking Lens Mount Auto Focus Lens Adapter Ring for Canon EF/EF-S L | Ruyi Photography Store Store | 82.09$ | 91.4% | 5 נמכרו | עמלה 7.0% | 1005008880988313
-- 7artisans EF-Other -EOS M -SE -R -NZ -FX Auto Focus Lens Adapter for Canon EF Lens to E/EO | QYCAMERA Store | 39.00$ | 90.0% | 4 נמכרו | עמלה 7.0% | 1005006305894807
-- MEIKE Pro EF-Z Auto Adapter｜Canon EF to Nikon Z AF Mount Converter with Full Electronic Co | Kang Store | 130.39$ | 100.0% | 1 נמכרו | עמלה 7.0% | 1005009185020802
-**EF to RF adapter autofocus**
-- Andoer EF-EOS R Auto Focus Camera Lens Adapter Ring IS Image for Canon EF EF-S Lens to Can | Camera Choice Store | 24.29$ | 95.1% | 659 נמכרו | עמלה 7.0% | 1005007218550542
-- EF-EOSR Auto Focus Camera Lens Adapter Ring Replacement for Canon EF EF-S Lens to Canon EO | Stone's Store | 24.29$ | 98.0% | 235 נמכרו | עמלה 7.0% | 1005011942702868
-- EOS R Mount Adapter EF/EF-S Lens to RF Mount Camera Autofocus Converter Ring Compatible wi | Ailesi Store | 38.79$ | 95.4% | 140 נמכרו | עמלה 7.0% | 1005009957645319
-**Nikon F to Fuji X adapter autofocus**
-- לא נמצאה חלופה עם עמלה
-**Nikon F to Sony E adapter autofocus**
-- VILTROX NF-E1 Autofocus Electronic Lens Adapter for Nikon F-mount Lens to Sony E-mount Cam | KS Pan's store | 176.00$ | 92.5% | 12 נמכרו | עמלה 7.0% | 1005004806289796
-- Monster Adapter  MonsterAdapter  LA-FE2 Adapter AF Auto Focus Ring For Nikon F Lens to Son | Filmmaker Pro Store | 439.00$ | 100.0% | 10 נמכרו | עמלה 7.0% | 1005012440843910
-- VILTROX NF-E1 For Nikon F Lens to Sony E mount A7SI A7II A7II Camera NF-NEX/NF-E Lens Adap | Fu0012shop Store | 32.27$ | 100.0% | 10 נמכרו | עמלה 7.0% | 1005012395265811
-**Nikon F to Z adapter autofocus**
-- Mount Tube Lens Adapter Viltrox NF-Z DG-Z Adapter Ring Nikon F Mount Nikon Z For Z50, Z6,  | AEVYVKV store Store | 37.26$ | 100.0% | 5 נמכרו | עמלה 7.0% | 1005012444744966
-- MonsterAdapter LA FZ1 AF  FZ 1 Auto Focu Adapter Ring for Nikon F Lens to Nikon Z Cameras  | Filmmaker Pro Store | 359.00$ | 100.0% | 3 נמכרו | עמלה 7.0% | 1005009552477986
-- Viltrox Auto Focus FTZ Lens Mount Adapter NF-Z for Nikon F Lens to Nikon Z Mount Mirrorles | ilovephoto Store | 139.00$ | 96.0% | 3 נמכרו | עמלה 7.0% | 1005007937464589
-**Sony E to Nikon Z adapter autofocus**
-- Viltrox E-Z AF Auto Focus Lens Mount Adapter Full Frame for Sony E mount lenses to Nikon Z | KS Pan's store | 74.25$ | 90.0% | 52 נמכרו | עמלה 7.0% | 1005008827411622
-- Viltrox Adapter E-Z Ring Auto Focus for Sony E Lens to Nikon Z Cameras | Ruimi Photography Store | 87.39$ | 94.3% | 18 נמכרו | עמלה 7.0% | 1005010100905871
-- Viltrox E-Z AF Lens Mount Adapter Auto Focus Ring Mount Lens Converter for Sony E-mount Le | MoreShot Store | 99.00$ | 94.0% | 13 נמכרו | עמלה 7.0% | 1005009506729848
-**Viltrox speed booster**
-- Viltrox EF-M2II 0.71x Speed Booster Adapter Focal Reducer Auto-Focus for Canon EF Mount Le | KS Pan's store | 115.00$ | 92.0% | 45 נמכרו | עמלה 7.0% | 1005009665148193
-- For Canon EF Lens to Sony E Mount Camera A9 A7 A7RII A6400 Viltrox EF-E II Lens Adapter Au | ERILLES 3C SMART Store | 92.23$ | 100.0% | 14 נמכרו | עמלה 7.0% | 1005009623906724
-- VILTROX NF-M43X 0.71X Lens Adapter Ring for Nikon F G Lens to Micro 4/3 Camera Panasonic O | Ruimi Photography Store | 65.25$ | 100.0% | 9 נמכרו | עמלה 7.0% | 1005009477030032
+- PALO – סוללה עם טעינה ישירה בכבל טייפ-סי LP-E17: 10.99$ → 9.16$
+- Hisewen – סוללה ומטען כפול LP-E17: 9.17$ → 7.66$
+- Hisewen – סוללה ומטען כפול LP-E6: 9.71$ → 8.09$
+- Hisewen – סוללה ומטען כפול LP-E8: 8.29$ → 6.87$
+- probty – סוללה מוגדלת EN-EL15C: 11.64$ → 9.72$
+- Hisewen – סוללה עם טעינה בכבל טייפ-סי EN-EL15C: 13.9$ → 11.52$
+- Hisewen – סוללה עם טעינה בכבל טייפ-סי EN-EL14a: 11.91$ → 9.88$
+- Hisewen – זוג סוללות ומטען כפול EN-EL20: 13.59$ → 11.38$
+- Hisewen – סוללה עם טעינה בכבל טייפ-סי NP-FW50: 12.07$ → 10.11$
+- Hisewen – סוללה ומטען עם חיבור טייפ-סי NP-FZ100: 18.39$ → 15.24$
+- ayrst – מטען כפול NP-FZ100: 10.04$ → 8.36$
+- probty – סוללה למצלמות קומפקטיות ומצלמות אקשן NP-BX1: 8.24$ → 6.92$
+- Hisewen – סוללה ומטען כפול NP-W126S: 8.8$ → 7.37$
+- PALO – סוללה עם טעינה בכבל ונרתיק NP-W126S: 11.99$ → 9.99$
+- K&F – תיק צד קל למצלמה, 10 ליטר: 35.69$ → 29.11$
+- JJC – נרתיק עדשה מרופד: 17.32$ → 14.55$
+- PGYTECH – מחיצה מרופדת שהופכת כל תיק לתיק צילום: 49.36$ → 40.92$
+- Ulanzi – תיק צד קטן ונוח למצלמה ולטלפון: 24.99$ → 20.99$
+- Ulanzi – תיק צד לטיולים, 9 ליטר: 39.99$ → 33.59$
+- PGYTECH – תיק צד למצלמה בשלושה גדלים: 69.93$ → 57.94$
+- PGYTECH – תרמיל צילום קל, 16 או 22 ליטר: 89.95$ → 74.95$
+- Ulanzi – תרמיל טיולים קל, 20 ליטר: 69.99$ → 58.79$
+- Ulanzi – תרמיל עירוני למצלמה ולמחשב, 22 ליטר: 119.99$ → 100.79$
+- PGYTECH – תרמיל צילום קל שמתרחב לפי הצורך: 179.95$ → 149.95$
+- PGYTECH – תרמיל צילום גדול עם מקום למחשב 16 אינץ׳: 215.2$ → 180.77$
+- PGYTECH – תרמיל צילום עמיד למים עם מקום למחשב: 26.95$ → 22.45$
+- PGYTECH – מזוודת צילום על גלגלים: 302.45$ → 252.96$
+- PGYTECH – תרמיל צילום עם גלגלים, 2 ב-1: 329.95$ → 274.96$
+- Ulanzi – תיק נשיאה למצלמת פוקט של די ג׳יי איי: 11.95$ → 10.01$
+- PGYTECH – תיק צד קטן למצלמת פוקט ולאביזרים: 44.95$ → 37.45$
+- K&F – נרתיק קשיח לפילטרים: 22.99$ → 17.7$
+- JJC – נרתיק עדשה עמיד למים עם חיבור לחגורה: 14.37$ → 12.07$
+- PGYTECH – תיק צד למצלמה בשלושה גדלים: 65.61$ → 54.84$
+- Ulanzi – חצובה מגנטית מתקפלת לטלפון: 24.99$ → 19.25$
+- Ulanzi – חצובה גמישה (תמנון) לטלפון ולמצלמה: 17.1$ → 7.74$
+- K&F – חצובת אלומיניום קלה עם שלט, 150 ס״מ: 24.47$ → 20.15$
+- K&F – חצובת טיולים עם ראש כדורי: 56.99$ → 47.49$
+- Fotopro – חצובת קרבון קטנה לטיולים עם ראש כדורי: 77.49$ → 65.19$
+- Fotopro – חצובת קרבון לטיולים שהופכת למונופוד: 153.39$ → 129.19$
+- COMAN – חצובת קרבון קלה לטיולים: 245.29$ → 191.79$
+- Freewell – חצובת קרבון לטיולים, 150 ס״מ: 249.98$ → 208.31$
+- K&F – מונופוד אלומיניום קל, 160 ס״מ: 22.43$ → 17.31$
+- K&F – ראש כדורי לחצובה, עד 10 ק״ג: 25.49$ → 20.99$
+- Manbily – ראש כדורי נמוך וחזק: 58.79$ → 48.84$
+- K&F – ראש וידאו נוזלי לצילום חלק: 41.66$ → 34.99$
+- SmallRig – ראש וידאו נוזלי עם פלטה מהירה: 39.19$ → 31.99$
+- K&F – מקל סלפי וחצובה עם שלט, עד 175 ס״מ: 26.51$ → 20.21$
+- SmallRig – פנס לד עם פוקוס ו-20 פילטרים: 49.81$ → 38.15$
+- NEEWER – תאורת קליפס נטענת לטלפון: 23.25$ → 17.25$
+- K&F – פנס לד צבעוני 12 וואט עם סוללה: 32.98$ → 25.39$
+- ZHIYUN – תאורת כיס חזקה 60 וואט: 128.8$ → 107.87$
+- COMAN – עמוד תאורה שנפתח בלחיצה: 71.49$ → 47.69$
+- PGYTECH – נרתיק מרופד לעדשת טלה: 35.95$ → 29.96$
+- SmallRig – רצועת יד למצלמה: 9.8$ → 8.22$
+- PGYTECH – קליפס למצלמה על רצועת התרמיל – דגם מתכת: 52.14$ → 43.45$
+- Fotopro – מתקן למצלמה על רצועת התרמיל: 44.79$ → 37.79$
+- K&F – פילטר הגנה דק לעדשה: 10.09$ → 8.23$
+- K&F – פילטרים לעדשה במגוון סוגים ומידות: 10.09$ → 7.71$
+- K&F – זוג טבעות מתאם לפילטרים: 8.4$ → 6.93$
+- K&F – סט 3 פילטרי הכהיה לחשיפה ארוכה: 50.99$ → 41.57$
+- K&F – פילטר הכהיה משתנה: 50.99$ → 41.57$
+- JJC – מערכת פילטרים מגנטית, 67 מ״מ: 37.41$ → 31.26$
+- Freewell – פילטר הכהיה משתנה ומקטב, מגנטי: 148.49$ → 124.49$
+- Freewell – פילטר הכהיה משתנה ומקטב, בהברגה: 99.99$ → 82.88$
+- Freewell – פילטר מקטב ומשמש למצלמות פוג׳י קומפקטיות: 69.99$ → 57.99$
+- JJC – משמש לעדשת קנון: 11.99$ → 9.97$
+- JJC – משמש הפיך לעדשת קנון 45 מ״מ: 19.99$ → 15.5$
+- K&F – פילטרים למצלמת פוקט של די ג׳יי איי: 16.31$ → 13.3$
+- K&F – מטען ל-3 סוללות עם מסך NP-FZ100: 23.45$ → 19.31$
+- Probty – סוללה גדולה לתאורה ולמוניטורים NP-F970: 19.54$ → 16.32$
+- KingMa – גריפ סוללה אנכי: 49.99$ → 41.99$
+- K&F – קופסה ל-16 כרטיסי מיקרו אס די: 7.76$ → 6.45$
+- NITECORE – מברשת עדינה לניקוי עדשות: 8.99$ → 7.55$
+- BOYA – מיקרופון אלחוטי קטן לטלפון: 29.09$ → 24.7$
+- BOYA – מיקרופון אלחוטי מקצועי לטלפון ולמחשב: 99.99$ → 83.99$
+- K&F – פילטר מקטב עם קליפס לטלפון: 17.33$ → 12.73$
+- Ulanzi – מעמד מגנטי לטלפון עם וו נסתר לתלייה על קיר או מדף: 29.39$ → 24.94$
+- K&F – זרוע מפרקית עם קלמפ חזק: 24.47$ → 20.15$
+- K&F – זרוע ארוכה לצילום מלמעלה על שולחן: 29.99$ → 25.19$
+- TELESIN – רתמת חזה למצלמת אקסטרים: 13.85$ → 11.61$
+- TELESIN – סוללות ומטען למצלמות גו-פרו: 21.23$ → 13.37$
+- K&F – ערכת אביזרים למצלמות אקסטרים: 23.45$ → 19.31$
+- K&F – סט פילטרים לרחפן אווטה 2: 20.39$ → 14.98$
+- Freewell – פילטרים לרחפן מיני 5 פרו: 19.79$ → 14.86$
+- PGYTECH – קורא כרטיסים מהיר עם שני חריצים: 33.28$ → 27.85$
+- SmallRig – זוג מכסים לשקע המבזק למצלמות סוני: 9.99$ → 8.39$
+- SmallRig – אחיזת אגודל עם מכסה לשקע המבזק: 16.9$ → 12.18$
+- Haoge – משמש עדשה ממתכת עם טבעת לפילטר: 39.88$ → 32.95$
+- K&F – מתאם עדשות Canon EF למצלמות Canon RF, עם פוקוס אוטומטי EF → RF: 79.99$ → 65.62$
+- JJC – מתאם עדשות Canon EF ל-RF, עם פוקוס אוטומטי EF → RF: 48.85$ → 40.9$
+- Shoten – מתאם אלקטרוני לעדשות Nikon F למצלמות Nikon Z F → Z: 59.99$ → 50.24$
+- K&F – מתאם עדשות Canon EF למצלמות Sony E, עם פוקוס אוטומטי EF → Sony E: 159.99$ → 133.05$
+- 7artisans – מתאם עדשות Canon EF ל-Sony E, עם פוקוס אוטומטי EF → Sony E: 100.29$ → 80.49$
+- Viltrox – מתאם עדשות Nikon F ל-Sony E, עם פוקוס אוטומטי F → Sony E: 92.3$ → 77.53$
+- Viltrox – מתאם עדשות Canon EF למצלמות Nikon Z, עם פוקוס אוטומטי EF → Z: 91.91$ → 76.59$
+- Meike – מתאם עדשות Canon EF ל-Nikon Z, עם פוקוס אוטומטי EF → Z: 199.99$ → 167.99$
+- K&F – מתאם M42 ל-Sony E, דגם PRO M42 → Sony E: 35.99$ → 29.93$
+- K&F – מתאם לעדשות Nikon F/G ל-Sony E, עם טבעת צמצם F → Sony E: 27.09$ → 20.96$
+- K&F – מתאם לעדשות Canon FD ל-Sony E FD → Sony E: 31.99$ → 24.3$
+- K&F – מתאם לעדשות Minolta MD ל-Sony E MD → Sony E: 30.99$ → 25.77$
+- K&F – מתאם לעדשות Pentax K ל-Sony E PK → Sony E: 29.39$ → 24.54$
+- K&F – מתאם לעדשות Leica M למצלמות מירורלס Leica M: 25.99$ → 20.01$
+- K&F – מתאם לעדשות Nikon F/G ל-Fuji X, עם טבעת צמצם F → Fuji X: 28.98$ → 24.1$
+- K&F – מתאם לעדשות Canon FD ל-Fuji X FD → Fuji X: 29.99$ → 24.94$
+- K&F – מתאם M42 ל-Fuji X M42 → Fuji X: 22.15$ → 18.47$
+- K&F – מתאם לעדשות Nikon F ידניות (AI/AIS) למצלמות Nikon Z F → Z: 54.19$ → 41.99$
+- K&F – מתאם לעדשות Nikon F למצלמות Canon EF (רפלקס) F → EF: 31.31$ → 25.65$
+- Ulanzi – מחזיק טלפון לחצובה, עם נעל לתאורה או מיקרופון: 7.2$ → 5.92$
+- Ulanzi – סופטבוקס כדורי קטן לפלאש ולתאורה, 30 ס״מ: 24.95$ → 19.58$
+- JJC – שלט בלוטות' למצלמות סוני: 28.59$ → 22.14$
+- UGREEN – כבל USB-C בזווית 90 מעלות, לטעינה על חצובה: 2.14$ → 1.79$
+- K&F – פילטר לצילום השמש, הכהיה של 16.6 סטופים: 27.53$ → 22.44$
+- K&F – פילטר הכהיה משתנה משולב, בכמה גרסאות: 22.73$ → 18.53$
+- SmallRig – מחזיק טלפון מגנטי לנעל המצלמה: הטלפון הופך למסך שני: 19.59$ → 16.39$
+- SmallRig – זרוע מפרקית 9.5 אינץ' למסך או לטלפון, בזווית הנוחה לעיניים: 9.7$ → 7.68$
+- UGREEN – כרטיס לכידה HDMI ל-USB-C ‏1080P@60, תמונה מהמצלמה לאייפד: 21.99$ → 16.64$
+- UGREEN – כרטיס לכידה עם טעינה 100W, מטעין את האייפד בזמן הצילום: 39.99$ → 33.32$
+- NEEWER – רפלקטור 5 ב־1 אובלי, 60×90 ס״מ: לבן, שחור, זהב, כסף ומפזר: 20.8$ → 15.77$
+- K&F – רפלקטור 5 ב־1 עגול עם ידית, מחזיקים ביד אחת: 16.99$ → 12.74$
+- SmallRig – זרוע מתכווננת עם תפס, מחזיקה רפלקטור, תאורה או טלפון: 33.83$ → 25.91$
+- SmallRig – זוג תפסי סופר קלמפ לתאורה ולרפלקטורים: 7.99$ → 6.71$
+- SmallRig – תפס עם זרוע גמישה של 24 ס״מ: 9.9$ → 8.12$
+- Netac – כרטיס זיכרון מיקרו מהיר: 10.49$ → 39.99$
+- PGYTECH – מחברים מהירים לרצועת מצלמה: 9.95$ → 8.36$
+- PGYTECH – רצועת יד דקה עם שחרור מהיר: 19.94$ → 16.62$
+- Ulanzi – חצובת שולחן קטנה שהיא גם ידית אחיזה: 11.01$ → 9.19$
+- Ulanzi – בסיס טעינה וחצובה למצלמת הכיס של די ג׳יי איי: 12.99$ → 10.01$
+- Ulanzi – חצובה עם שחרור מהיר בלחיצה אחת: 45.47$ → 37.71$
+- – מגן מסך מזכוכית למצלמות Canon R8, R7, R6, R50: 3.19$ → 2.62$
+- K&F – מקלוני ניקוי לחיישן המצלמה: 11.77$ → 9.39$
+- Minifocus – תושבת למסך חיצוני על נעל המצלמה: 8.33$ → 6.78$
+- SmallRig – מחבר מוטות לריג וידאו: 9.9$ → 7.75$
+- Ulanzi – זרוע קסם עם קלמפ: 14.99$ → 10.8$
+- SmallRig – מוט קרבון לריג וידאו: 13.71$ → 10.68$
+- SmallRig – מחזיק סוללה ניידת לריג: 21.78$ → 16.81$
+- JJC – שלט בלוטות׳ למצלמות סוני: 30.53$ → 25.38$
+- – כרטיס לכידה: המצלמה הופכת למצלמת רשת: 13.59$ → 11.42$
