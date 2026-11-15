@@ -1,5 +1,5 @@
 {
- "date": "2026-11-08",
+ "date": "2026-11-15",
  "rules": {
   "min_rating": 94,
   "min_sold": 100,
@@ -16,26 +16,12 @@
     "title": "3500mAh LP E6 LPE6 LP-E6 E6N Battery or LED Dual Charger For Canon EOS 5DS R 5D Mark II 5D Mark III 6D 7D 70D 80D Camera",
     "shop": "TaLaBat Official Store",
     "price": 7.69,
-    "rating": 96.0,
-    "sold": 291,
+    "rating": 96.1,
+    "sold": 294,
     "commission": 7.0,
     "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sfe578ec859c842ada4ec0f449a5baf092.jpg",
     "url": "https://www.aliexpress.com/item/1005005902364552.html",
-    "link": "https://s.click.aliexpress.com/e/_c3lbKZaR"
-   },
-   {
-    "id": "1005006314485852",
-    "collection": "batteries",
-    "query": "camera battery NP-FZ100",
-    "title": "JJC Battery Storage Pouch Camera Battery Case for Canon LP-E6N  LP-E6NH LP-E17 AAA 18650 CR2032 Sony NP-FW50 NP-FZ100 NP FW50",
-    "shop": "JJC Official Store",
-    "price": 7.61,
-    "rating": 98.7,
-    "sold": 271,
-    "commission": 7.0,
-    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sdb6554431ead40c4bfca09ef45e328e57.jpg",
-    "url": "https://www.aliexpress.com/item/1005006314485852.html",
-    "link": "https://s.click.aliexpress.com/e/_c4S1RerN"
+    "link": "https://s.click.aliexpress.com/e/_c3ZLoFLH"
    },
    {
     "id": "1005005966094128",
@@ -44,30 +30,29 @@
     "title": "ENEL5 EN-EL5 EL5 Battery + Dual Charger 2080mAh for Nikon Coolpix P530 P520 P510 P100 P500 P5000 P5100 P6000 3700 4200 Batteria",
     "shop": "TaLaBat Official Store",
     "price": 5.25,
-    "rating": 96.3,
-    "sold": 270,
+    "rating": 96.2,
+    "sold": 274,
     "commission": 7.0,
     "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sc8e095485d5d4d91958316d3128cf159r.jpg",
     "url": "https://www.aliexpress.com/item/1005005966094128.html",
-    "link": "https://s.click.aliexpress.com/e/_c4dXlTBv"
-   }
-  ],
-  "cleaning": [
+    "link": "https://s.click.aliexpress.com/e/_c3uXuGYF"
+   },
    {
-    "id": "1005005935163285",
-    "collection": "cleaning",
-    "query": "lens cleaning pen",
-    "title": "Soft Tip Air Blower Blaster Pump Dust Cleaner for Digital DSLR Camera Lens Filter Binocular Telescope Microscope Glass Keyboards",
+    "id": "1005006314485852",
+    "collection": "batteries",
+    "query": "camera battery NP-FZ100",
+    "title": "JJC Battery Storage Pouch Camera Battery Case for Canon LP-E6N  LP-E6NH LP-E17 AAA 18650 CR2032 Sony NP-FW50 NP-FZ100 NP FW50",
     "shop": "JJC Official Store",
-    "price": 4.09,
+    "price": 8.09,
     "rating": 98.6,
-    "sold": 107,
+    "sold": 267,
     "commission": 7.0,
-    "img": "https://ae-pic-a1.aliexpress-media.com/kf/H512d333d1e394df8ae67b7a6b629b6d6b.jpg",
-    "url": "https://www.aliexpress.com/item/1005005935163285.html",
-    "link": "https://s.click.aliexpress.com/e/_c30DDBEn"
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sdb6554431ead40c4bfca09ef45e328e57.jpg",
+    "url": "https://www.aliexpress.com/item/1005006314485852.html",
+    "link": "https://s.click.aliexpress.com/e/_c41Rbd0f"
    }
   ],
+  "cleaning": [],
   "cards": [
    {
     "id": "1005009314740606",
@@ -77,25 +62,11 @@
     "shop": "KIWIFOTOS Official Store",
     "price": 11.95,
     "rating": 96.5,
-    "sold": 433,
+    "sold": 414,
     "commission": 3.0,
     "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sbf4817f532b04c90b1f9882f137336ea0.jpg",
     "url": "https://www.aliexpress.com/item/1005009314740606.html",
-    "link": "https://s.click.aliexpress.com/e/_c4rXoBSJ"
-   },
-   {
-    "id": "1005005935162281",
-    "collection": "cards",
-    "query": "memory card case",
-    "title": "JJC 16 Slots Micro SD Card Case Storage Box Soft Foam MicroSD Card Holder Waterproof Memory Card Organizer for 16 TF Cards",
-    "shop": "JJC Official Store",
-    "price": 4.89,
-    "rating": 97.7,
-    "sold": 358,
-    "commission": 7.0,
-    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S1eb754bbb53e4c60886811ee06256bcec.jpg",
-    "url": "https://www.aliexpress.com/item/1005005935162281.html",
-    "link": "https://s.click.aliexpress.com/e/_c3HyZcht"
+    "link": "https://s.click.aliexpress.com/e/_c3G5REoL"
    },
    {
     "id": "1005012100099554",
@@ -104,12 +75,26 @@
     "title": "Ulanzi DC01 2-in-1 Portable Memory Card Case Dual-Slot Simultaneous Card Reader for Camera Smartphone for Photography",
     "shop": "Ulanzi Official Store",
     "price": 28.4,
-    "rating": 98.3,
-    "sold": 338,
+    "rating": 97.3,
+    "sold": 349,
     "commission": 8.0,
     "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sba625c21432342f6bb8751c7f5c5580dW.jpg",
     "url": "https://www.aliexpress.com/item/1005012100099554.html",
-    "link": "https://s.click.aliexpress.com/e/_c3u8MU35"
+    "link": "https://s.click.aliexpress.com/e/_c3Tucg7p"
+   },
+   {
+    "id": "1005005935162281",
+    "collection": "cards",
+    "query": "memory card case",
+    "title": "JJC 16 Slots Micro SD Card Case Storage Box Soft Foam MicroSD Card Holder Waterproof Memory Card Organizer for 16 TF Cards",
+    "shop": "JJC Official Store",
+    "price": 4.89,
+    "rating": 97.6,
+    "sold": 342,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S1eb754bbb53e4c60886811ee06256bcec.jpg",
+    "url": "https://www.aliexpress.com/item/1005005935162281.html",
+    "link": "https://s.click.aliexpress.com/e/_c3RogDcR"
    }
   ],
   "bags": [
@@ -119,13 +104,13 @@
     "query": "camera backpack",
     "title": "TELESIN 360° Rotation Magnetic Backpack Clip Clamp Mount for GoPro Hero 13 12 11 10 9 8 7 Insta360 DJI Action Camera Accessories",
     "shop": "TELESIN Official Store",
-    "price": 11.7,
-    "rating": 95.8,
-    "sold": 1068,
+    "price": 12.95,
+    "rating": 95.9,
+    "sold": 1102,
     "commission": 7.0,
     "img": "https://ae-pic-a1.aliexpress-media.com/kf/S2eca7a0ef9c14587af2a4b80cd5b875bs.jpg",
     "url": "https://www.aliexpress.com/item/1005005043290517.html",
-    "link": "https://s.click.aliexpress.com/e/_c37budyj"
+    "link": "https://s.click.aliexpress.com/e/_c4re2e8F"
    },
    {
     "id": "1005007533137022",
@@ -133,13 +118,13 @@
     "query": "lens pouch",
     "title": "JJC Large Thick Camera Lens Pouch Case for Nikon 180-600mm 600mm F6.3 Sony 200-600mm Zoom Lens Canon RF 200-800mm F6.3-9 IS USM",
     "shop": "JJC Official Store",
-    "price": 36.63,
+    "price": 38.39,
     "rating": 95.8,
-    "sold": 234,
+    "sold": 238,
     "commission": 7.0,
     "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sbdb691fef6634c6989cee54f2d39f25bd.jpg",
     "url": "https://www.aliexpress.com/item/1005007533137022.html",
-    "link": "https://s.click.aliexpress.com/e/_c4nM2Yon"
+    "link": "https://s.click.aliexpress.com/e/_c3mcSjcB"
    },
    {
     "id": "1005007506356556",
@@ -147,73 +132,73 @@
     "query": "lens pouch",
     "title": "JJC Thick Camera Lens Case For Nikon Sony Fujifilm Olympus Panasonic DSLR Mirrorless Water Resistant Camera Lens Protective Bag",
     "shop": "JJC Official Store",
-    "price": 10.32,
+    "price": 10.85,
     "rating": 98.1,
-    "sold": 231,
+    "sold": 230,
     "commission": 7.0,
     "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sdadbfe386447471e97419ea7dc31a174z.png",
     "url": "https://www.aliexpress.com/item/1005007506356556.html",
-    "link": "https://s.click.aliexpress.com/e/_c4VpiVJt"
+    "link": "https://s.click.aliexpress.com/e/_c4oNKip5"
    }
   ],
   "tripods": [
-   {
-    "id": "1005010708281380",
-    "collection": "tripods",
-    "query": "mini tripod",
-    "title": "TELESIN Mini Quick Release Universal Tripod Hand Grip for GoPro Insta360 DJI Osmo Action Camera With 1/4 Screw Adapter",
-    "shop": "TELESIN Photography Official Store",
-    "price": 8.58,
-    "rating": 96.8,
-    "sold": 2469,
-    "commission": 7.0,
-    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sb40b38f4b8a645eeb587be0851e8ccd2R.jpg",
-    "url": "https://www.aliexpress.com/item/1005010708281380.html",
-    "link": "https://s.click.aliexpress.com/e/_c3E3XD1d"
-   },
    {
     "id": "1005012473735594",
     "collection": "tripods",
     "query": "travel tripod",
     "title": "Ulanzi MT-44M Selfie Stick Ground Tripod 1/4''&Magnetic Selfie Stick for Smartphone Camera One-Touch Auto Deploy for Travel",
     "shop": "Ulanzi Official Store",
-    "price": 22.54,
-    "rating": 98.6,
-    "sold": 1176,
+    "price": 24.34,
+    "rating": 96.8,
+    "sold": 1406,
     "commission": 8.0,
     "img": "https://ae-pic-a1.aliexpress-media.com/kf/S720600a9944040598b80a13f70d7330dA.jpg",
     "url": "https://www.aliexpress.com/item/1005012473735594.html",
-    "link": "https://s.click.aliexpress.com/e/_c39h7VOf"
+    "link": "https://s.click.aliexpress.com/e/_c3PWFe31"
    },
    {
     "id": "1005005569654848",
     "collection": "tripods",
-    "query": "monopod",
+    "query": "carbon fiber tripod",
     "title": "Phone Travel Self Tripod  Aluminum Tall 55” 140CM Stand With Quick Plates Mount Pan Head For Canon Nikon DSLR SLR Digital Camera",
     "shop": "BTFOOR Official Store",
     "price": 35.19,
     "rating": 95.6,
-    "sold": 969,
+    "sold": 965,
     "commission": 7.0,
     "img": "https://ae-pic-a1.aliexpress-media.com/kf/S8ceb24d5155e43cab5d889a5c30fa51aN.jpg",
     "url": "https://www.aliexpress.com/item/1005005569654848.html",
-    "link": "https://s.click.aliexpress.com/e/_c3ryFXHV"
+    "link": "https://s.click.aliexpress.com/e/_c3sz3hI7"
+   },
+   {
+    "id": "1005008563283770",
+    "collection": "tripods",
+    "query": "carbon fiber tripod",
+    "title": "K&F CONCEPT 64 inch Camera Tripod with Ball Head for Cellphone Live Vlog 8kg Load K234A0+BH-28L Lightweight Outdoor DSLR Tripods",
+    "shop": "K&F CONCEPT Official Store",
+    "price": 41.99,
+    "rating": 95.3,
+    "sold": 231,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sa9e7b38d37af4ab1a8f15aec0483ac71m.jpg",
+    "url": "https://www.aliexpress.com/item/1005008563283770.html",
+    "link": "https://s.click.aliexpress.com/e/_c4W2wfuP"
    }
   ],
   "straps": [
    {
-    "id": "1005008408189699",
+    "id": "1005012085530622",
     "collection": "straps",
-    "query": "quick release camera strap",
-    "title": "PGYTECH Camera Wrist Strap Air Upgrade for Photographers Adjustable Quick Release Camera Hand Strap for Sony Nikon Canon Gopro",
+    "query": "camera wrist strap",
+    "title": "PGYTECH Pocket-Series Camera Strap Compatible with DJI Osmo Pocket 3/Xtra Muse, 2-in-1 Adjustable Shoulder/Wrist Strap",
     "shop": "PGYTECH Official Store",
-    "price": 20.37,
-    "rating": 98.0,
-    "sold": 1559,
+    "price": 16.63,
+    "rating": 98.4,
+    "sold": 1601,
     "commission": 7.0,
-    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sa4a13abaaadf48f7be1bd2883140b20aO.png",
-    "url": "https://www.aliexpress.com/item/1005008408189699.html",
-    "link": "https://s.click.aliexpress.com/e/_c4k8PCA3"
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sa8b18b9b63b048dca5a47f7044eac5cbm.png",
+    "url": "https://www.aliexpress.com/item/1005012085530622.html",
+    "link": "https://s.click.aliexpress.com/e/_c3DgZC6r"
    },
    {
     "id": "1005005789718689",
@@ -223,25 +208,25 @@
     "shop": "TELESIN Official Store",
     "price": 8.82,
     "rating": 97.7,
-    "sold": 1551,
+    "sold": 1563,
     "commission": 7.0,
     "img": "https://ae-pic-a1.aliexpress-media.com/kf/S76621c4a4c7c4dbd990d4c203422da1dE.jpg",
     "url": "https://www.aliexpress.com/item/1005005789718689.html",
-    "link": "https://s.click.aliexpress.com/e/_c4aJKbVz"
+    "link": "https://s.click.aliexpress.com/e/_c2yHuDHh"
    },
    {
-    "id": "1005012085530622",
+    "id": "1005008146958796",
     "collection": "straps",
     "query": "camera wrist strap",
-    "title": "PGYTECH Pocket-Series Camera Strap Compatible with DJI Osmo Pocket 3/Xtra Muse, 2-in-1 Adjustable Shoulder/Wrist Strap",
-    "shop": "PGYTECH Official Store",
-    "price": 16.63,
-    "rating": 98.3,
-    "sold": 1533,
+    "title": "TELESIN Waterproof Bluetooth Remote Control For GoPro Hero 13 12 11 10 9 8 Max With Wrist Strap For Action Camera Accessories",
+    "shop": "TELESIN Official Store",
+    "price": 16.72,
+    "rating": 94.1,
+    "sold": 1370,
     "commission": 7.0,
-    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sa8b18b9b63b048dca5a47f7044eac5cbm.png",
-    "url": "https://www.aliexpress.com/item/1005012085530622.html",
-    "link": "https://s.click.aliexpress.com/e/_c2zsIE8P"
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sce8583a8fa3d486d97cd4c534b01294cX.jpg",
+    "url": "https://www.aliexpress.com/item/1005008146958796.html",
+    "link": "https://s.click.aliexpress.com/e/_c4kF1BJV"
    }
   ],
   "lighting": [
@@ -253,25 +238,25 @@
     "shop": "NUNUPHO Official Store",
     "price": 20.55,
     "rating": 94.9,
-    "sold": 1850,
+    "sold": 2024,
     "commission": 7.0,
     "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sdc46c38fb57d42f8904d3cf9277383205.jpg",
     "url": "https://www.aliexpress.com/item/1005006974359091.html",
-    "link": "https://s.click.aliexpress.com/e/_c35msC5Z"
+    "link": "https://s.click.aliexpress.com/e/_c347KBOx"
    },
    {
     "id": "1005005646856612",
     "collection": "lighting",
-    "query": "LED video light",
+    "query": "RGB light camera",
     "title": "LED Video Light Portable Photography On-Camera 3000K-6000K Bi-Color lighting Cold Shoe for DSLR Camera Camcorder Gopro Vlog",
     "shop": "BTFOOR Official Store",
     "price": 7.95,
     "rating": 95.3,
-    "sold": 813,
+    "sold": 847,
     "commission": 7.0,
     "img": "https://ae-pic-a1.aliexpress-media.com/kf/S8eaddf41b7844fb78fe67ca82fa3d2dex.jpg",
     "url": "https://www.aliexpress.com/item/1005005646856612.html",
-    "link": "https://s.click.aliexpress.com/e/_c4KrbXcj"
+    "link": "https://s.click.aliexpress.com/e/_c3bDhGn1"
    },
    {
     "id": "1005005046406482",
@@ -280,12 +265,12 @@
     "title": "RGB LED Video Light Photography Fill Camera Lighting Panel CRI95+ 2500-9000K LCD Display Cold Shoe For Vlog Live Streaming DSLR",
     "shop": "BTFOOR Official Store",
     "price": 20.25,
-    "rating": 94.8,
-    "sold": 494,
+    "rating": 95.0,
+    "sold": 504,
     "commission": 7.0,
     "img": "https://ae-pic-a1.aliexpress-media.com/kf/S033aa139c2ad48f082a4a60c2f55933fc.jpg",
     "url": "https://www.aliexpress.com/item/1005005046406482.html",
-    "link": "https://s.click.aliexpress.com/e/_c3aCZ6mL"
+    "link": "https://s.click.aliexpress.com/e/_c3AijfPH"
    }
   ],
   "filters": [
@@ -297,11 +282,11 @@
     "shop": "FREEWELL Official Store",
     "price": 24.99,
     "rating": 97.3,
-    "sold": 1403,
+    "sold": 1377,
     "commission": 8.0,
     "img": "https://ae-pic-a1.aliexpress-media.com/kf/S044b375263054f2988bd338aefdd8b63P.jpg",
     "url": "https://www.aliexpress.com/item/1005010302846967.html",
-    "link": "https://s.click.aliexpress.com/e/_c3SIwW6F"
+    "link": "https://s.click.aliexpress.com/e/_c4dSZjMf"
    },
    {
     "id": "1005012394406685",
@@ -310,26 +295,26 @@
     "title": "Freewell 4 Pack Filter Kit, White Black Options, ND/PL, LPR, Glow Mist, CPL Filters for DJI Osmo Pocket 4P ＆ Xtra Muse 2 Pro",
     "shop": "FREEWELL Official Store",
     "price": 42.0,
-    "rating": 99.1,
-    "sold": 946,
+    "rating": 98.9,
+    "sold": 1000,
     "commission": 8.0,
     "img": "https://ae-pic-a1.aliexpress-media.com/kf/S9a5b09f4438147d08ab907ddec45b94dz.jpg",
     "url": "https://www.aliexpress.com/item/1005012394406685.html",
-    "link": "https://s.click.aliexpress.com/e/_c4mBBJlV"
+    "link": "https://s.click.aliexpress.com/e/_c4LsFhdv"
    },
    {
-    "id": "1005009278082726",
+    "id": "1005006872792999",
     "collection": "filters",
-    "query": "CPL filter",
-    "title": "TELESIN Lens Filter Set for DJI OSMO Pocket 3 4 CPL ND16 ND32 ND64 ND256 Black Diffusion Lens  Filter Kit Set For DJI Pocket 4 3",
-    "shop": "TELESIN Official Store",
-    "price": 6.85,
-    "rating": 96.5,
-    "sold": 837,
+    "query": "variable ND filter",
+    "title": "KnightX Effects Star Filter Line 52mm 55mm 58mm 67mm 77mm Camera Lens Filter For Canon Eos Sony Nikon Photo Photography",
+    "shop": "KnightX Official Store",
+    "price": 3.85,
+    "rating": 96.3,
+    "sold": 791,
     "commission": 7.0,
-    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S8ebfc18334c040659828fdf869892fcfE.jpg",
-    "url": "https://www.aliexpress.com/item/1005009278082726.html",
-    "link": "https://s.click.aliexpress.com/e/_c3IpVvUL"
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sce302c20a02940a5be98a5bd91d175b3U.jpg",
+    "url": "https://www.aliexpress.com/item/1005006872792999.html",
+    "link": "https://s.click.aliexpress.com/e/_c3QDA4OB"
    }
   ],
   "phone": [
@@ -341,25 +326,25 @@
     "shop": "FeiyuTech Official Store",
     "price": 42.57,
     "rating": 97.8,
-    "sold": 440,
+    "sold": 445,
     "commission": 7.0,
     "img": "https://ae-pic-a1.aliexpress-media.com/kf/S9adeb9ec3ca14bfab5d10c53fd278243I.jpg",
     "url": "https://www.aliexpress.com/item/1005011994304897.html",
-    "link": "https://s.click.aliexpress.com/e/_c37qGwfH"
+    "link": "https://s.click.aliexpress.com/e/_c2xAI5oJ"
    },
    {
-    "id": "1005007473445172",
+    "id": "1005008166439503",
     "collection": "phone",
-    "query": "phone lens clip",
-    "title": "APEXEL Camera Phone Lens 100mm Macro Lens 4K HD Super Macro Lenses+CPL+Star Filter for iPhone X XS Max Samsung S9 All Smartphone",
-    "shop": "APEXEL Global Official Store",
-    "price": 11.29,
-    "rating": 94.0,
-    "sold": 350,
+    "query": "phone gimbal",
+    "title": "FANGTUOSI 360 Rotation Gimbal Stabilizer ,Selfie Stick Tripod for Smartphone Camera With Bluetooth shutter Stabilizer for Live",
+    "shop": "FANGTUOSI Official Store",
+    "price": 31.62,
+    "rating": 95.6,
+    "sold": 371,
     "commission": 7.0,
-    "img": "https://ae-pic-a1.aliexpress-media.com/kf/H71c30fcde1ff4cfc985a33c7baf01107c.jpg",
-    "url": "https://www.aliexpress.com/item/1005007473445172.html",
-    "link": "https://s.click.aliexpress.com/e/_c30Mdxxp"
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sfaa212c84f024cefa9af22abb660c767w.jpg",
+    "url": "https://www.aliexpress.com/item/1005008166439503.html",
+    "link": "https://s.click.aliexpress.com/e/_c4FcP327"
    },
    {
     "id": "1005005936479058",
@@ -368,42 +353,28 @@
     "title": "FeiyuTech VB4 3-Axis Gimbal Stabilizer for iPhone & Android, Built-in Selfie Stick, Foldable Design for Vlogging, Face Tracking",
     "shop": "FeiyuTech Official Store",
     "price": 41.71,
-    "rating": 95.6,
-    "sold": 301,
+    "rating": 95.7,
+    "sold": 333,
     "commission": 7.0,
     "img": "https://ae-pic-a1.aliexpress-media.com/kf/S3d8020593bac4a45a0ecef45c9026272d.jpg",
     "url": "https://www.aliexpress.com/item/1005005936479058.html",
-    "link": "https://s.click.aliexpress.com/e/_c4TwXGGf"
+    "link": "https://s.click.aliexpress.com/e/_c3OPDp8X"
    }
   ],
   "video": [
-   {
-    "id": "1005008275277930",
-    "collection": "video",
-    "query": "action camera mount",
-    "title": "TELESIN Phone Action Camera 2 in 1 Neck Hold Mount for GoPro Insta360 DJI OSMO Action Universal Action Camera Phone Accessories",
-    "shop": "TELESIN Official Store",
-    "price": 16.79,
-    "rating": 98.1,
-    "sold": 1566,
-    "commission": 7.0,
-    "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sfeeed8086f104a75b923a8564e7b9189Q.jpg",
-    "url": "https://www.aliexpress.com/item/1005008275277930.html",
-    "link": "https://s.click.aliexpress.com/e/_c3514zC7"
-   },
    {
     "id": "1005003473727886",
     "collection": "video",
     "query": "magic arm camera",
     "title": "SmallRig 9.5 inches Articulating Arm Adjustable Friction Magic Arm For DSLR LCD Monitor LED Light Camera Accessories 2066",
     "shop": "smallrig Official Store",
-    "price": 11.34,
-    "rating": 97.1,
-    "sold": 548,
+    "price": 12.59,
+    "rating": 97.2,
+    "sold": 536,
     "commission": 7.0,
     "img": "https://ae-pic-a1.aliexpress-media.com/kf/S8ede9b06292f44c5b9d0c5c32585c067K.jpg",
     "url": "https://www.aliexpress.com/item/1005003473727886.html",
-    "link": "https://s.click.aliexpress.com/e/_c2QhOvFh"
+    "link": "https://s.click.aliexpress.com/e/_c45zo2Bp"
    },
    {
     "id": "1005007378912322",
@@ -412,12 +383,26 @@
     "title": "SmallRig Top Handle for ARRI Locating Holes (Tiny),Weight 113g,Portable Camera Top Handle for Sony for Canon for Nikon 4757",
     "shop": "smallrig Official Store",
     "price": 16.79,
-    "rating": 96.3,
-    "sold": 491,
+    "rating": 96.4,
+    "sold": 502,
     "commission": 7.0,
     "img": "https://ae-pic-a1.aliexpress-media.com/kf/S7438d3c9bf384a138b148a94550e7916z.jpg",
     "url": "https://www.aliexpress.com/item/1005007378912322.html",
-    "link": "https://s.click.aliexpress.com/e/_c4bkqusR"
+    "link": "https://s.click.aliexpress.com/e/_c3CZX4dN"
+   },
+   {
+    "id": "1005009015037998",
+    "collection": "video",
+    "query": "camera cage",
+    "title": "NEEWER HD 65mm Telephoto Phone Camera Lens with Lens Hood for Phone Cage Case, 1.7X Zoom Lens For iPhone 16 15 S25 S24 Ultra",
+    "shop": "NEEWER Official Store",
+    "price": 51.86,
+    "rating": 97.1,
+    "sold": 400,
+    "commission": 7.0,
+    "img": "https://ae-pic-a1.aliexpress-media.com/kf/S4beeb3f0120c4720985349ce0563cce5x.jpg",
+    "url": "https://www.aliexpress.com/item/1005009015037998.html",
+    "link": "https://s.click.aliexpress.com/e/_c33Us2ub"
    }
   ],
   "nature": [
@@ -427,13 +412,13 @@
     "query": "camera rain cover",
     "title": "JJC 2Pack Clear Stabilizer Rain Cover Gimbal Stabilizer for Camera Raincoat For DJI RS 4 Pro RS 4 RS 3 Mini Pro RSC 2 RS 2",
     "shop": "JJC Official Store",
-    "price": 10.32,
-    "rating": 97.6,
-    "sold": 207,
+    "price": 10.75,
+    "rating": 97.3,
+    "sold": 209,
     "commission": 7.0,
     "img": "https://ae-pic-a1.aliexpress-media.com/kf/S41e66237eba44e6585269e61f66e02d3i.png",
     "url": "https://www.aliexpress.com/item/1005007197845231.html",
-    "link": "https://s.click.aliexpress.com/e/_c4sRIIaF"
+    "link": "https://s.click.aliexpress.com/e/_c40JRovH"
    }
   ],
   "adapters": []
